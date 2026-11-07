@@ -1,0 +1,50 @@
+{
+  "at": "2026-11-07T18:56:00Z",
+  "input": "ordinary mouse via IWSDK managed Chromium, not IWER hands",
+  "physicalQuest": false,
+  "results": [
+    {
+      "test": "open mouse stroke is visible and announced",
+      "pass": true,
+      "message": "Bring the glowing end back to the start. Draw a loop around the ribbon, not just a line.",
+      "screenshot": "docs/submission/screenshots/21-live-stroke.png"
+    },
+    {
+      "test": "mouse stroke still registers after 922 LUMA voxels exist",
+      "pass": true,
+      "held": {
+        "phase": "drawing",
+        "message": "Your stroke is on the board. Go around the ribbon and close the loop.",
+        "stroke": 13,
+        "ink": [255, 255, 255, 255]
+      }
+    },
+    {
+      "test": "undo drops LUMA side mask immediately then replans",
+      "pass": true,
+      "undo": {
+        "side": 0,
+        "instances": 0,
+        "front": 168,
+        "phase": "agent-planning"
+      },
+      "after": {
+        "phase": "construction-success",
+        "instances": 922,
+        "pass": true
+      }
+    },
+    {
+      "test": "desktop L1/L2 regression",
+      "pass": true,
+      "passed": [
+        "desktop Level 1 real pointer closed outline and verified crossing",
+        "Level 2 authentic failure",
+        "Level 2 human extension and worker replan crossing",
+        "clear gives empty-mask recovery",
+        "undo restores a valid drawing",
+        "tiny invalid stroke remains recoverable"
+      ]
+    }
+  ]
+}
