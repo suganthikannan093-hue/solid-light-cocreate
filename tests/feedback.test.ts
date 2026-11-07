@@ -7,7 +7,7 @@ it('gives an action instead of a technical failure label and a closed tutorial t
 
 it('the actual thin Garden guide gives a walkable path, then a separate roof loop completes it',()=>{
  const goal=goalFor(3),outline=(b:ReturnType<typeof drawingGuide>,margin=0):Point[]=>[[b.x0-margin,b.y0-margin],[b.x1+margin,b.y0-margin],[b.x1+margin,b.y1+margin],[b.x0-margin,b.y1+margin],[b.x0-margin,b.y0-margin]];
- for(const margin of [0,.01,.025]){
+ for(const margin of [-.012,0,.01,.025]){
   const path=rasterize(outline(drawingGuide(3,goal),margin),1),before=path.pixels.slice(),decision=new OfflineStrategyProvider().plan({revision:1,playerMask:path,goal,previousAttempts:[]});
   expect(decision.report.constraints?.path).toBe(true);expect(decision.report.failures).toEqual(['INSUFFICIENT_SHELTER']);
   const roof=rasterize(outline(drawingGuide(3,goal,true),margin),2),combined=addMask(path,roof,2);expect(path.pixels).toEqual(before);

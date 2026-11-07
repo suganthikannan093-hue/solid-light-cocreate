@@ -2,6 +2,19 @@
   "pass": true,
   "results": [
     {
+      "ok": true,
+      "data": {
+        "operation": "browser.run",
+        "result": {
+          "phase": "needs-user",
+          "frontPixels": 0,
+          "message": "Drawing interrupted. Your previous outline is safe. Release and try again."
+        },
+        "script": "scripts/assert-disconnected-stroke.mjs",
+        "workspaceRoot": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate"
+      }
+    },
+    {
       "phase": "complete",
       "level": 1,
       "result": {
@@ -385,142 +398,142 @@
                 [
                   2,
                   10,
-                  14
+                  15
                 ],
                 [
                   3,
                   10,
-                  14
+                  15
                 ],
                 [
                   4,
                   10,
-                  14
+                  15
                 ],
                 [
                   5,
                   10,
-                  14
+                  15
                 ],
                 [
                   6,
                   10,
-                  14
+                  15
                 ],
                 [
                   7,
                   10,
-                  14
+                  15
                 ],
                 [
                   8,
                   10,
-                  14
+                  15
                 ],
                 [
                   9,
                   10,
-                  14
+                  15
                 ],
                 [
                   10,
                   10,
-                  14
+                  15
                 ],
                 [
                   11,
                   10,
-                  14
+                  15
                 ],
                 [
                   12,
                   10,
-                  14
+                  15
                 ],
                 [
                   13,
                   10,
-                  14
+                  15
                 ],
                 [
                   14,
                   10,
-                  14
+                  15
                 ],
                 [
                   15,
                   10,
-                  14
+                  15
                 ],
                 [
                   16,
                   10,
-                  14
+                  15
                 ],
                 [
                   17,
                   10,
-                  14
+                  15
                 ],
                 [
                   18,
                   10,
-                  14
+                  15
                 ],
                 [
                   19,
                   10,
-                  14
+                  15
                 ],
                 [
                   20,
                   10,
-                  14
+                  15
                 ],
                 [
                   21,
                   10,
-                  14
+                  15
                 ],
                 [
                   22,
                   10,
-                  14
+                  15
                 ],
                 [
                   23,
                   10,
-                  14
+                  15
                 ],
                 [
                   24,
                   10,
-                  14
+                  15
                 ],
                 [
                   25,
                   10,
-                  14
+                  15
                 ],
                 [
                   26,
                   10,
-                  14
+                  15
                 ],
                 [
                   27,
                   10,
-                  14
+                  15
                 ],
                 [
                   28,
                   10,
-                  14
+                  15
                 ],
                 [
                   29,
                   10,
-                  14
+                  15
                 ]
               ],
               "failures": [
@@ -591,157 +604,173 @@
                 [
                   2,
                   10,
-                  7
+                  6
                 ],
                 [
                   3,
                   10,
-                  7
+                  6
                 ],
                 [
                   4,
                   10,
-                  7
+                  6
                 ],
                 [
                   5,
                   10,
-                  7
+                  6
                 ],
                 [
                   6,
                   10,
-                  7
+                  6
                 ],
                 [
                   7,
                   10,
-                  7
+                  6
                 ],
                 [
                   8,
                   10,
-                  7
+                  6
                 ],
                 [
                   9,
                   10,
-                  7
+                  6
                 ],
                 [
                   10,
                   10,
-                  7
+                  6
                 ],
                 [
                   11,
                   10,
-                  7
+                  6
                 ],
                 [
                   12,
                   10,
-                  7
+                  6
                 ],
                 [
                   13,
                   10,
-                  7
+                  6
                 ],
                 [
                   14,
                   10,
-                  7
+                  6
                 ],
                 [
                   15,
                   10,
-                  7
+                  6
                 ],
                 [
                   16,
                   10,
-                  7
+                  6
                 ],
                 [
                   17,
                   10,
-                  7
+                  6
                 ],
                 [
                   18,
                   10,
-                  7
+                  6
                 ],
                 [
                   19,
                   10,
-                  7
+                  6
                 ],
                 [
                   20,
                   10,
-                  7
+                  6
                 ],
                 [
                   21,
                   10,
-                  7
+                  6
                 ],
                 [
                   22,
                   10,
-                  7
+                  6
                 ],
                 [
                   23,
                   10,
-                  7
+                  6
                 ],
                 [
                   24,
                   10,
-                  7
+                  6
                 ],
                 [
                   25,
                   10,
-                  7
+                  6
                 ],
                 [
                   26,
                   10,
-                  7
+                  6
                 ],
                 [
                   27,
                   10,
-                  7
+                  6
                 ],
                 [
                   28,
                   10,
-                  7
+                  6
                 ],
                 [
                   29,
                   10,
-                  7
+                  6
                 ]
               ],
-              "cost": 3810,
+              "cost": 3450,
               "constraints": {
                 "path": true,
                 "shelter": true
               },
               "failures": [],
               "diagnostics": [],
-              "score": 96190
+              "score": 96550
             }
           },
           "script": "scripts/wait-complete.mjs",
           "workspaceRoot": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate"
         }
+      }
+    },
+    {
+      "ok": true,
+      "data": {
+        "operation": "browser.run",
+        "result": {
+          "level": 3,
+          "phase": "level-complete",
+          "pathPixels": 90,
+          "roofPixels": 60,
+          "airPixels": 0,
+          "pass": true
+        },
+        "script": "scripts/assert-garden-layers.mjs",
+        "workspaceRoot": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate"
       }
     },
     {
@@ -1078,5 +1107,5 @@
       }
     }
   ],
-  "at": "2026-11-07T15:29:09.419Z"
+  "at": "2026-11-07T17:35:20.972Z"
 }

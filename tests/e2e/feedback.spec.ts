@@ -15,3 +15,16 @@ test('novice feedback: instant stroke, open-gap recovery, sparse rectangle and c
  const points=[];for(const [u,v] of [[.07,.20],[.94,.20],[.94,.37],[.07,.37],[.07,.20]])points.push(await position(u,v));await page.mouse.move(points[0].x,points[0].y);await page.mouse.down();for(const p of points.slice(1))await page.mouse.move(p.x,p.y);await page.mouse.up();
  await page.waitForFunction(()=>window.solidLight.state().phase==='level-complete');await expect(page.getByRole('status')).toContainText('LEVEL 1 COMPLETE');await expect(page.getByRole('button',{name:'Next level',exact:true})).toHaveClass(/next-objective/);await page.getByRole('button',{name:'Next level',exact:true}).click();expect(await page.evaluate(()=>window.solidLight.state().level)).toBe(2);
 });
+
+test('fast imperfect mouse loops preserve corners; Clear and Undo announce their effect',async({page})=>{
+ await page.goto('./');await page.waitForFunction(()=>!!window.solidLight);
+ const timings:number[]=[];
+ for(const outline of [[[.07,.20],[.94,.205],[.935,.375],[.065,.38],[.07,.20]],[[.07,.20],[.065,.38],[.935,.375],[.94,.205],[.07,.20]]]){
+  const points=await page.evaluate(outline=>{const w=window.solidLight.world,p=w.requireSceneObject('front-plane'),r=w.renderer.domElement.getBoundingClientRect();return outline.map(([u,v])=>{const a=p.position.clone().set((u-.5)*1.28,(v-.5)*.64,0);p.localToWorld(a);a.project(w.camera);return {x:r.x+(a.x+1)*r.width/2,y:r.y+(1-a.y)*r.height/2};});},outline);
+  await page.mouse.move(points[0].x,points[0].y);const start=Date.now();await page.mouse.down();for(const p of points.slice(1))await page.mouse.move(p.x,p.y,{steps:1});await page.mouse.up();timings.push(Date.now()-start);
+  await page.waitForFunction(()=>window.solidLight.state().phase==='level-complete');expect(await page.evaluate(()=>window.solidLight.state().decision!.report.pass)).toBe(true);
+  await clickControl(page,'Clear');await expect(page.getByRole('status')).toContainText('Cleared. Your drawing is empty');await page.waitForFunction(()=>window.solidLight.state().phase==='needs-user');await expect(page.getByRole('status')).toContainText('Cleared.');
+  await clickControl(page,'Undo');await expect(page.getByRole('status')).toContainText('Undone. Your previous outline is restored');await page.waitForFunction(()=>window.solidLight.state().phase==='level-complete');
+ }
+ console.log(JSON.stringify({realMouseStrokeMs:timings,explicitStrokeDelays:0,samplesPerLoop:5}));
+});

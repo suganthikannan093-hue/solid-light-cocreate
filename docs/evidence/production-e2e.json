@@ -3,7 +3,8 @@
     "argv": [
       "/Users/apple/.local/bin/node",
       "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate/node_modules/.bin/playwright",
-      "test"
+      "test",
+      "tests/e2e/garden.spec.ts"
     ],
     "configFile": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate/playwright.config.ts",
     "rootDir": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate/tests/e2e",
@@ -114,198 +115,6 @@
   },
   "suites": [
     {
-      "title": "budget.spec.ts",
-      "file": "budget.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "default journey reaches budget challenge and opens a distinct remix after a human trim",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 180000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 34400,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-11-07T16:10:04.513Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate/test-results/budget-default-journey-rea-8b442-ct-remix-after-a-human-trim/video.webm"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "bfff7a1deaa6eae76f63-3ac11f49215c63a871c9",
-          "file": "budget.spec.ts",
-          "line": 6,
-          "column": 1
-        }
-      ]
-    },
-    {
-      "title": "cloud.spec.ts",
-      "file": "cloud.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "optional cloud requires consent and backend outage preserves both levels",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 180000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 66032,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-11-07T16:10:41.333Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate/test-results/cloud-optional-cloud-requi-ea5c4-utage-preserves-both-levels/video.webm"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "56770d54d9dbcece91a2-0dd8d14ae8548c73100e",
-          "file": "cloud.spec.ts",
-          "line": 4,
-          "column": 1
-        }
-      ]
-    },
-    {
-      "title": "comfort.spec.ts",
-      "file": "comfort.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "focused controls, visible toggle state, XR fallback and narrow viewport framing",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 180000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 8103,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-11-07T16:11:47.434Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate/test-results/comfort-focused-controls-v-fcf3e-and-narrow-viewport-framing/video.webm"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "09546bd862d204a3462c-58cffaddfa7020dcdd9d",
-          "file": "comfort.spec.ts",
-          "line": 6,
-          "column": 1
-        }
-      ]
-    },
-    {
-      "title": "feedback.spec.ts",
-      "file": "feedback.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "novice feedback: instant stroke, open-gap recovery, sparse rectangle and clear next objective",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 180000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 10866,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-11-07T16:11:55.607Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate/test-results/feedback-novice-feedback-i-79a44-le-and-clear-next-objective/video.webm"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "eccc8495635fa8823817-add285a96f68a896e766",
-          "file": "feedback.spec.ts",
-          "line": 6,
-          "column": 1
-        }
-      ]
-    },
-    {
       "title": "garden.spec.ts",
       "file": "garden.spec.ts",
       "column": 0,
@@ -327,12 +136,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 52617,
+                  "duration": 56659,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-07T16:12:06.550Z",
+                  "startTime": "2026-11-07T17:38:35.154Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -348,55 +157,7 @@
           ],
           "id": "8d392b78b326e6f8de96-9c816ea8c770d613a815",
           "file": "garden.spec.ts",
-          "line": 7,
-          "column": 1
-        }
-      ]
-    },
-    {
-      "title": "production.spec.ts",
-      "file": "production.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "production full offline planner playthrough, both levels and recovery",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 180000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 47912,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-11-07T16:12:59.206Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate/test-results/production-production-full-ca719-gh-both-levels-and-recovery/video.webm"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "ed69554c53210704c98c-0e6761327b19456d3a26",
-          "file": "production.spec.ts",
-          "line": 3,
+          "line": 8,
           "column": 1
         }
       ]
@@ -404,9 +165,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-11-07T16:09:55.404Z",
-    "duration": 232142.435,
-    "expected": 6,
+    "startTime": "2026-11-07T17:38:29.478Z",
+    "duration": 63321.342,
+    "expected": 1,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

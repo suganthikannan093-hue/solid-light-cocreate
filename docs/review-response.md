@@ -25,3 +25,12 @@ Chapter 3 now adds each valid closed loop to the human mask. The lower path stay
 The shared guide uses three deck cells (Y=7..9) and a separate roof at Y=16..17. Unit coverage rasterizes the actual guide and two generous margins, verifies the path-only shelter diagnosis and completion after union with the independently drawn roof. Intermediate candidate tests no longer request edits before the search finishes. Clearance failures explicitly ask for air above the path.
 
 Desktop hides the legacy perpendicular side plane; it remains in immersive mode for spatial orientation. Sparks stay below board height. The browser title is corrected, disabled Next loses focus glow, and High contrast has explicit text plus an aria-live announcement. Physical Quest reach and comfort remain unverified.
+
+## Forgiveness, contribution and finale follow-up
+The lower Garden target now includes a small margin for a loop drawn just inside the guide. Geometry validation remains unchanged; the tests include a tight inset, plus an actual too-thin failure whose hint asks for a little more height without filling headroom. Help names the two loops. Undo/Clear confirmations persist through planning. Live preview checks closure and length coverage; safe walking/shelter/budget still require the authoritative planner.
+
+Both boards name their ownership: the human supplies length and height; LUMA chooses and tests depth with a bounded local planner. The existing chapter progression has distinct constraints: intersection and footprint, missing length beyond LUMA’s authority, a separate canopy with Sturdy/Efficient alternatives, then a voxel budget requiring human trimming. Workshop presets vary span, footprint and resources. Strategy tests establish multiple valid constructions, not just alternate dialogue.
+
+The finale retains the real structure and both silhouettes, credits human and LUMA separately, names their combined result, offers workshop continuation and uses a brief reduced-motion-aware light celebration. Boards render after sparks, sparks do not write depth, and real near hands can still occlude UI correctly. The desktop perpendicular plane has a material-level visibility gate in addition to object visibility.
+
+Owner confirmed no Quest is available. Real hand tracking, comfort/readability, tracking-loss recovery and headset footage remain open. Emulator disconnection and full-journey checks are separate evidence.

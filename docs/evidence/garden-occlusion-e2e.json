@@ -1,0 +1,175 @@
+{
+  "config": {
+    "argv": [
+      "/Users/apple/.local/bin/node",
+      "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate/node_modules/.bin/playwright",
+      "test",
+      "tests/e2e/garden.spec.ts"
+    ],
+    "configFile": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate/playwright.config.ts",
+    "rootDir": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 180000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate/tests/e2e",
+        "snapshotDir": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate/tests/e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 180000,
+        "use": {
+          "baseURL": "https://127.0.0.1:4173",
+          "ignoreHTTPSErrors": true,
+          "viewport": {
+            "width": 1000,
+            "height": 720
+          },
+          "video": {
+            "mode": "on",
+            "size": {
+              "width": 1000,
+              "height": 720
+            }
+          },
+          "channel": "chromium",
+          "headless": true,
+          "launchOptions": {
+            "args": [
+              "--use-gl=angle",
+              "--use-angle=metal"
+            ]
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "docs/evidence/production-e2e.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.0",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run preview -- --host 127.0.0.1 --port 4173",
+      "url": "https://127.0.0.1:4173",
+      "ignoreHTTPSErrors": true,
+      "reuseExistingServer": false
+    }
+  },
+  "suites": [
+    {
+      "title": "garden.spec.ts",
+      "file": "garden.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Next into Garden: thin path is kept, open roof is recoverable, second loop adds shelter, Undo and both strategies work",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 56659,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-07T17:38:35.154Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate/test-results/garden-Next-into-Garden-th-e14e8-do-and-both-strategies-work/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8d392b78b326e6f8de96-9c816ea8c770d613a815",
+          "file": "garden.spec.ts",
+          "line": 8,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-07T17:38:29.478Z",
+    "duration": 63321.342,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

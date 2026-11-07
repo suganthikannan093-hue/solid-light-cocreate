@@ -30,3 +30,5 @@ Intel x86_64 macOS 26.7.2, 16GiB RAM, Node 26.13.0 / npm 11.20.0. Official SDK s
 Garden follow-up: additive closed-loop drawing now preserves the path while the player adds a separate roof. Thin guide fixtures and six local production browser scenarios pass. The focused Level 2 → Garden hand-input and final hosted checks are tracked in evidence/xr-garden-additive.json and hosted-e2e.json; older recordings are historical.
 
 The Garden follow-up is deployed: six hosted scenarios passed in 2.4 minutes, and the focused official IWER hand sequence passed Level 2 → Next → separate path/roof → crossing. Refreshed 161.60-second narrated footage and release archive are ready. Hardware testing remains open.
+
+Latest follow-up implements guide inset tolerance, chapter-specific Help, persistent editing feedback, explicit contributor labels and a two-credit finale. Seven local browser scenarios passed, including clockwise/counter-clockwise fast imperfect mouse loops (one measured at 180ms, no inserted delays). Final hosted and emulator recovery/menus are being rechecked. The owner confirmed no Quest is available; physical tests and headset recording remain open.
