@@ -6,3 +6,6 @@ The hand-created final structure has 900 exposed voxel instances. Emulated stere
 Candidate compute is bounded to 24 attempts / 800ms plus a 2.5s worker watchdog. Drawing preview is throttled to ~60ms and contour sampling capped at 2048 points. Occupancy is 32KiB, masks 1KiB each; only surface cubes are instanced. Heap peak was not measured; renderer counters are not a heap-memory benchmark.
 
 Target ≥60 FPS on Quest 3/3S remains unverified. Run the physical test script with device/browser version, thermal duration and hand-input notes. Production desktop pointer regression uses Chromium Metal; software-rendered full playthroughs were too slow for the original 60s test budget and are not used as device performance evidence.
+
+## Latest four-chapter emulator sample
+Last Spark complete, active stereo IWER hands: 120 frames, median 16.4ms, p95 18.5ms; 1,414 exposed instances; 70 draw calls / 56,924 triangles; 44 geometries / 26 textures; worker 69.1ms. See evidence/performance.json. This supersedes the earlier scene sample for current desktop behavior. It remains uncalibrated desktop scheduling evidence, not a physical Quest benchmark.

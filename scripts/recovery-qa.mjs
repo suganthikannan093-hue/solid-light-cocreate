@@ -1,7 +1,8 @@
+import {clickControl} from './ui-controls.mjs';
 import {writeFile} from 'node:fs/promises';
 export default async function({page,frame,workspaceRoot}){
  const results=[];
- const click=name=>frame.getByRole('button',{name,exact:true}).click();
+ const click=name=>clickControl(frame,name);
  const state=()=>frame.evaluate(()=>{const s=window.solidLight.state();return {revision:s.revision,phase:s.phase,mask:s.front,decisionRevision:s.decision?.volume.revision};});
  await click('Level 2');
  const points=await frame.evaluate(()=>{const w=window.solidLight.world,plane=w.requireSceneObject('front-plane'),r=w.renderer.domElement.getBoundingClientRect();return [[.02,.21],[.97,.21],[.97,.365],[.02,.365],[.02,.21]].map(([u,v])=>{const p=plane.position.clone().set((u-.5)*1.28,(v-.5)*.64,0);plane.localToWorld(p);p.project(w.camera);return {x:r.x+(p.x+1)*r.width/2,y:r.y+(1-p.y)*r.height/2};});});

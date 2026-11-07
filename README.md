@@ -25,12 +25,14 @@ npx @iwsdk/cli browser run scripts/desktop-qa.mjs --timeout 60000
 ```
 
 ## Controls
-Drag a closed outline around the dotted front-plane guide; release to fill and ask LUMA to plan. Drawing again replaces the current silhouette; Undo restores the previous one. Desktop buttons and spatial buttons provide Level 1/2, Undo, Clear, Reset, Pause/Resume, Recenter, Help, Enter XR, Mute, Reduced motion, and High contrast. Pinch-and-drag uses IWSDK's shared spatial pointer path. An immersive session hides ordinary browser UI; use the spatial controls below the bridge. Hand input and hardware test status are in docs/QA-report.md.
+Hold the mouse button (or pinch in an immersive session), loop around the thick dotted guide, return to the start and release. A moving example teaches the motion; open loops retain their stroke and show the closing gap. New outlines replace the mask. Undo restores earlier work.
 
-Level 1: trace the full guide. Level 2: first trace the short guide; LUMA evaluates candidates and highlights missing columns. Redraw the ribbon extending through those columns to the far bank. An already sufficient drawing may succeed directly. Invalid input gives guidance, never a fabricated bridge.
+Next, Undo, Clear, Help and Settings are the primary actions. Settings contains chapter practice, Reset, Pause, Recenter, Enter/Exit XR, Mute, Reduced motion, High contrast and Sturdy/Efficient. Selected and toggle states are visible. Immersive sessions use large spatial controls above the scene's lower edge. Physical Quest validation remains open.
 
-## Scope
-Levels 1 and 2 are the default submission path. Experimental Level 3 is available with `?level3=1`: select Level 3, build a path and canopy, and compare Sturdy / Efficient designs. It has desktop and IWER hand evidence. Optional cloud adapters support Vultr (default) or OpenAI behind a separately configured HTTPS backend; no cloud backend/key or paid calls are active. See docs/level3.md and docs/optional-cloud.md. Passthrough disabled. Public demo: https://suganthikannan093-hue.github.io/solid-light-cocreate/ . No public video upload has occurred. Quest performance and physical hand reliability require hardware testing.
+## Journey
+Four default chapters: First Bridge teaches the loop; Incomplete Span requires extending the human projection; Light Garden adds a protective canopy; Last Spark adds a strict voxel budget. Next then cycles four workshop presets that change span, creature footprint and resources. Success requires a real validated route and traveler crossing. An already sufficient drawing can succeed directly.
+
+Live demo: https://suganthikannan093-hue.github.io/solid-light-cocreate/ . The newest local changes are published only after regression checks. Optional OpenAI/Vultr adapters use a separate secret-holding HTTPS backend and explicit consent. OpenAI is the default provider; its key connectivity has been tested, but a public inference proxy is not deployed. No key belongs in this frontend. See docs/optional-cloud.md.
 
 ## Engineering
 32³ occupancy V(x,y,z)=F(x,y)&S(z,y); even-odd rasterization, exposed instanced cubes, worker candidate search, bank-anchored rigid-deck walkability BFS, revision guards. World units are meters. See docs/architecture.md and docs/implementation-status.md.

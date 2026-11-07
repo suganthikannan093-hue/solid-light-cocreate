@@ -1,11 +1,12 @@
-# Shot list
-- 15s: actual two-plane creation hero, cyan versus amber ownership.
-- 30s: pointer or emulated-hand Level 1 outline, filled mask and side profile.
-- 15s: actual creature crossing and success label.
-- 25s: Level 2 short drawing and actual failed candidates.
-- 25s: missing-column highlight and human extension.
-- 20s: actual replanning and second crossing.
-- 15s: alternate drawing, planner event evidence.
-- 10s: title/finale and accurate roadmap.
+# Capture sequence
+1. Title and moving loop example.
+2. One closed loop, live stroke and release.
+3. Actual candidate tests, solid volume, verified route and traveler arrival.
+4. Level 2 short outline, real amber diagnosis.
+5. Human extension and successful replan.
+6. Pause, contrast, reduced motion, clear, open-loop gap and Undo.
+7. Default Next into Light Garden; path-only failure, shelter repair and strategy comparison.
+8. Default Next into Last Spark; budget failure, human trim and successful crossing.
+9. Final completed structure; disclose local planning and unverified physical Quest behavior.
 
-Capture at 1280×720 or higher when available. Hide unrelated developer windows and personal information. Keep emulator label visible in edited footage. Retain original captures; screenshot directory contains real app evidence plus explicitly named isolated asset previews. Video URL remains pending owner upload/approval.
+Final timing and evidence: demo-timeline.json and video-manifest.json. Narration is locally synthesized; capture is real desktop gameplay, not represented as headset footage.

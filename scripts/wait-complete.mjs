@@ -1,0 +1,1 @@
+export default async function({frame}){await frame.waitForFunction(()=>window.solidLight.state().phase==='level-complete',null,{timeout:25000});return frame.evaluate(()=>{const s=window.solidLight.state();return {level:s.level,phase:s.phase,report:s.decision?.report};});}

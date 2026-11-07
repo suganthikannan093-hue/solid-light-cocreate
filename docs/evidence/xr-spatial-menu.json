@@ -1,0 +1,16 @@
+{
+  "pass": true,
+  "result": {
+    "ok": true,
+    "data": {
+      "operation": "browser.run",
+      "result": {
+        "muted": "true",
+        "settings": "true"
+      },
+      "script": "scripts/assert-mute.mjs",
+      "workspaceRoot": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate"
+    }
+  },
+  "at": "2026-11-07T15:29:24.794Z"
+}

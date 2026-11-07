@@ -1,0 +1,8 @@
+{
+  "pass": true,
+  "status": 503,
+  "body": {
+    "error": "cloud_not_configured"
+  },
+  "condition": "no keys; Vultr egress whitelist not confirmed; no upstream request enabled"
+}

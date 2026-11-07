@@ -1,0 +1,7 @@
+import {readFile,writeFile} from 'node:fs/promises';
+import {createCloudServer} from '../server/cloud.mjs';
+let apiKey=(await readFile(process.argv[2],'utf8')).trim();const started=performance.now();let upstreamStatus=null,upstreamCode=null;
+const server=createCloudServer({provider:'openai',allowedOrigin:'https://game.test',enabled:true,apiKey,model:'gpt-4.1-mini',timeoutMs:6000,limit:1,totalLimit:1},async(url,options)=>{const response=await fetch(url,options);upstreamStatus=response.status;if(!response.ok){try{upstreamCode=(await response.clone().json()).error?.code??null;}catch{upstreamCode='invalid_error_body';}}return response;});
+await new Promise(r=>server.listen(0,'127.0.0.1',r));
+try{const result=await fetch(`http://127.0.0.1:${server.address().port}/strategy`,{method:'POST',headers:{Origin:'https://game.test','Content-Type':'application/json'},body:JSON.stringify({consent:true,revision:1,gridSize:32,occupied:150,goal:{source:2,target:29,canopy:false}})});const body=await result.json();const evidence={pass:result.ok,backendStatus:result.status,upstreamStatus,upstreamCode,model:'gpt-4.1-mini',milliseconds:Math.round(performance.now()-started),result:body,requestsAllowed:1,at:new Date().toISOString()};await writeFile('docs/evidence/openai-connection.json',JSON.stringify(evidence,null,2));console.log(JSON.stringify(evidence));}
+finally{await new Promise(r=>server.close(r));apiKey='';}

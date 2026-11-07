@@ -1,0 +1,14 @@
+{
+  "pass": true,
+  "backendStatus": 200,
+  "upstreamStatus": 200,
+  "upstreamCode": null,
+  "model": "gpt-4.1-mini",
+  "milliseconds": 1915,
+  "result": {
+    "strategy": "sturdy",
+    "explanation": "Use strong supports to ensure long-lasting stability between source 2 and target 29 without changing the existing layout."
+  },
+  "requestsAllowed": 1,
+  "at": "2026-11-07T14:34:17.644Z"
+}

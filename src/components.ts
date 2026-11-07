@@ -6,6 +6,7 @@
  */
 
 import { defineComponents } from '@iwsdk/core';
+import { SpatialControl } from './game/spatial-control.js';
 import { Robot } from './robot-component.js';
 
-export default defineComponents([Robot]);
+export default defineComponents([Robot,SpatialControl]);

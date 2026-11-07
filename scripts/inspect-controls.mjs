@@ -1,0 +1,1 @@
+export default async function({frame}){return frame.evaluate(()=>{const w=window.solidLight.world;return {presenting:w.renderer.xr.isPresenting,controls:['Control-Next level','Control-Settings'].map(n=>{const o=w.scene.getObjectByName(n);return {name:n,visible:o?.visible,position:o?.position.toArray(),state:o?.userData.controlState};})};});}

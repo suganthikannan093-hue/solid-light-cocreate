@@ -1,9 +1,10 @@
+import {clickControl} from './ui-controls.mjs';
 import {writeFile} from 'node:fs/promises';
 export default async function({page,frame,workspaceRoot}) {
  const results=[];const errors=[];page.on('pageerror',error=>errors.push(String(error)));
  await frame.waitForFunction(()=>!!window.solidLight);
  const state=()=>frame.evaluate(()=>{const s=window.solidLight.state();return {level:s.level,phase:s.phase,revision:s.revision,paused:s.paused,instances:s.instances,decision:s.decision?{phase:s.decision.phase,report:s.decision.report,attempts:s.decision.attempts,elapsed:s.decision.elapsed}:null,events:s.events};});
- const click=async name=>{await frame.getByRole('button',{name,exact:true}).click();};
+ const click=name=>clickControl(frame,name);
  async function draw(x0,x1,y0=.21,y1=.365) {
   const points=await frame.evaluate(({x0,x1,y0,y1})=>{
    const world=window.solidLight.world,plane=world.requireSceneObject('front-plane'),rect=world.renderer.domElement.getBoundingClientRect();

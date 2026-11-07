@@ -1,0 +1,265 @@
+{
+  "config": {
+    "argv": [
+      "/Users/apple/.local/bin/node",
+      "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate/node_modules/.bin/playwright",
+      "test"
+    ],
+    "configFile": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate/playwright.config.ts",
+    "rootDir": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 180000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate/tests/e2e",
+        "snapshotDir": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate/tests/e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 180000,
+        "use": {
+          "baseURL": "https://suganthikannan093-hue.github.io/solid-light-cocreate/",
+          "ignoreHTTPSErrors": false,
+          "viewport": {
+            "width": 1000,
+            "height": 720
+          },
+          "video": {
+            "mode": "on",
+            "size": {
+              "width": 1000,
+              "height": 720
+            }
+          },
+          "channel": "chromium",
+          "headless": true,
+          "launchOptions": {
+            "args": [
+              "--use-gl=angle",
+              "--use-angle=metal"
+            ]
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "docs/evidence/hosted-e2e.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "cloud.spec.ts",
+      "file": "cloud.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "optional cloud requires consent and backend outage preserves both levels",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 31098,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-07T13:16:50.501Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate/test-results/cloud-optional-cloud-requi-ea5c4-utage-preserves-both-levels/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "56770d54d9dbcece91a2-0dd8d14ae8548c73100e",
+          "file": "cloud.spec.ts",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "garden.spec.ts",
+      "file": "garden.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "experimental Garden checks shelter and path; both strategies finish",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 23176,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-07T13:17:22.584Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate/test-results/garden-experimental-Garden-b1a74-path-both-strategies-finish/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8d392b78b326e6f8de96-9d15dd3a4dbaec8e9b0f",
+          "file": "garden.spec.ts",
+          "line": 5,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "production.spec.ts",
+      "file": "production.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "production full offline planner playthrough, both levels and recovery",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 30294,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-07T13:17:45.829Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate/test-results/production-production-full-ca719-gh-both-levels-and-recovery/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed69554c53210704c98c-0e6761327b19456d3a26",
+          "file": "production.spec.ts",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-07T13:16:49.634Z",
+    "duration": 86773.246,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

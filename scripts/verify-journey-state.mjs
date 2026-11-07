@@ -1,0 +1,1 @@
+export default async function({frame}){return frame.evaluate(()=>{const s=window.solidLight.state();return {level:s.level,phase:s.phase,strokeBounds:s.stroke?.reduce((b,p)=>[Math.min(b[0],p[0]),Math.max(b[1],p[0]),Math.min(b[2],p[1]),Math.max(b[3],p[1])],[1,0,1,0]),openGap:s.openGap,message:s.message,decision:s.decision?.report};});}

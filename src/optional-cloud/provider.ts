@@ -7,7 +7,7 @@ export function parseSuggestion(value:unknown):Suggestion {
 }
 export class CloudStrategyProvider implements StrategyProvider {
  status='Offline planner';private count=0;private offline=new OfflineStrategyProvider();
- constructor(private endpoint:string,public consent=false,private fetcher:typeof fetch=fetch.bind(globalThis),private timeoutMs=1200,private cap=3){}
+ constructor(private endpoint:string,public consent=false,private fetcher:typeof fetch=fetch.bind(globalThis),private timeoutMs=3000,private cap=3){}
  async suggest(snapshot:WorldSnapshot):Promise<Suggestion|null>{
   if(!this.consent||!this.endpoint.startsWith('https://')||this.count>=this.cap){this.status='Offline planner (cloud disabled or request cap)';return null;}
   this.count++;const controller=new AbortController();let timer:ReturnType<typeof setTimeout>|undefined;

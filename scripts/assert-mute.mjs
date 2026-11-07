@@ -1,0 +1,1 @@
+export default async function({frame}){const r=await frame.evaluate(()=>({muted:document.querySelector('[data-action="Mute"]').getAttribute('aria-pressed'),settings:document.querySelector('[data-action="Settings"]').getAttribute('aria-pressed')}));if(r.muted!=='true'||r.settings!=='true')throw Error('Hand Settings/Mute action failed');return r;}

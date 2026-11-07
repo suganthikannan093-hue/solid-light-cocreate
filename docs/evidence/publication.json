@@ -1,5 +1,7 @@
 {
   "repository": "https://github.com/suganthikannan093-hue/solid-light-cocreate",
   "pages": "https://suganthikannan093-hue.github.io/solid-light-cocreate/",
-  "status": "pushed; deployment and public gameplay verification pending"
+  "status": "P0 public deployment verified; experimental P1 deployment in progress",
+  "p0DeploymentRun": "https://github.com/suganthikannan093-hue/solid-light-cocreate/actions/runs/42373724390",
+  "p1DeploymentRun": "https://github.com/suganthikannan093-hue/solid-light-cocreate/actions/runs/42375982437"
 }

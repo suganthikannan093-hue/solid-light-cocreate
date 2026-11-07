@@ -16,8 +16,10 @@ LUMA observes geometry, proposes candidates, executes construction/validation to
 ## Challenges and testing
 See ../QA-report.md for executed tests, failures fixed and remaining verification. Desktop/emulator evidence must not be described as physical Quest testing. No hardware FPS claim is made.
 
-## Future improvements
-Experimental Level 3, The Light Garden, checks walkability and canopy coverage independently and offers a visible resource-versus-width choice. It is behind an explicit flag, outside the default judged route. Optional cloud adapters support Vultr or OpenAI with server-only credentials, consent, schema validation and automatic local fallback; no backend/provider key is currently configured or live-tested.
+## A longer co-creation journey
+Four connected chapters build on each other: First Bridge, Incomplete Span, Light Garden, and Last Spark. The Garden adds a real canopy constraint. Last Spark adds a strict light budget that can require the human to trim their projection. Four workshop presets vary span, creature footprint and budget. Sturdy/Efficient preferences change tested side profiles without bypassing validation.
 
-Target launch date: owner decision, pending hardware and public-host verification.
+Animated loop teaching, immediate strokes, actionable gap feedback, an enlarged depth readout, a thick emissive volume, and recoverable editing support the core puzzle. Optional OpenAI suggestions remain separate from the authoritative local planner. A bounded real provider connectivity test passed; a public inference proxy is not deployed.
+
+Target launch date: owner decision, pending hardware verification and final submission review.
 Suggested track/division: Gaming / New Experience, subject to entrant eligibility and final form confirmation. Special-award focus: Agentic Interaction. This text is a draft, not a submitted entry.

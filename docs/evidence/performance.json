@@ -1,19 +1,19 @@
 {
   "environment": "Intel macOS SDK-managed Chromium; uncalibrated desktop only",
   "frames": 120,
-  "medianFrameMs": 33.099999994039536,
-  "p95FrameMs": 41.79999998211861,
+  "medianFrameMs": 16.400000005960464,
+  "p95FrameMs": 18.5,
   "renderer": {
-    "frame": 12297,
-    "calls": 64,
-    "triangles": 43260,
-    "points": 0,
-    "lines": 0
+    "frame": 35652,
+    "calls": 70,
+    "triangles": 56924,
+    "points": 160,
+    "lines": 50
   },
   "memory": {
-    "geometries": 29,
-    "textures": 23
+    "geometries": 44,
+    "textures": 26
   },
-  "workerMs": 76.60000002384186,
-  "instances": 900
+  "workerMs": 69.09999999403954,
+  "instances": 1414
 }
