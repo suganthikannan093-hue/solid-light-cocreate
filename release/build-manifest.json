@@ -1,6 +1,7 @@
 {
-  "artifactSha256": "3bb2d00966e4e617ee4a07cbaaf6f818eb1623ab8be1f250618347f784f1b13c",
+  "artifactSha256": "e303783b85359a058866a8b7afcdf83d45a7f9a090cc9ccbf7cd1348bc618566",
   "files": {
+    "dist/.nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "dist/assets/_virtual_iwsdk-disabled-bundled-fonts-BO7XWqUe.js": "13d2d3340629f74eab54eeb019fce80e0d0b965ff88940459ee32b6f12117444",
     "dist/assets/dist-Brupejm_.js": "a74930e9564ba1e7e7964041a17f437ef5fd9ceae7a84772ee12017b75fb3ff2",
     "dist/assets/index-BQ7sl6FY.js": "5f9a6be38918da8c761019b47d4e01b7b543edb6672210b515a6aa0733d789a3",
@@ -25,5 +26,5 @@
     "dist/ui/welcome.uikitml": "e2417f2cf63d2f340fda69d2a3e37ecc0d6fcb1659f97229f182b76e56c94427"
   },
   "sdk": "1.1.0-rc.2",
-  "source": "local working tree; production E2E passed; remote publication pending authentication"
+  "source": "production E2E passed; nojekyll marker added for Pages static paths"
 }

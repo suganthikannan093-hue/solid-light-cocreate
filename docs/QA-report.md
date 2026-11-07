@@ -27,4 +27,4 @@ P0 release acceptance remains OPEN. Level 3 and Cloud P1 remain disabled and not
 Dependency audit: patched generated sharp override from 0.35.4 to 0.35.5; npm install reports 0 vulnerabilities. Full audit retained.
 
 ## Final local gate
-Strict typecheck, 13 engine tests, production build and production browser regression pass. Final Level 1/2 IWER hand regressions pass. Layout reserves space for desktop controls so they do not cover the bridge. Public hosting approval was granted for a new repository; authentication is pending. Build hash: 3bb2d00966e4e617ee4a07cbaaf6f818eb1623ab8be1f250618347f784f1b13c.
+Strict typecheck, 13 engine tests, production build and production browser regression pass. Final Level 1/2 IWER hand regressions pass. Layout reserves space for desktop controls so they do not cover the bridge. Public hosting approval was granted for a new repository; authentication is pending. Build hash: e303783b85359a058866a8b7afcdf83d45a7f9a090cc9ccbf7cd1348bc618566.

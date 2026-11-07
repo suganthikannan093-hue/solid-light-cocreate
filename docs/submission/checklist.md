@@ -23,4 +23,4 @@ Deadline shown: November 18, 2026 at noon PST. Build target accelerated to one d
 - [ ] Final Devpost form requirements checked
 - [ ] Final submission performed by owner
 
-Local production artifact SHA256: 3bb2d00966e4e617ee4a07cbaaf6f818eb1623ab8be1f250618347f784f1b13c. See ../../release/build-manifest.json (relative to repo root: release/build-manifest.json). Local production artifact: dist/ and release/solid-light-cocreate-dist.zip. Draft description, reviewer guide, script and shot list are prepared. No external publication, membership, upload or final submission is claimed.
+Local production artifact SHA256: e303783b85359a058866a8b7afcdf83d45a7f9a090cc9ccbf7cd1348bc618566. See ../../release/build-manifest.json (relative to repo root: release/build-manifest.json). Local production artifact: dist/ and release/solid-light-cocreate-dist.zip. Draft description, reviewer guide, script and shot list are prepared. No external publication, membership, upload or final submission is claimed.
