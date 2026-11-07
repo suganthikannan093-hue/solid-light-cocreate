@@ -1,0 +1,12 @@
+{
+  "observed": "actual CLI output from local production suite before final isolated Garden geometry clone fix",
+  "unitTestsPassed": 24,
+  "browserScenariosPassed": [
+    "cloud consent and outage fallback for both levels",
+    "Garden missing canopy and two strategy completions",
+    "default P0 offline-after-load and recovery"
+  ],
+  "fullSuiteResult": "3 passed (1.5m)",
+  "subsequentTargetedGardenResult": "1 passed (25.9s)",
+  "note": "Playwright JSON output was overwritten by the targeted run; final hosted full-suite JSON is retained separately."
+}

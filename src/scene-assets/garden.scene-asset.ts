@@ -1,0 +1,3 @@
+import {BufferGeometry,Float32BufferAttribute,Points,PointsMaterial} from '@iwsdk/core';
+// Original falling light garden: deterministic, meters, Y-up, world-space stage bounds.
+export function lightGarden(){const positions:number[]=[];for(let i=0;i<80;i++)positions.push(-.79+((i*17)%79)/79*1.12,.65+((i*31)%83)/83*.59,-1.78+((i*23)%71)/71*.42);const geometry=new BufferGeometry();geometry.setAttribute('position',new Float32BufferAttribute(positions,3));const points=new Points(geometry,new PointsMaterial({color:0xc7ff94,size:.012,transparent:true,opacity:.75}));points.name='FallingGardenLight';return points;}

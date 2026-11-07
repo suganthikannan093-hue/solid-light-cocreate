@@ -1,6 +1,8 @@
 # SOLID LIGHT: CO-CREATE
 Two minds. Two perspectives. One impossible creation.
 
+Repository: https://github.com/suganthikannan093-hue/solid-light-cocreate
+
 A local construction agent and a human each own one perpendicular silhouette. Their intersection creates a real voxel bridge for a tiny traveler. LUMA is a bounded deterministic search-and-validation planner, not an LLM.
 
 ## Run
@@ -28,7 +30,7 @@ Drag a closed outline around the dotted front-plane guide; release to fill and a
 Level 1: trace the full guide. Level 2: first trace the short guide; LUMA evaluates candidates and highlights missing columns. Redraw the ribbon extending through those columns to the far bank. An already sufficient drawing may succeed directly. Invalid input gives guidance, never a fabricated bridge.
 
 ## Scope
-Levels 1 and 2 implemented; see QA report for evidence and remaining gates. Level 3 and Cloud LLM are P1, disabled and not playable/configured. No paid calls or keys. Passthrough disabled. No public URL or video upload is implied by this repository. Quest performance and physical hand reliability require hardware testing.
+Levels 1 and 2 are the default submission path. Experimental Level 3 is available with `?level3=1`: select Level 3, build a path and canopy, and compare Sturdy / Efficient designs. It has desktop and IWER hand evidence. Optional cloud adapters support Vultr (default) or OpenAI behind a separately configured HTTPS backend; no cloud backend/key or paid calls are active. See docs/level3.md and docs/optional-cloud.md. Passthrough disabled. Public demo: https://suganthikannan093-hue.github.io/solid-light-cocreate/ . No public video upload has occurred. Quest performance and physical hand reliability require hardware testing.
 
 ## Engineering
 32³ occupancy V(x,y,z)=F(x,y)&S(z,y); even-odd rasterization, exposed instanced cubes, worker candidate search, bank-anchored rigid-deck walkability BFS, revision guards. World units are meters. See docs/architecture.md and docs/implementation-status.md.

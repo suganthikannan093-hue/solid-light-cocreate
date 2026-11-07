@@ -17,7 +17,7 @@ LUMA observes geometry, proposes candidates, executes construction/validation to
 See ../QA-report.md for executed tests, failures fixed and remaining verification. Desktop/emulator evidence must not be described as physical Quest testing. No hardware FPS claim is made.
 
 ## Future improvements
-Level 3, The Light Garden, retains two simultaneous constraints and a resource-versus-robustness choice. Optional cloud strategy/explanation would use a secure backend with consent, schema validation and automatic local fallback. Both are currently disabled and not presented as playable.
+Experimental Level 3, The Light Garden, checks walkability and canopy coverage independently and offers a visible resource-versus-width choice. It is behind an explicit flag, outside the default judged route. Optional cloud adapters support Vultr or OpenAI with server-only credentials, consent, schema validation and automatic local fallback; no backend/provider key is currently configured or live-tested.
 
 Target launch date: owner decision, pending hardware and public-host verification.
 Suggested track/division: Gaming / New Experience, subject to entrant eligibility and final form confirmation. Special-award focus: Agentic Interaction. This text is a draft, not a submitted entry.

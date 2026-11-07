@@ -6,3 +6,8 @@
 5. Keep the host accessible throughout judging. Record final URL, build commit/hash and date in submission/checklist.md. Do not submit a localhost URL.
 
 The local SDK certificate is development-only. A public host must supply a trusted certificate. No deployment account has been assumed or external publication performed.
+
+## Authorized GitHub deployment
+Repository created: https://github.com/suganthikannan093-hue/solid-light-cocreate
+Pages site provisioned: https://suganthikannan093-hue.github.io/solid-light-cocreate/
+Workflow: .github/workflows/pages.yml. Pushes to main install locked dependencies, typecheck, run unit tests, build and deploy dist through the official Pages artifact actions. GitHub API Pages build_type is workflow. Public gameplay verification status is in evidence/hosted-qa.json when completed.

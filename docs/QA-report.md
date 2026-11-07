@@ -1,30 +1,36 @@
 # QA report — 2026-11-07
-## Executed
-- Intel macOS 26.7.2, Node 26.13.0, official IWSDK 1.1.0-rc.2 / IWER 2.7.0 / managed Chromium.
-- TypeScript strict typecheck passed after fixing ES2020 replaceAll and launchXR return assumptions.
-- `npm test`: 13 tests passed: mask fill/empty/tiny/crossing/clipping/noisy determinism, intersection/bounds/removal, real surface traversal, missing X Level 2 and three extensions, direct success when already sufficient, side adaptation, clearance/thin/disconnected/elevation rejection, bounded search, authorship, stale revision predicate.
-- SDK-managed browser actual mouse QA: Level 1 success; Level 2 real DISCONNECTED_SPAN → human redraw → replan → success; clear/empty guidance, Undo, pause/resume, tiny invalid stroke, reset. No page errors. Evidence: evidence/desktop-qa.json and submission/screenshots/02–04.
-- SDK creature asset preview: 512 triangles, three meshes, no diagnostic warnings. Isolated preview is labeled as a model, not gameplay.
-- Production builds succeeded, with SDK chunk-size and upstream zod annotation warnings. First HTTP harness request failed against HTTPS preview; corrected scheme. Software-rendered production run reached Level 2 but exceeded 60s; increased timeout and reduced viewport. Final production regression passed on Chromium Metal.
+## Verified environment and SDK
+Intel x86_64 macOS 26.7.2, 16GiB RAM, Node 26.13.0; official IWSDK 1.1.0-rc.2 scaffold, IWER 2.7.0 Quest 3 emulation, managed Chromium. Linux GitHub Actions passed the P0 install/typecheck/unit/build/deploy workflow. Physical Quest is unavailable.
 
-## Failures found / handled
-- Shared preview rejects SDK local self-signed HTTPS (`ERR_CERT_AUTHORITY_INVALID`): use official managed Chromium.
-- Editor mode leaves runtime iframe at 0×0: select Runtime before browser input.
-- Repeated development reloads exhausted WebGL contexts: added explicit World.destroy hot-module teardown and restarted managed browser.
-- Immersive IWER overlay intercepts DOM clicks: exit XR before desktop tests; use spatial controls inside XR.
-- Browser screenshot of zero-height fixed-layout body timed out: capture page/runtime surface instead.
-- Stale worker could arrive while a new stroke was in progress: invalidate revision on pointer down, before release.
+## Passed tests
+- Strict TypeScript typecheck and production builds.
+- 24 unit/integration tests across geometry and cloud suites: normal/tiny/empty/clipped/noisy/crossing contours; exact deterministic 32³ intersection; monotonic removal; real standable-surface BFS; thickness, 3×5-cell footprint and six-cell headroom; disconnected/elevation/overhead rejection; bounded planner; player ownership; valid input changes agent depth; Level 2 missing-X failure and three extensions; stale revision predicate.
+- Garden constraints: deck-only fails shelter, roof-only fails path, complete shelter passes; low roof fails clearance; actual path footprint has canopy; sturdy uses more voxels than efficient without bypassing validation or changing human pixels.
+- Cloud client/backend tests use mocked upstream responses (no paid API calls): missing key/config/consent, invalid JSON/schema/HTML, 429, lost network, timeout, request cap, minimized state, server credential boundary, and Vultr/OpenAI routing.
+- Three production browser scenarios passed: default Levels 1 and 2 with real pointer input, offline after load, authentic failure → edit → replan → success; invalid/clear/undo/pause/reset and resize/refresh; experimental Garden with real drawing, missing-canopy recovery and both strategies; opt-in cloud outage with zero requests before consent and bounded local fallback after consent. The final garden geometry ownership fix passed its targeted rerun (evidence/production-e2e.json). The full final hosted suite is recorded in evidence/hosted-e2e.json after deployment.
+- Actual worker rapid-clear race passed across message boundary: latest mask and result revisions remain authoritative. Accessibility/help/recenter remain usable. Synthetic visibility event did not crash (not an OS background test).
+- Official IWER active hand input: Level 1 mask → 24 tested candidates → crossing; Level 2 spatial control, short span → real diagnosis → hand extension → replan → crossing; experimental Garden hand-drawn deck/canopy and verified crossing. Exact evidence: xr-hand-qa.json, xr-hand-result.json, xr-level2-qa.json, xr-garden-qa.json. Strategy choice is browser-tested; physical hand menu ergonomics remain unverified.
+- Public P0 HTTPS deployment and full hosted playthrough passed: https://suganthikannan093-hue.github.io/solid-light-cocreate/ . Scene and worker paths under /solid-light-cocreate/ returned 200. Shared browser secure-context/Help interaction passed. Final experimental additions are being redeployed/rechecked.
+- npm audit after sharp override 0.35.5: zero known vulnerabilities. Client JS scan contains neither provider credential environment names nor test credential marker. No production client key is configured.
 
-## Pending verification
-- Active IWER Quest 3 hand input passed Level 1. Level 2 spatial control selection, short-span pinch drawing, genuine DISCONNECTED_SPAN, human extension, replanning and crossing passed. Evidence: evidence/xr-hand-qa.json, xr-hand-result.json, xr-level2-qa.json and screenshots/05–06. Both levels were rerun successfully after the conservative footprint expansion.
-- Final production static build browser regression passed (47.8s gameplay test; 59.3s total harness): both real pointer levels, authentic failure/replan, Clear/Undo/pause/reset, tiny input, resize and refresh. Network disabled after initial load; no failed asset requests or captured page errors. Evidence: evidence/production-e2e.json, desktop-qa.json and real raw video in submission/recordings/.
-- Actual worker rapid-clear race passed: latest mask and decision revisions remain authoritative. Accessibility/help/recenter controls remained usable. A synthetic visibility event did not crash; actual OS background/foreground and repeated resource teardown soak still need verification. Unfamiliar human 60–90s onboarding remains unverified.
-- Public trusted HTTPS host and availability throughout judging: requires approved deployment.
-- Physical Quest 3/3S: all FPS, hand reliability, comfort, seated reach, permission behavior and text-legibility checks unverified. Run quest-test-script.md.
+## Defects found and corrected
+- ES2020 replaceAll and launchXR void-return assumptions caught by compiler.
+- Shared local preview rejected self-signed HTTPS: official SDK-managed Chromium used; public shared preview succeeded with trusted Pages certificate.
+- Editor view hid runtime at 0×0: use Runtime view for interactions.
+- Repeated development reloads exhausted WebGL contexts: explicit World.destroy hot-module teardown and browser restart.
+- Immersive emulator overlay intercepted DOM clicks: exit XR for desktop tests; use spatial controls in XR.
+- Fixed-layout body screenshot timed out: capture full page/runtime surface.
+- Old worker could arrive during new stroke: invalidate revision on pointer down.
+- Desktop toolbar covered bridge: reserve scene space above toolbar; production regression passed.
+- Native fetch stored as object method caused browser illegal invocation: bind global fetch; actual cloud-outage browser test now confirms requests and fallback.
+- Garden failure diagnostics could return a less informative final candidate: retain the most informative failed candidate; report real path-versus-shelter state.
+- Software-rendered production tests exceeded 60s: Chromium Metal used; these timings are not Quest benchmarks.
 
-P0 release acceptance remains OPEN. Level 3 and Cloud P1 remain disabled and not tested as implemented features. No public deployment, video upload or final submission is claimed.
+## Evidence and remaining limits
+Real screenshots are in submission/screenshots; real unedited silent recordings in submission/recordings. These are not physical Quest footage or a finished narrated submission video.
 
-Dependency audit: patched generated sharp override from 0.35.4 to 0.35.5; npm install reports 0 vulnerabilities. Full audit retained.
+Physical Quest 3/3S FPS, hand reliability, seated reach, legibility, comfort, permissions, thermal behavior and OS background/foreground remain unverified. Unfamiliar-human 60–90s onboarding and a repeated resource-teardown soak also remain open. See quest-test-script.md and performance.md; measured desktop emulator results do not establish ≥60 FPS on Quest.
 
-## Final local gate
-Strict typecheck, 13 engine tests, production build and production browser regression pass. Final Level 1/2 IWER hand regressions pass. Layout reserves space for desktop controls so they do not cover the bridge. Public hosting approval was granted for a new repository; authentication is pending. Build hash: e303783b85359a058866a8b7afcdf83d45a7f9a090cc9ccbf7cd1348bc618566.
+Cloud adapters/backend are implemented, but no real provider key/backend or fixed egress IP is configured or live-tested. Vultr source-IP allowlist must be owner-confirmed, and exact Agent Rush coupon applicability/expiry checked before billable use. No Vultr VM/inference resources or charges have been activated.
+
+Submission drafts and build artifacts exist; eligibility/membership, narrated public video upload and final Devpost submission are owner actions. No final submission or public video URL is claimed.

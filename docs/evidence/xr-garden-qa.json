@@ -1,0 +1,190 @@
+{
+  "pass": true,
+  "result": {
+    "phase": "level-complete",
+    "message": "The Light Garden is safe. Two constraints, one creation. Replay or compare the other strategy.",
+    "revision": 4,
+    "frontPixels": 360,
+    "instances": 3120,
+    "decision": {
+      "phase": "success",
+      "pass": true,
+      "failures": [],
+      "pathLength": 28,
+      "attempts": 24,
+      "workerMs": 432.90000000596046
+    },
+    "renderer": {
+      "frame": 2522,
+      "calls": 70,
+      "triangles": 96548,
+      "points": 160,
+      "lines": 0
+    },
+    "camera": {
+      "position": [
+        0,
+        1.600000023841858,
+        0
+      ],
+      "fov": 90
+    }
+  },
+  "evidence": [
+    {
+      "ok": true,
+      "data": {
+        "workspaceRoot": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate",
+        "operation": "xr.enter",
+        "result": {
+          "success": true
+        }
+      }
+    },
+    {
+      "ok": true,
+      "data": {
+        "workspaceRoot": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate",
+        "operation": "xr.set-input-mode",
+        "result": {
+          "mode": "hand",
+          "activeDevices": [
+            "hand-left",
+            "hand-right"
+          ]
+        }
+      }
+    },
+    {
+      "ok": true,
+      "data": {
+        "workspaceRoot": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate",
+        "operation": "xr.set-transform",
+        "result": {
+          "device": "hand-right",
+          "position": {
+            "x": -0.8100000023841858,
+            "y": 1.2649999856948853,
+            "z": -1.25
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          }
+        }
+      }
+    },
+    {
+      "ok": true,
+      "data": {
+        "workspaceRoot": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate",
+        "operation": "xr.set-select-value",
+        "result": {
+          "device": "hand-right",
+          "value": 1
+        }
+      }
+    },
+    {
+      "ok": true,
+      "data": {
+        "workspaceRoot": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate",
+        "operation": "xr.animate-to",
+        "result": {
+          "device": "hand-right",
+          "position": {
+            "x": 0.4000000059604645,
+            "y": 1.2649999856948853,
+            "z": -1.25
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "actualDuration": 0.7012999999821186
+        }
+      }
+    },
+    {
+      "ok": true,
+      "data": {
+        "workspaceRoot": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate",
+        "operation": "xr.animate-to",
+        "result": {
+          "device": "hand-right",
+          "position": {
+            "x": 0.4000000059604645,
+            "y": 1.5149999856948853,
+            "z": -1.25
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "actualDuration": 0.7045999999940395
+        }
+      }
+    },
+    {
+      "ok": true,
+      "data": {
+        "workspaceRoot": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate",
+        "operation": "xr.animate-to",
+        "result": {
+          "device": "hand-right",
+          "position": {
+            "x": -0.8100000023841858,
+            "y": 1.5149999856948853,
+            "z": -1.25
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "actualDuration": 0.7068000000119209
+        }
+      }
+    },
+    {
+      "ok": true,
+      "data": {
+        "workspaceRoot": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate",
+        "operation": "xr.animate-to",
+        "result": {
+          "device": "hand-right",
+          "position": {
+            "x": -0.8100000023841858,
+            "y": 1.2649999856948853,
+            "z": -1.25
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "actualDuration": 0.714
+        }
+      }
+    },
+    {
+      "ok": true,
+      "data": {
+        "workspaceRoot": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate",
+        "operation": "xr.set-select-value",
+        "result": {
+          "device": "hand-right",
+          "value": 0
+        }
+      }
+    }
+  ]
+}

@@ -1,22 +1,22 @@
 {
   "phase": "level-complete",
-  "message": "You extended the length. I replanned the depth. Together, we found the way. Replay either level.",
-  "revision": 17,
-  "frontPixels": 150,
-  "instances": 900,
+  "message": "The Light Garden is safe. Two constraints, one creation. Replay or compare the other strategy.",
+  "revision": 4,
+  "frontPixels": 360,
+  "instances": 3120,
   "decision": {
     "phase": "success",
     "pass": true,
     "failures": [],
     "pathLength": 28,
     "attempts": 24,
-    "workerMs": 76.60000002384186
+    "workerMs": 432.90000000596046
   },
   "renderer": {
-    "frame": 10486,
-    "calls": 64,
-    "triangles": 43260,
-    "points": 0,
+    "frame": 2522,
+    "calls": 70,
+    "triangles": 96548,
+    "points": 160,
     "lines": 0
   },
   "camera": {

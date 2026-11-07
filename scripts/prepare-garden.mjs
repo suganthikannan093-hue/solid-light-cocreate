@@ -1,0 +1,1 @@
+export default async function({frame}){await frame.goto('https://localhost:8081/?level3=1');await frame.waitForFunction(()=>!!window.solidLight);await frame.getByRole('button',{name:'Level 3',exact:true}).click();return {ready:true};}

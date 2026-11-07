@@ -135,6 +135,10 @@
                 10
               ]
             ],
+            "constraints": {
+              "path": true,
+              "shelter": true
+            },
             "failures": [],
             "diagnostics": [],
             "score": 99160
@@ -365,7 +369,7 @@
               "score": 0
             }
           ],
-          "elapsed": 354.5
+          "elapsed": 241.2000000178814
         },
         "events": [
           {
@@ -666,6 +670,10 @@
           "report": {
             "pass": false,
             "path": [],
+            "constraints": {
+              "path": false,
+              "shelter": true
+            },
             "failures": [
               "DISCONNECTED_SPAN"
             ],
@@ -688,7 +696,7 @@
                 "message": "My side view cannot add missing length. Extend your cyan outline across the amber marks."
               }
             ],
-            "score": 0
+            "score": 304
           },
           "attempts": [
             {
@@ -932,7 +940,7 @@
               "score": 0
             }
           ],
-          "elapsed": 233.7999999821186
+          "elapsed": 86.40000000596046
         },
         "events": [
           {
@@ -1673,6 +1681,10 @@
                 10
               ]
             ],
+            "constraints": {
+              "path": true,
+              "shelter": true
+            },
             "failures": [],
             "diagnostics": [],
             "score": 98100
@@ -1903,7 +1915,7 @@
               "score": 0
             }
           ],
-          "elapsed": 344
+          "elapsed": 245.2000000178814
         },
         "events": [
           {
@@ -2784,5 +2796,5 @@
     }
   ],
   "errors": [],
-  "at": "2026-11-07T12:39:22.470Z"
+  "at": "2026-11-07T13:10:32.293Z"
 }

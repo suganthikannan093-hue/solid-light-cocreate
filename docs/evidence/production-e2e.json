@@ -3,7 +3,8 @@
     "argv": [
       "/Users/apple/.local/bin/node",
       "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate/node_modules/.bin/playwright",
-      "test"
+      "test",
+      "tests/e2e/garden.spec.ts"
     ],
     "configFile": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate/playwright.config.ts",
     "rootDir": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate/tests/e2e",
@@ -104,7 +105,7 @@
     "updateSnapshots": "default",
     "updateSourceMethod": "patch",
     "version": "1.65.0",
-    "workers": 4,
+    "workers": 1,
     "webServer": {
       "command": "npm run preview -- --host 127.0.0.1 --port 4173",
       "url": "https://127.0.0.1:4173",
@@ -114,13 +115,13 @@
   },
   "suites": [
     {
-      "title": "production.spec.ts",
-      "file": "production.spec.ts",
+      "title": "garden.spec.ts",
+      "file": "garden.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "production full offline planner playthrough, both levels and recovery",
+          "title": "experimental Garden checks shelter and path; both strategies finish",
           "ok": true,
           "tags": [],
           "tests": [
@@ -135,18 +136,18 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 47833,
+                  "duration": 21493,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-07T12:38:42.552Z",
+                  "startTime": "2026-11-07T13:11:56.378Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate/test-results/production-production-full-ca719-gh-both-levels-and-recovery/video.webm"
+                      "path": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate/test-results/garden-experimental-Garden-b1a74-path-both-strategies-finish/video.webm"
                     }
                   ]
                 }
@@ -154,9 +155,9 @@
               "status": "expected"
             }
           ],
-          "id": "ed69554c53210704c98c-0e6761327b19456d3a26",
-          "file": "production.spec.ts",
-          "line": 3,
+          "id": "8d392b78b326e6f8de96-9d15dd3a4dbaec8e9b0f",
+          "file": "garden.spec.ts",
+          "line": 5,
           "column": 1
         }
       ]
@@ -164,8 +165,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-11-07T12:38:33.638Z",
-    "duration": 59329.168,
+    "startTime": "2026-11-07T13:11:52.913Z",
+    "duration": 25905.178,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

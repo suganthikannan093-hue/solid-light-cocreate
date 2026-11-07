@@ -3,20 +3,20 @@ export type Point = [number, number];
 export type Cell = [number, number, number];
 export interface Mask2D { size:number; pixels:Uint8Array; revision:number }
 export interface VoxelVolume { dimensions:[number,number,number]; occupancy:Uint8Array; revision:number }
-export interface LevelGoal { source:number; target:number; deck:number; footprint:number; clearance:number; thickness:number }
-export type FailureReason = 'EMPTY_USER_MASK'|'DISCONNECTED_SPAN'|'INSUFFICIENT_CLEARANCE'|'UNSUPPORTED_PATH'|'NO_WALKABLE_PATH'|'TIME_BUDGET_EXCEEDED'|'INVALID_CANDIDATE';
-export interface GeometryDiagnostic { reason:FailureReason; columns:number[]; message:string }
-export interface ValidationReport { pass:boolean; failures:FailureReason[]; diagnostics:GeometryDiagnostic[]; path:Cell[]; score:number }
+export interface LevelGoal { source:number; target:number; deck:number; footprint:number; clearance:number; thickness:number; canopyY?:number; strategy?:'sturdy'|'efficient' }
+export type FailureReason = 'EMPTY_USER_MASK'|'DISCONNECTED_SPAN'|'INSUFFICIENT_CLEARANCE'|'UNSUPPORTED_PATH'|'NO_WALKABLE_PATH'|'TIME_BUDGET_EXCEEDED'|'INVALID_CANDIDATE'|'INSUFFICIENT_SHELTER';
+export interface GeometryDiagnostic { reason:FailureReason; columns:number[]; message:string; region?:'canopy' }
+export interface ValidationReport { pass:boolean; failures:FailureReason[]; diagnostics:GeometryDiagnostic[]; path:Cell[]; score:number; constraints?:{path:boolean;shelter:boolean} }
 export interface AttemptSummary { id:string; width:number; deck:number; pass:boolean; failures:FailureReason[]; score:number }
 export interface AgentDecision { phase:'success'|'needs-user'|'unable-to-solve'; side:Mask2D; volume:VoxelVolume; report:ValidationReport; attempts:AttemptSummary[]; elapsed:number }
 export interface WorldSnapshot { revision:number; playerMask:Mask2D; goal:LevelGoal; previousAttempts:AttemptSummary[] }
 export interface GameState { level:number; revision:number; phase:string; message:string; paused:boolean; front:number[]; side:number[]; instances:number; decision:AgentDecision|undefined; events:Array<Record<string,unknown>>; render:{frame:number;calls:number;triangles:number;points:number;lines:number} }
 export interface SearchBudget { maxCandidates:number; milliseconds:number }
 export interface AgentObservation { occupied:number; missingColumns:number[] }
-export interface StrategyProvider { plan(snapshot:WorldSnapshot,budget?:SearchBudget):AgentDecision }
+export interface StrategyProvider { plan(snapshot:WorldSnapshot,budget?:SearchBudget):AgentDecision|Promise<AgentDecision> }
 export interface FeatureFlags { enableLevel3:boolean; enableCloudLLM:boolean; enablePassthrough:boolean }
-export const featureFlags:FeatureFlags={enableLevel3:false,enableCloudLLM:false,enablePassthrough:false};
-export const goalFor=(level:number):LevelGoal=>({source:level===1?4:2,target:level===1?27:29,deck:10,footprint:5,clearance:6,thickness:2});
+export const featureFlags:FeatureFlags={enableLevel3:typeof location!=='undefined'&&new URLSearchParams(location.search).has('level3'),enableCloudLLM:typeof location!=='undefined'&&new URLSearchParams(location.search).has('cloud'),enablePassthrough:false};
+export const goalFor=(level:number):LevelGoal=>({source:level===1?4:2,target:level===1?27:29,deck:10,footprint:5,clearance:6,thickness:2,...(level===3?{canopyY:16,strategy:'sturdy' as const}:{})});
 export const emptyMask=(revision=0):Mask2D=>({size:N,pixels:new Uint8Array(N*N),revision});
 export function rectangle(x0:number,y0:number,x1:number,y1:number,revision=0):Mask2D {
  const m=emptyMask(revision);for(let y=Math.max(0,y0);y<=Math.min(N-1,y1);y++)for(let x=Math.max(0,x0);x<=Math.min(N-1,x1);x++)m.pixels[x+N*y]=1;return m;
@@ -62,22 +62,30 @@ export function validate(volume:VoxelVolume,goal:LevelGoal):ValidationReport {
  const path:Cell[]=[];if(end){let k=index(...end);while(k>=0){const z=Math.floor(k/(N*N)),y=Math.floor(k/N)%N,x=k%N;path.push([x,y,z]);k=parents[k];}path.reverse();}
  const missing:number[]=[];for(let x=goal.source;x<=goal.target;x++){let exists=false;for(let y=0;y<N;y++)for(let z=0;z<N;z++)exists ||=solid(x,y,z);if(!exists)missing.push(x);}
  const reason:FailureReason=missing.length?'DISCONNECTED_SPAN':supports?'NO_WALKABLE_PATH':'INSUFFICIENT_CLEARANCE';
- const pass=path.length>0;
- return {pass,path,failures:pass?[]:[reason],diagnostics:pass?[]:[{reason,columns:missing,message:missing.length?'Extend your cyan outline through the amber marked columns.':'Draw a solid band along the guide, with room above for our traveler.'}],score:pass?100000-a.reduce((s,v)=>s+v,0):queue.length};
+ let shelter=true;const uncovered:number[]=[];if(goal.canopyY!==undefined){for(let x=goal.source;x<=goal.target;x++){let covered=false;for(let z=radius;z<N-radius;z++){let ok=true;for(let dx=-1;dx<=1;dx++)for(let dz=-radius;dz<=radius;dz++)if(!solid(x+dx,goal.canopyY,z+dz))ok=false;covered ||=ok;}if(!covered)uncovered.push(x);}for(const [x,,z] of path){let ok=true;for(let dx=-1;dx<=1;dx++)for(let dz=-radius;dz<=radius;dz++)if(!solid(x+dx,goal.canopyY,z+dz))ok=false;if(!ok&&!uncovered.includes(x))uncovered.push(x);}shelter=uncovered.length===0;}
+ const pathOK=path.length>0,pass=pathOK&&shelter;if(pathOK&&!shelter)return {pass:false,path,failures:['INSUFFICIENT_SHELTER'],diagnostics:[{reason:'INSUFFICIENT_SHELTER',columns:uncovered,region:'canopy',message:'Our path works, but the garden needs shelter. Raise your cyan outline through the upper amber band.'}],score:0,constraints:{path:pathOK,shelter}};
+ return {pass,path,constraints:{path:pathOK,shelter},failures:pass?[]:[reason],diagnostics:pass?[]:[{reason,columns:missing,message:missing.length?'Extend your cyan outline through the amber marked columns.':'Draw a solid band along the guide, with room above for our traveler.'}],score:pass?100000-a.reduce((s,v)=>s+v,0):queue.length};
+}
+export function proposeProjection(deck:number,width:number,thickness:number,revision:number,goal:LevelGoal):Mask2D {
+ const side=rectangle(Math.floor((N-width)/2),deck-thickness,Math.floor((N+width)/2)-1,deck-1,revision);
+ if(goal.canopyY!==undefined){const lo=Math.floor((N-width)/2),hi=Math.floor((N+width)/2)-1;for(let z=lo;z<=hi;z++)for(let y=goal.canopyY;y<=goal.canopyY+1;y++)side.pixels[z+N*y]=1;for(let y=deck-1;y<=goal.canopyY+1;y++){side.pixels[lo+N*y]=1;side.pixels[hi+N*y]=1;}}
+ return side;
 }
 export class OfflineStrategyProvider implements StrategyProvider {
  plan(snapshot:WorldSnapshot,budget:SearchBudget={maxCandidates:24,milliseconds:800}):AgentDecision {
   const start=performance.now(),{playerMask:front,goal}=snapshot,observation=inspectWorld(front,goal),attempts:AttemptSummary[]=[];
-  const preferredWidth=Math.min(23,Math.max(5,Math.round(observation.occupied/(goal.target-goal.source+1)*2+3)));
-  let side=emptyMask(front.revision),volume=buildIntersection(front,side),report=validate(volume,goal),best:AgentDecision|undefined;
+  const preferredWidth=goal.canopyY!==undefined?(goal.strategy==='efficient'?9:23):Math.min(23,Math.max(5,Math.round(observation.occupied/(goal.target-goal.source+1)*2+3)));
+  let side=emptyMask(front.revision),volume=buildIntersection(front,side),report=validate(volume,goal),best:AgentDecision|undefined;let closest:AgentDecision|undefined;
   for(const deck of [goal.deck,goal.deck+1,goal.deck-1])for(const width of [5,9,15,23])for(const thickness of [2,3]) {
    if(attempts.length>=budget.maxCandidates||performance.now()-start>budget.milliseconds)break;
-   side=rectangle(Math.floor((N-width)/2),deck-thickness,Math.floor((N+width)/2)-1,deck-1,front.revision);
+   side=proposeProjection(deck,width,thickness,front.revision,goal);
    volume=buildIntersection(front,side);report=validate(volume,goal);if(report.pass)report.score-=Math.abs(width-preferredWidth)*1000;
    attempts.push({id:`${deck}-${width}-${thickness}`,width,deck,pass:report.pass,failures:report.failures,score:report.score});
+   if(!report.pass&&(!closest||report.path.length>closest.report.path.length||report.score>closest.report.score))closest={phase:'needs-user',side,volume,report,attempts,elapsed:0};
    if(report.pass&&(!best||report.score>best.report.score))best={phase:'success',side,volume,report,attempts,elapsed:0};
   }
   if(best)return {...best,attempts,elapsed:performance.now()-start};
+  if(closest){side=closest.side;volume=closest.volume;report=closest.report;}
   if(!observation.occupied){report={...report,failures:['EMPTY_USER_MASK'],diagnostics:[{reason:'EMPTY_USER_MASK',columns:[],message:'Pinch or drag a closed outline around the dotted guide.'}]};}
   else if(observation.missingColumns.length){report={...report,failures:['DISCONNECTED_SPAN'],diagnostics:[{reason:'DISCONNECTED_SPAN',columns:observation.missingColumns,message:'My side view cannot add missing length. Extend your cyan outline across the amber marks.'}]};}
   return {phase:'needs-user',side,volume,report,attempts,elapsed:performance.now()-start};
