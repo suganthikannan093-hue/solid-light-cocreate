@@ -135,12 +135,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 14408,
+                  "duration": 34400,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-07T15:17:11.461Z",
+                  "startTime": "2026-11-07T16:10:04.513Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -183,12 +183,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 29784,
+                  "duration": 66032,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-07T15:17:27.004Z",
+                  "startTime": "2026-11-07T16:10:41.333Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -231,12 +231,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3169,
+                  "duration": 8103,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-07T15:17:56.810Z",
+                  "startTime": "2026-11-07T16:11:47.434Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -279,12 +279,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 9326,
+                  "duration": 10866,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-07T15:18:00.008Z",
+                  "startTime": "2026-11-07T16:11:55.607Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -312,7 +312,7 @@
       "line": 0,
       "specs": [
         {
-          "title": "experimental Garden checks shelter and path; both strategies finish",
+          "title": "Next into Garden: thin path is kept, open roof is recoverable, second loop adds shelter, Undo and both strategies work",
           "ok": true,
           "tags": [],
           "tests": [
@@ -327,18 +327,18 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 22118,
+                  "duration": 52617,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-07T15:18:09.364Z",
+                  "startTime": "2026-11-07T16:12:06.550Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate/test-results/garden-experimental-Garden-b1a74-path-both-strategies-finish/video.webm"
+                      "path": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate/test-results/garden-Next-into-Garden-th-e14e8-do-and-both-strategies-work/video.webm"
                     }
                   ]
                 }
@@ -346,9 +346,9 @@
               "status": "expected"
             }
           ],
-          "id": "8d392b78b326e6f8de96-9d15dd3a4dbaec8e9b0f",
+          "id": "8d392b78b326e6f8de96-9c816ea8c770d613a815",
           "file": "garden.spec.ts",
-          "line": 6,
+          "line": 7,
           "column": 1
         }
       ]
@@ -375,12 +375,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 30322,
+                  "duration": 47912,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-07T15:18:31.501Z",
+                  "startTime": "2026-11-07T16:12:59.206Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -404,8 +404,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-11-07T15:17:08.016Z",
-    "duration": 114028.698,
+    "startTime": "2026-11-07T16:09:55.404Z",
+    "duration": 232142.435,
     "expected": 6,
     "skipped": 0,
     "unexpected": 0,

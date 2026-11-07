@@ -18,3 +18,10 @@ The reviews correctly identified the first loop and the length of the session as
 | Audio lacks partnership | Different original motifs for tests, human-edit request, construction and arrival | WebAudio recorded in demo; synthesized narrator is distinct from LUMA |
 
 The narrated demo uses real browser interactions and the actual planner. Emulated hands and desktop testing do not establish physical Quest reliability or performance. OpenAI connectivity was separately validated; gameplay remains fully local unless a secure backend is configured and cloud consent is enabled.
+
+## Garden follow-up
+Chapter 3 now adds each valid closed loop to the human mask. The lower path stays when a separate roof loop is drawn, including when an attempted roof loop is open or tiny. Undo restores the preceding mask; Clear starts again. Other chapters retain replacement semantics so the Last Spark can still be trimmed.
+
+The shared guide uses three deck cells (Y=7..9) and a separate roof at Y=16..17. Unit coverage rasterizes the actual guide and two generous margins, verifies the path-only shelter diagnosis and completion after union with the independently drawn roof. Intermediate candidate tests no longer request edits before the search finishes. Clearance failures explicitly ask for air above the path.
+
+Desktop hides the legacy perpendicular side plane; it remains in immersive mode for spatial orientation. Sparks stay below board height. The browser title is corrected, disabled Next loses focus glow, and High contrast has explicit text plus an aria-live announcement. Physical Quest reach and comfort remain unverified.

@@ -4,7 +4,7 @@ Source of truth: master-specification.md. Accelerated single-day delivery; accep
 | Milestone | Dependency | Acceptance | Status |
 |---|---|---|---|
 | Environment/input | Official generator / SDK | Selectable spatial drawing surface and real input | Passed; pinned IWSDK 1.1.0-rc.2 / IWER 2.7.0 |
-| Geometry/planner | Input | Exact 32³ intersection, real walking validation, bounded search, revision guards | 30 unit tests passed across geometry, feedback and cloud |
+| Geometry/planner | Input | Exact 32³ intersection, real walking validation, bounded search, revision guards | 31 unit tests passed across geometry, feedback and cloud |
 | First Bridge | Geometry | Human loop → candidate tests → verified crossing | Production browser passed; updated IWER hand journey passed |
 | Incomplete Span | First Bridge | Missing-X failure → human extension → replan and crossing | Production browser passed; updated IWER hand journey passed |
 | Light Garden | Stable P0 | Path plus canopy, Sturdy/Efficient tradeoff | Default chapter 3; production browser and IWER hands passed |
@@ -26,3 +26,5 @@ Source of truth: master-specification.md. Accelerated single-day delivery; accep
 
 ## Environment
 Intel x86_64 macOS 26.7.2, 16GiB RAM, Node 26.13.0 / npm 11.20.0. Official SDK scaffold and locked dependencies. Existing sibling projects remain untouched. The final local artifact and hashes are in release/build-manifest.json.
+
+Garden follow-up: additive closed-loop drawing now preserves the path while the player adds a separate roof. Thin guide fixtures and six local production browser scenarios pass. The focused Level 2 → Garden hand-input and final hosted checks are tracked in evidence/xr-garden-additive.json and hosted-e2e.json; older recordings are historical.

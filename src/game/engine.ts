@@ -22,6 +22,8 @@ export const emptyMask=(revision=0):Mask2D=>({size:N,pixels:new Uint8Array(N*N),
 export function rectangle(x0:number,y0:number,x1:number,y1:number,revision=0):Mask2D {
  const m=emptyMask(revision);for(let y=Math.max(0,y0);y<=Math.min(N-1,y1);y++)for(let x=Math.max(0,x0);x<=Math.min(N-1,x1);x++)m.pixels[x+N*y]=1;return m;
 }
+// Garden strokes add only pixels the human actually drew; planner ownership is unchanged.
+export function addMask(base:Mask2D,stroke:Mask2D,revision:number):Mask2D {const next=emptyMask(revision);for(let i=0;i<next.pixels.length;i++)next.pixels[i]=base.pixels[i]||stroke.pixels[i]?1:0;return next;}
 export function rasterize(input:Point[],revision:number):Mask2D {
  const mask=emptyMask(revision);if(input.length<3)return mask;
  const points=input.slice(0,2048).map(([x,y])=>[Math.max(0,Math.min(1,x)),Math.max(0,Math.min(1,y))] as Point);

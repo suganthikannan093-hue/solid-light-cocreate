@@ -8,7 +8,7 @@ Public URL: https://suganthikannan093-hue.github.io/solid-light-cocreate/ . Desk
 
 All critical gameplay uses the offline planner. Network is needed to initially load a hosted app; there is no runtime AI network dependency. This release does not include a service worker, so a cold load with no cached assets requires connectivity.
 
-5. Next level opens Light Garden. A low ribbon has a path but no shelter; extend the outline upward to enclose the upper canopy guide. Compare Sturdy/Efficient in Settings.
+5. Next level opens Light Garden. A low ribbon has a path but no shelter; keep the lower loop and draw a second closed loop around the upper canopy guide. Compare Sturdy/Efficient in Settings.
 6. Next level opens Last Spark. A broad protected bridge exceeds the light budget. Tighten its outer edges through the highlighted strips while keeping the banks connected. Next starts a workshop preset; four presets vary the constraints.
 
 Cloud is off by default. OpenAI connectivity has been separately verified, but no public proxy is deployed. Invalid shapes give corrective guidance instead of a fabricated crossing. Already sufficient drawings may succeed directly. Chapter practice and accessibility toggles are in Settings.

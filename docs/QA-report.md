@@ -27,3 +27,8 @@ Real production four-chapter progression passed through actual mouse input, incl
 
 ## Final hosted regression
 All six scenarios passed against the deployed Pages build in 2.0 minutes. Garden and Last Spark explicitly disabled browser networking after initial load, as did the P0 playthrough. The final FOV framing, live drawing, status/toggle/unsupported-XR behavior and cloud-outage recovery passed on the hosted artifact. Evidence: evidence/hosted-e2e.json. GitHub Actions run 42386728339 passed install/typecheck/unit/build/deploy for application source aa9f3a8.
+
+## Garden follow-up regression
+31 unit tests and all six local production browser scenarios passed. The new Garden scenario enters through Level 2 Next, draws the actual thin lower guide, observes the shelter request, confirms an open roof attempt preserves the path, adds an independent roof loop, checks empty air rows, undoes/re-adds the roof, and completes both strategies offline after loading. Title, hidden legacy desktop plane, bounded sparks, disabled-Next styling and High contrast aria-live feedback are asserted. A later intermediate-status wording change is checked by the updated emulator/hosted probes. Physical Quest remains unverified.
+
+The focused official IWER hand sequence also passed: complete Level 2, select spatial Next, draw the thin Garden path, receive the real shelter request, add a separate roof loop, and cross. The final hand-drawn mask has path pixels, roof pixels and zero occupied air rows between. Evidence: evidence/xr-garden-additive.json; screenshot 15-garden-additive-xr.png. This remains emulator evidence, not physical Quest testing.
