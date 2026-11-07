@@ -1,0 +1,1 @@
+export default async function({page,frame}) {return {frames:page.frames().map(f=>f.url()),selected:frame.url(),dom:await frame.evaluate(()=>({body:document.body.innerHTML.slice(-3000),hook:!!window.solidLight,buttons:document.querySelectorAll('button').length})),state:await frame.evaluate(()=>window.solidLight?.state()?.phase)};}

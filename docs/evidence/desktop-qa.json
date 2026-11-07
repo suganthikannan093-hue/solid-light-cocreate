@@ -1,0 +1,2788 @@
+{
+  "results": [
+    {
+      "test": "desktop Level 1 real pointer closed outline and verified crossing",
+      "pass": true,
+      "state": {
+        "level": 1,
+        "phase": "level-complete",
+        "revision": 4,
+        "paused": false,
+        "instances": 840,
+        "decision": {
+          "phase": "success",
+          "report": {
+            "pass": true,
+            "path": [
+              [
+                4,
+                10,
+                10
+              ],
+              [
+                5,
+                10,
+                10
+              ],
+              [
+                6,
+                10,
+                10
+              ],
+              [
+                7,
+                10,
+                10
+              ],
+              [
+                8,
+                10,
+                10
+              ],
+              [
+                9,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10
+              ],
+              [
+                11,
+                10,
+                10
+              ],
+              [
+                12,
+                10,
+                10
+              ],
+              [
+                13,
+                10,
+                10
+              ],
+              [
+                14,
+                10,
+                10
+              ],
+              [
+                15,
+                10,
+                10
+              ],
+              [
+                16,
+                10,
+                10
+              ],
+              [
+                17,
+                10,
+                10
+              ],
+              [
+                18,
+                10,
+                10
+              ],
+              [
+                19,
+                10,
+                10
+              ],
+              [
+                20,
+                10,
+                10
+              ],
+              [
+                21,
+                10,
+                10
+              ],
+              [
+                22,
+                10,
+                10
+              ],
+              [
+                23,
+                10,
+                10
+              ],
+              [
+                24,
+                10,
+                10
+              ],
+              [
+                25,
+                10,
+                10
+              ],
+              [
+                26,
+                10,
+                10
+              ],
+              [
+                27,
+                10,
+                10
+              ]
+            ],
+            "failures": [],
+            "diagnostics": [],
+            "score": 99160
+          },
+          "attempts": [
+            {
+              "id": "10-5-2",
+              "width": 5,
+              "deck": 10,
+              "pass": true,
+              "failures": [],
+              "score": 89720
+            },
+            {
+              "id": "10-5-3",
+              "width": 5,
+              "deck": 10,
+              "pass": true,
+              "failures": [],
+              "score": 89580
+            },
+            {
+              "id": "10-9-2",
+              "width": 9,
+              "deck": 10,
+              "pass": true,
+              "failures": [],
+              "score": 93496
+            },
+            {
+              "id": "10-9-3",
+              "width": 9,
+              "deck": 10,
+              "pass": true,
+              "failures": [],
+              "score": 93244
+            },
+            {
+              "id": "10-15-2",
+              "width": 15,
+              "deck": 10,
+              "pass": true,
+              "failures": [],
+              "score": 99160
+            },
+            {
+              "id": "10-15-3",
+              "width": 15,
+              "deck": 10,
+              "pass": true,
+              "failures": [],
+              "score": 98740
+            },
+            {
+              "id": "10-23-2",
+              "width": 23,
+              "deck": 10,
+              "pass": true,
+              "failures": [],
+              "score": 90712
+            },
+            {
+              "id": "10-23-3",
+              "width": 23,
+              "deck": 10,
+              "pass": true,
+              "failures": [],
+              "score": 90068
+            },
+            {
+              "id": "11-5-2",
+              "width": 5,
+              "deck": 11,
+              "pass": false,
+              "failures": [
+                "NO_WALKABLE_PATH"
+              ],
+              "score": 0
+            },
+            {
+              "id": "11-5-3",
+              "width": 5,
+              "deck": 11,
+              "pass": false,
+              "failures": [
+                "NO_WALKABLE_PATH"
+              ],
+              "score": 0
+            },
+            {
+              "id": "11-9-2",
+              "width": 9,
+              "deck": 11,
+              "pass": false,
+              "failures": [
+                "NO_WALKABLE_PATH"
+              ],
+              "score": 0
+            },
+            {
+              "id": "11-9-3",
+              "width": 9,
+              "deck": 11,
+              "pass": false,
+              "failures": [
+                "NO_WALKABLE_PATH"
+              ],
+              "score": 0
+            },
+            {
+              "id": "11-15-2",
+              "width": 15,
+              "deck": 11,
+              "pass": false,
+              "failures": [
+                "NO_WALKABLE_PATH"
+              ],
+              "score": 0
+            },
+            {
+              "id": "11-15-3",
+              "width": 15,
+              "deck": 11,
+              "pass": false,
+              "failures": [
+                "NO_WALKABLE_PATH"
+              ],
+              "score": 0
+            },
+            {
+              "id": "11-23-2",
+              "width": 23,
+              "deck": 11,
+              "pass": false,
+              "failures": [
+                "NO_WALKABLE_PATH"
+              ],
+              "score": 0
+            },
+            {
+              "id": "11-23-3",
+              "width": 23,
+              "deck": 11,
+              "pass": false,
+              "failures": [
+                "NO_WALKABLE_PATH"
+              ],
+              "score": 0
+            },
+            {
+              "id": "9-5-2",
+              "width": 5,
+              "deck": 9,
+              "pass": false,
+              "failures": [
+                "NO_WALKABLE_PATH"
+              ],
+              "score": 0
+            },
+            {
+              "id": "9-5-3",
+              "width": 5,
+              "deck": 9,
+              "pass": false,
+              "failures": [
+                "NO_WALKABLE_PATH"
+              ],
+              "score": 0
+            },
+            {
+              "id": "9-9-2",
+              "width": 9,
+              "deck": 9,
+              "pass": false,
+              "failures": [
+                "NO_WALKABLE_PATH"
+              ],
+              "score": 0
+            },
+            {
+              "id": "9-9-3",
+              "width": 9,
+              "deck": 9,
+              "pass": false,
+              "failures": [
+                "NO_WALKABLE_PATH"
+              ],
+              "score": 0
+            },
+            {
+              "id": "9-15-2",
+              "width": 15,
+              "deck": 9,
+              "pass": false,
+              "failures": [
+                "NO_WALKABLE_PATH"
+              ],
+              "score": 0
+            },
+            {
+              "id": "9-15-3",
+              "width": 15,
+              "deck": 9,
+              "pass": false,
+              "failures": [
+                "NO_WALKABLE_PATH"
+              ],
+              "score": 0
+            },
+            {
+              "id": "9-23-2",
+              "width": 23,
+              "deck": 9,
+              "pass": false,
+              "failures": [
+                "NO_WALKABLE_PATH"
+              ],
+              "score": 0
+            },
+            {
+              "id": "9-23-3",
+              "width": 23,
+              "deck": 9,
+              "pass": false,
+              "failures": [
+                "NO_WALKABLE_PATH"
+              ],
+              "score": 0
+            }
+          ],
+          "elapsed": 354.5
+        },
+        "events": [
+          {
+            "tool": "inspectWorld",
+            "revision": 4
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "10-5-2",
+            "width": 5,
+            "deck": 10,
+            "pass": true,
+            "failures": [],
+            "score": 89720
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "10-5-3",
+            "width": 5,
+            "deck": 10,
+            "pass": true,
+            "failures": [],
+            "score": 89580
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "10-9-2",
+            "width": 9,
+            "deck": 10,
+            "pass": true,
+            "failures": [],
+            "score": 93496
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "10-9-3",
+            "width": 9,
+            "deck": 10,
+            "pass": true,
+            "failures": [],
+            "score": 93244
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "10-15-2",
+            "width": 15,
+            "deck": 10,
+            "pass": true,
+            "failures": [],
+            "score": 99160
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "10-15-3",
+            "width": 15,
+            "deck": 10,
+            "pass": true,
+            "failures": [],
+            "score": 98740
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "10-23-2",
+            "width": 23,
+            "deck": 10,
+            "pass": true,
+            "failures": [],
+            "score": 90712
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "10-23-3",
+            "width": 23,
+            "deck": 10,
+            "pass": true,
+            "failures": [],
+            "score": 90068
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "11-5-2",
+            "width": 5,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "11-5-3",
+            "width": 5,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "11-9-2",
+            "width": 9,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "11-9-3",
+            "width": 9,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "11-15-2",
+            "width": 15,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "11-15-3",
+            "width": 15,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "11-23-2",
+            "width": 23,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "11-23-3",
+            "width": 23,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "9-5-2",
+            "width": 5,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "9-5-3",
+            "width": 5,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "9-9-2",
+            "width": 9,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "9-9-3",
+            "width": 9,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "9-15-2",
+            "width": 15,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "9-15-3",
+            "width": 15,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "9-23-2",
+            "width": 23,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "9-23-3",
+            "width": 23,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "commitConstruction",
+            "revision": 4,
+            "failures": []
+          }
+        ]
+      }
+    },
+    {
+      "test": "Level 2 authentic failure",
+      "pass": true,
+      "state": {
+        "level": 2,
+        "phase": "needs-user",
+        "revision": 7,
+        "paused": false,
+        "instances": 828,
+        "decision": {
+          "phase": "needs-user",
+          "report": {
+            "pass": false,
+            "path": [],
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "diagnostics": [
+              {
+                "reason": "DISCONNECTED_SPAN",
+                "columns": [
+                  19,
+                  20,
+                  21,
+                  22,
+                  23,
+                  24,
+                  25,
+                  26,
+                  27,
+                  28,
+                  29
+                ],
+                "message": "My side view cannot add missing length. Extend your cyan outline across the amber marks."
+              }
+            ],
+            "score": 0
+          },
+          "attempts": [
+            {
+              "id": "10-5-2",
+              "width": 5,
+              "deck": 10,
+              "pass": false,
+              "failures": [
+                "DISCONNECTED_SPAN"
+              ],
+              "score": 16
+            },
+            {
+              "id": "10-5-3",
+              "width": 5,
+              "deck": 10,
+              "pass": false,
+              "failures": [
+                "DISCONNECTED_SPAN"
+              ],
+              "score": 16
+            },
+            {
+              "id": "10-9-2",
+              "width": 9,
+              "deck": 10,
+              "pass": false,
+              "failures": [
+                "DISCONNECTED_SPAN"
+              ],
+              "score": 80
+            },
+            {
+              "id": "10-9-3",
+              "width": 9,
+              "deck": 10,
+              "pass": false,
+              "failures": [
+                "DISCONNECTED_SPAN"
+              ],
+              "score": 80
+            },
+            {
+              "id": "10-15-2",
+              "width": 15,
+              "deck": 10,
+              "pass": false,
+              "failures": [
+                "DISCONNECTED_SPAN"
+              ],
+              "score": 176
+            },
+            {
+              "id": "10-15-3",
+              "width": 15,
+              "deck": 10,
+              "pass": false,
+              "failures": [
+                "DISCONNECTED_SPAN"
+              ],
+              "score": 176
+            },
+            {
+              "id": "10-23-2",
+              "width": 23,
+              "deck": 10,
+              "pass": false,
+              "failures": [
+                "DISCONNECTED_SPAN"
+              ],
+              "score": 304
+            },
+            {
+              "id": "10-23-3",
+              "width": 23,
+              "deck": 10,
+              "pass": false,
+              "failures": [
+                "DISCONNECTED_SPAN"
+              ],
+              "score": 304
+            },
+            {
+              "id": "11-5-2",
+              "width": 5,
+              "deck": 11,
+              "pass": false,
+              "failures": [
+                "DISCONNECTED_SPAN"
+              ],
+              "score": 0
+            },
+            {
+              "id": "11-5-3",
+              "width": 5,
+              "deck": 11,
+              "pass": false,
+              "failures": [
+                "DISCONNECTED_SPAN"
+              ],
+              "score": 0
+            },
+            {
+              "id": "11-9-2",
+              "width": 9,
+              "deck": 11,
+              "pass": false,
+              "failures": [
+                "DISCONNECTED_SPAN"
+              ],
+              "score": 0
+            },
+            {
+              "id": "11-9-3",
+              "width": 9,
+              "deck": 11,
+              "pass": false,
+              "failures": [
+                "DISCONNECTED_SPAN"
+              ],
+              "score": 0
+            },
+            {
+              "id": "11-15-2",
+              "width": 15,
+              "deck": 11,
+              "pass": false,
+              "failures": [
+                "DISCONNECTED_SPAN"
+              ],
+              "score": 0
+            },
+            {
+              "id": "11-15-3",
+              "width": 15,
+              "deck": 11,
+              "pass": false,
+              "failures": [
+                "DISCONNECTED_SPAN"
+              ],
+              "score": 0
+            },
+            {
+              "id": "11-23-2",
+              "width": 23,
+              "deck": 11,
+              "pass": false,
+              "failures": [
+                "DISCONNECTED_SPAN"
+              ],
+              "score": 0
+            },
+            {
+              "id": "11-23-3",
+              "width": 23,
+              "deck": 11,
+              "pass": false,
+              "failures": [
+                "DISCONNECTED_SPAN"
+              ],
+              "score": 0
+            },
+            {
+              "id": "9-5-2",
+              "width": 5,
+              "deck": 9,
+              "pass": false,
+              "failures": [
+                "DISCONNECTED_SPAN"
+              ],
+              "score": 0
+            },
+            {
+              "id": "9-5-3",
+              "width": 5,
+              "deck": 9,
+              "pass": false,
+              "failures": [
+                "DISCONNECTED_SPAN"
+              ],
+              "score": 0
+            },
+            {
+              "id": "9-9-2",
+              "width": 9,
+              "deck": 9,
+              "pass": false,
+              "failures": [
+                "DISCONNECTED_SPAN"
+              ],
+              "score": 0
+            },
+            {
+              "id": "9-9-3",
+              "width": 9,
+              "deck": 9,
+              "pass": false,
+              "failures": [
+                "DISCONNECTED_SPAN"
+              ],
+              "score": 0
+            },
+            {
+              "id": "9-15-2",
+              "width": 15,
+              "deck": 9,
+              "pass": false,
+              "failures": [
+                "DISCONNECTED_SPAN"
+              ],
+              "score": 0
+            },
+            {
+              "id": "9-15-3",
+              "width": 15,
+              "deck": 9,
+              "pass": false,
+              "failures": [
+                "DISCONNECTED_SPAN"
+              ],
+              "score": 0
+            },
+            {
+              "id": "9-23-2",
+              "width": 23,
+              "deck": 9,
+              "pass": false,
+              "failures": [
+                "DISCONNECTED_SPAN"
+              ],
+              "score": 0
+            },
+            {
+              "id": "9-23-3",
+              "width": 23,
+              "deck": 9,
+              "pass": false,
+              "failures": [
+                "DISCONNECTED_SPAN"
+              ],
+              "score": 0
+            }
+          ],
+          "elapsed": 233.7999999821186
+        },
+        "events": [
+          {
+            "tool": "inspectWorld",
+            "revision": 4
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "10-5-2",
+            "width": 5,
+            "deck": 10,
+            "pass": true,
+            "failures": [],
+            "score": 89720
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "10-5-3",
+            "width": 5,
+            "deck": 10,
+            "pass": true,
+            "failures": [],
+            "score": 89580
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "10-9-2",
+            "width": 9,
+            "deck": 10,
+            "pass": true,
+            "failures": [],
+            "score": 93496
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "10-9-3",
+            "width": 9,
+            "deck": 10,
+            "pass": true,
+            "failures": [],
+            "score": 93244
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "10-15-2",
+            "width": 15,
+            "deck": 10,
+            "pass": true,
+            "failures": [],
+            "score": 99160
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "10-15-3",
+            "width": 15,
+            "deck": 10,
+            "pass": true,
+            "failures": [],
+            "score": 98740
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "10-23-2",
+            "width": 23,
+            "deck": 10,
+            "pass": true,
+            "failures": [],
+            "score": 90712
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "10-23-3",
+            "width": 23,
+            "deck": 10,
+            "pass": true,
+            "failures": [],
+            "score": 90068
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "11-5-2",
+            "width": 5,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "11-5-3",
+            "width": 5,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "11-9-2",
+            "width": 9,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "11-9-3",
+            "width": 9,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "11-15-2",
+            "width": 15,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "11-15-3",
+            "width": 15,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "11-23-2",
+            "width": 23,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "11-23-3",
+            "width": 23,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "9-5-2",
+            "width": 5,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "9-5-3",
+            "width": 5,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "9-9-2",
+            "width": 9,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "9-9-3",
+            "width": 9,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "9-15-2",
+            "width": 15,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "9-15-3",
+            "width": 15,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "9-23-2",
+            "width": 23,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "9-23-3",
+            "width": 23,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "commitConstruction",
+            "revision": 4,
+            "failures": []
+          },
+          {
+            "tool": "inspectWorld",
+            "revision": 7
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "10-5-2",
+            "width": 5,
+            "deck": 10,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 16
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "10-5-3",
+            "width": 5,
+            "deck": 10,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 16
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "10-9-2",
+            "width": 9,
+            "deck": 10,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 80
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "10-9-3",
+            "width": 9,
+            "deck": 10,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 80
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "10-15-2",
+            "width": 15,
+            "deck": 10,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 176
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "10-15-3",
+            "width": 15,
+            "deck": 10,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 176
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "10-23-2",
+            "width": 23,
+            "deck": 10,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 304
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "10-23-3",
+            "width": 23,
+            "deck": 10,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 304
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "11-5-2",
+            "width": 5,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "11-5-3",
+            "width": 5,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "11-9-2",
+            "width": 9,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "11-9-3",
+            "width": 9,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "11-15-2",
+            "width": 15,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "11-15-3",
+            "width": 15,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "11-23-2",
+            "width": 23,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "11-23-3",
+            "width": 23,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "9-5-2",
+            "width": 5,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "9-5-3",
+            "width": 5,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "9-9-2",
+            "width": 9,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "9-9-3",
+            "width": 9,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "9-15-2",
+            "width": 15,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "9-15-3",
+            "width": 15,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "9-23-2",
+            "width": 23,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "9-23-3",
+            "width": 23,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "requestHumanEdit",
+            "revision": 7,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "test": "Level 2 human extension and worker replan crossing",
+      "pass": true,
+      "state": {
+        "level": 2,
+        "phase": "level-complete",
+        "revision": 9,
+        "paused": false,
+        "instances": 900,
+        "decision": {
+          "phase": "success",
+          "report": {
+            "pass": true,
+            "path": [
+              [
+                2,
+                10,
+                10
+              ],
+              [
+                3,
+                10,
+                10
+              ],
+              [
+                4,
+                10,
+                10
+              ],
+              [
+                5,
+                10,
+                10
+              ],
+              [
+                6,
+                10,
+                10
+              ],
+              [
+                7,
+                10,
+                10
+              ],
+              [
+                8,
+                10,
+                10
+              ],
+              [
+                9,
+                10,
+                10
+              ],
+              [
+                10,
+                10,
+                10
+              ],
+              [
+                11,
+                10,
+                10
+              ],
+              [
+                12,
+                10,
+                10
+              ],
+              [
+                13,
+                10,
+                10
+              ],
+              [
+                14,
+                10,
+                10
+              ],
+              [
+                15,
+                10,
+                10
+              ],
+              [
+                16,
+                10,
+                10
+              ],
+              [
+                17,
+                10,
+                10
+              ],
+              [
+                18,
+                10,
+                10
+              ],
+              [
+                19,
+                10,
+                10
+              ],
+              [
+                20,
+                10,
+                10
+              ],
+              [
+                21,
+                10,
+                10
+              ],
+              [
+                22,
+                10,
+                10
+              ],
+              [
+                23,
+                10,
+                10
+              ],
+              [
+                24,
+                10,
+                10
+              ],
+              [
+                25,
+                10,
+                10
+              ],
+              [
+                26,
+                10,
+                10
+              ],
+              [
+                27,
+                10,
+                10
+              ],
+              [
+                28,
+                10,
+                10
+              ],
+              [
+                29,
+                10,
+                10
+              ]
+            ],
+            "failures": [],
+            "diagnostics": [],
+            "score": 98100
+          },
+          "attempts": [
+            {
+              "id": "10-5-2",
+              "width": 5,
+              "deck": 10,
+              "pass": true,
+              "failures": [],
+              "score": 90700
+            },
+            {
+              "id": "10-5-3",
+              "width": 5,
+              "deck": 10,
+              "pass": true,
+              "failures": [],
+              "score": 90550
+            },
+            {
+              "id": "10-9-2",
+              "width": 9,
+              "deck": 10,
+              "pass": true,
+              "failures": [],
+              "score": 94460
+            },
+            {
+              "id": "10-9-3",
+              "width": 9,
+              "deck": 10,
+              "pass": true,
+              "failures": [],
+              "score": 94190
+            },
+            {
+              "id": "10-15-2",
+              "width": 15,
+              "deck": 10,
+              "pass": true,
+              "failures": [],
+              "score": 98100
+            },
+            {
+              "id": "10-15-3",
+              "width": 15,
+              "deck": 10,
+              "pass": true,
+              "failures": [],
+              "score": 97650
+            },
+            {
+              "id": "10-23-2",
+              "width": 23,
+              "deck": 10,
+              "pass": true,
+              "failures": [],
+              "score": 89620
+            },
+            {
+              "id": "10-23-3",
+              "width": 23,
+              "deck": 10,
+              "pass": true,
+              "failures": [],
+              "score": 88930
+            },
+            {
+              "id": "11-5-2",
+              "width": 5,
+              "deck": 11,
+              "pass": false,
+              "failures": [
+                "NO_WALKABLE_PATH"
+              ],
+              "score": 0
+            },
+            {
+              "id": "11-5-3",
+              "width": 5,
+              "deck": 11,
+              "pass": false,
+              "failures": [
+                "NO_WALKABLE_PATH"
+              ],
+              "score": 0
+            },
+            {
+              "id": "11-9-2",
+              "width": 9,
+              "deck": 11,
+              "pass": false,
+              "failures": [
+                "NO_WALKABLE_PATH"
+              ],
+              "score": 0
+            },
+            {
+              "id": "11-9-3",
+              "width": 9,
+              "deck": 11,
+              "pass": false,
+              "failures": [
+                "NO_WALKABLE_PATH"
+              ],
+              "score": 0
+            },
+            {
+              "id": "11-15-2",
+              "width": 15,
+              "deck": 11,
+              "pass": false,
+              "failures": [
+                "NO_WALKABLE_PATH"
+              ],
+              "score": 0
+            },
+            {
+              "id": "11-15-3",
+              "width": 15,
+              "deck": 11,
+              "pass": false,
+              "failures": [
+                "NO_WALKABLE_PATH"
+              ],
+              "score": 0
+            },
+            {
+              "id": "11-23-2",
+              "width": 23,
+              "deck": 11,
+              "pass": false,
+              "failures": [
+                "NO_WALKABLE_PATH"
+              ],
+              "score": 0
+            },
+            {
+              "id": "11-23-3",
+              "width": 23,
+              "deck": 11,
+              "pass": false,
+              "failures": [
+                "NO_WALKABLE_PATH"
+              ],
+              "score": 0
+            },
+            {
+              "id": "9-5-2",
+              "width": 5,
+              "deck": 9,
+              "pass": false,
+              "failures": [
+                "NO_WALKABLE_PATH"
+              ],
+              "score": 0
+            },
+            {
+              "id": "9-5-3",
+              "width": 5,
+              "deck": 9,
+              "pass": false,
+              "failures": [
+                "NO_WALKABLE_PATH"
+              ],
+              "score": 0
+            },
+            {
+              "id": "9-9-2",
+              "width": 9,
+              "deck": 9,
+              "pass": false,
+              "failures": [
+                "NO_WALKABLE_PATH"
+              ],
+              "score": 0
+            },
+            {
+              "id": "9-9-3",
+              "width": 9,
+              "deck": 9,
+              "pass": false,
+              "failures": [
+                "NO_WALKABLE_PATH"
+              ],
+              "score": 0
+            },
+            {
+              "id": "9-15-2",
+              "width": 15,
+              "deck": 9,
+              "pass": false,
+              "failures": [
+                "NO_WALKABLE_PATH"
+              ],
+              "score": 0
+            },
+            {
+              "id": "9-15-3",
+              "width": 15,
+              "deck": 9,
+              "pass": false,
+              "failures": [
+                "NO_WALKABLE_PATH"
+              ],
+              "score": 0
+            },
+            {
+              "id": "9-23-2",
+              "width": 23,
+              "deck": 9,
+              "pass": false,
+              "failures": [
+                "NO_WALKABLE_PATH"
+              ],
+              "score": 0
+            },
+            {
+              "id": "9-23-3",
+              "width": 23,
+              "deck": 9,
+              "pass": false,
+              "failures": [
+                "NO_WALKABLE_PATH"
+              ],
+              "score": 0
+            }
+          ],
+          "elapsed": 344
+        },
+        "events": [
+          {
+            "tool": "inspectWorld",
+            "revision": 4
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "10-5-2",
+            "width": 5,
+            "deck": 10,
+            "pass": true,
+            "failures": [],
+            "score": 89720
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "10-5-3",
+            "width": 5,
+            "deck": 10,
+            "pass": true,
+            "failures": [],
+            "score": 89580
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "10-9-2",
+            "width": 9,
+            "deck": 10,
+            "pass": true,
+            "failures": [],
+            "score": 93496
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "10-9-3",
+            "width": 9,
+            "deck": 10,
+            "pass": true,
+            "failures": [],
+            "score": 93244
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "10-15-2",
+            "width": 15,
+            "deck": 10,
+            "pass": true,
+            "failures": [],
+            "score": 99160
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "10-15-3",
+            "width": 15,
+            "deck": 10,
+            "pass": true,
+            "failures": [],
+            "score": 98740
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "10-23-2",
+            "width": 23,
+            "deck": 10,
+            "pass": true,
+            "failures": [],
+            "score": 90712
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "10-23-3",
+            "width": 23,
+            "deck": 10,
+            "pass": true,
+            "failures": [],
+            "score": 90068
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "11-5-2",
+            "width": 5,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "11-5-3",
+            "width": 5,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "11-9-2",
+            "width": 9,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "11-9-3",
+            "width": 9,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "11-15-2",
+            "width": 15,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "11-15-3",
+            "width": 15,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "11-23-2",
+            "width": 23,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "11-23-3",
+            "width": 23,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "9-5-2",
+            "width": 5,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "9-5-3",
+            "width": 5,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "9-9-2",
+            "width": 9,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "9-9-3",
+            "width": 9,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "9-15-2",
+            "width": 15,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "9-15-3",
+            "width": 15,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "9-23-2",
+            "width": 23,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 4,
+            "id": "9-23-3",
+            "width": 23,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "commitConstruction",
+            "revision": 4,
+            "failures": []
+          },
+          {
+            "tool": "inspectWorld",
+            "revision": 7
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "10-5-2",
+            "width": 5,
+            "deck": 10,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 16
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "10-5-3",
+            "width": 5,
+            "deck": 10,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 16
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "10-9-2",
+            "width": 9,
+            "deck": 10,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 80
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "10-9-3",
+            "width": 9,
+            "deck": 10,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 80
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "10-15-2",
+            "width": 15,
+            "deck": 10,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 176
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "10-15-3",
+            "width": 15,
+            "deck": 10,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 176
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "10-23-2",
+            "width": 23,
+            "deck": 10,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 304
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "10-23-3",
+            "width": 23,
+            "deck": 10,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 304
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "11-5-2",
+            "width": 5,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "11-5-3",
+            "width": 5,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "11-9-2",
+            "width": 9,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "11-9-3",
+            "width": 9,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "11-15-2",
+            "width": 15,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "11-15-3",
+            "width": 15,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "11-23-2",
+            "width": 23,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "11-23-3",
+            "width": 23,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "9-5-2",
+            "width": 5,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "9-5-3",
+            "width": 5,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "9-9-2",
+            "width": 9,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "9-9-3",
+            "width": 9,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "9-15-2",
+            "width": 15,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "9-15-3",
+            "width": 15,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "9-23-2",
+            "width": 23,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 7,
+            "id": "9-23-3",
+            "width": 23,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "requestHumanEdit",
+            "revision": 7,
+            "failures": [
+              "DISCONNECTED_SPAN"
+            ]
+          },
+          {
+            "tool": "inspectWorld",
+            "revision": 9
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 9,
+            "id": "10-5-2",
+            "width": 5,
+            "deck": 10,
+            "pass": true,
+            "failures": [],
+            "score": 90700
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 9,
+            "id": "10-5-3",
+            "width": 5,
+            "deck": 10,
+            "pass": true,
+            "failures": [],
+            "score": 90550
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 9,
+            "id": "10-9-2",
+            "width": 9,
+            "deck": 10,
+            "pass": true,
+            "failures": [],
+            "score": 94460
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 9,
+            "id": "10-9-3",
+            "width": 9,
+            "deck": 10,
+            "pass": true,
+            "failures": [],
+            "score": 94190
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 9,
+            "id": "10-15-2",
+            "width": 15,
+            "deck": 10,
+            "pass": true,
+            "failures": [],
+            "score": 98100
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 9,
+            "id": "10-15-3",
+            "width": 15,
+            "deck": 10,
+            "pass": true,
+            "failures": [],
+            "score": 97650
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 9,
+            "id": "10-23-2",
+            "width": 23,
+            "deck": 10,
+            "pass": true,
+            "failures": [],
+            "score": 89620
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 9,
+            "id": "10-23-3",
+            "width": 23,
+            "deck": 10,
+            "pass": true,
+            "failures": [],
+            "score": 88930
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 9,
+            "id": "11-5-2",
+            "width": 5,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 9,
+            "id": "11-5-3",
+            "width": 5,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 9,
+            "id": "11-9-2",
+            "width": 9,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 9,
+            "id": "11-9-3",
+            "width": 9,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 9,
+            "id": "11-15-2",
+            "width": 15,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 9,
+            "id": "11-15-3",
+            "width": 15,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 9,
+            "id": "11-23-2",
+            "width": 23,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 9,
+            "id": "11-23-3",
+            "width": 23,
+            "deck": 11,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 9,
+            "id": "9-5-2",
+            "width": 5,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 9,
+            "id": "9-5-3",
+            "width": 5,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 9,
+            "id": "9-9-2",
+            "width": 9,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 9,
+            "id": "9-9-3",
+            "width": 9,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 9,
+            "id": "9-15-2",
+            "width": 15,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 9,
+            "id": "9-15-3",
+            "width": 15,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 9,
+            "id": "9-23-2",
+            "width": 23,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "validateSupport/findWalkablePath",
+            "revision": 9,
+            "id": "9-23-3",
+            "width": 23,
+            "deck": 9,
+            "pass": false,
+            "failures": [
+              "NO_WALKABLE_PATH"
+            ],
+            "score": 0
+          },
+          {
+            "tool": "commitConstruction",
+            "revision": 9,
+            "failures": []
+          }
+        ]
+      }
+    },
+    {
+      "test": "clear gives empty-mask recovery",
+      "pass": true
+    },
+    {
+      "test": "undo restores a valid drawing",
+      "pass": true
+    },
+    {
+      "test": "tiny invalid stroke remains recoverable",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "at": "2026-11-07T12:39:22.470Z"
+}

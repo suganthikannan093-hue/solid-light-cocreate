@@ -1,0 +1,31 @@
+{
+  "pass": true,
+  "phase": "level-complete",
+  "message": "We made light solid. Our traveler is home! Select Level 2 for a new challenge.",
+  "revision": 12,
+  "frontPixels": 140,
+  "instances": 840,
+  "decision": {
+    "phase": "success",
+    "pass": true,
+    "failures": [],
+    "pathLength": 24,
+    "attempts": 24,
+    "workerMs": 123.19999998807907
+  },
+  "renderer": {
+    "frame": 6356,
+    "calls": 64,
+    "triangles": 41820,
+    "points": 0,
+    "lines": 0
+  },
+  "camera": {
+    "position": [
+      0,
+      1.600000023841858,
+      0
+    ],
+    "fov": 90
+  }
+}

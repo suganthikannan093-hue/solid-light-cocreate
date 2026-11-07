@@ -1,0 +1,148 @@
+{
+  "version": "iwsdk.scene.v1",
+  "units": "meters",
+  "components": {
+    "com.iwsdk.components.DomeGradient": {
+      "sky": [
+        0.018,
+        0.025,
+        0.065,
+        1
+      ],
+      "equator": [
+        0.035,
+        0.05,
+        0.11,
+        1
+      ],
+      "ground": [
+        0.012,
+        0.018,
+        0.04,
+        1
+      ]
+    }
+  },
+  "resources": {},
+  "authoring": {
+    "views": [
+      {
+        "id": "hero",
+        "role": "hero",
+        "projection": "perspective",
+        "position": [
+          0,
+          1.55,
+          0.15
+        ],
+        "target": [
+          0,
+          1.28,
+          -1.65
+        ],
+        "fov": 48
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "front-plane",
+      "content": {
+        "type": "asset",
+        "asset": "drawing-plane"
+      },
+      "transform": {
+        "position": [
+          -0.2,
+          1.45,
+          -1.65
+        ]
+      },
+      "components": {
+        "RayInteractable": {}
+      }
+    },
+    {
+      "id": "side-plane",
+      "content": {
+        "type": "asset",
+        "asset": "drawing-plane"
+      },
+      "transform": {
+        "position": [
+          0.65,
+          1.45,
+          -1.95
+        ],
+        "rotationDeg": [
+          0,
+          -90,
+          0
+        ],
+        "scale": 0.65
+      }
+    },
+    {
+      "id": "bank-left",
+      "content": {
+        "type": "asset",
+        "asset": "bank"
+      },
+      "transform": {
+        "position": [
+          -0.74,
+          0.83,
+          -1.55
+        ]
+      }
+    },
+    {
+      "id": "bank-right",
+      "content": {
+        "type": "asset",
+        "asset": "bank"
+      },
+      "transform": {
+        "position": [
+          0.34,
+          0.83,
+          -1.55
+        ]
+      }
+    },
+    {
+      "id": "creature",
+      "content": {
+        "type": "asset",
+        "asset": "creature"
+      },
+      "transform": {
+        "position": [
+          -0.74,
+          0.88,
+          -1.55
+        ]
+      }
+    },
+    {
+      "id": "ambient",
+      "components": {
+        "HemisphereLight": {
+          "skyColor": [
+            0.6,
+            0.8,
+            1,
+            1
+          ],
+          "groundColor": [
+            0.15,
+            0.12,
+            0.3,
+            1
+          ],
+          "intensity": 2
+        }
+      }
+    }
+  ]
+}

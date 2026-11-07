@@ -1,0 +1,2 @@
+# Real gameplay recording
+production-playthrough-raw.webm is an unedited, silent Playwright recording of the real production build: Level 1, actual Level 2 failure/replan/success, and recovery interactions. It is evidence, not a narrated final competition video. The latest passing production test refreshes this recording. Use video-script.md and video-shot-list.md for an edited, narrated public upload under three minutes. No upload or public video URL has been created.

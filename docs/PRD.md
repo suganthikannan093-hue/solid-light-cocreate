@@ -1,0 +1,2 @@
+# Product requirements
+Source of truth: master-specification.md. Core loop: human-owned front contour + LUMA-owned orthogonal side projection → validated solid → creature crossing. P0 includes both levels, honest diagnosis/replanning, desktop and hands-first controls, recovery, accessibility, evidence and static release. P1 retains Level 3 and secure optional cloud; disabled until P0 gates pass. Target first success within 60–90s requires an unfamiliar human usability test; automation timing does not prove it.

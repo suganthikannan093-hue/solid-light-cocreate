@@ -1,0 +1,34 @@
+Usage: iwsdk xr set-transform [--input-json <json>] [--timeout <ms>] [--raw]
+
+Description: Set a device position and/or orientation immediately (XR-origin). Gaze accepts orientation only; move its origin with the headset. Hands: `anchor` puts that point of the hand at `position` and keeps it there while the hand changes shape (e.g. anchor "index-tip" on a button, "grasp" on an object before pinching); orientation may be hand directions or "auto". Requires an active session.
+MCP tool: xr_set_transform
+WebSocket method: set_transform
+
+Parameters:
+  device (required) [enum] - The device to move
+    values: headset, controller-left, controller-right, hand-left, hand-right, gaze
+  position [object] - A 3D position in metres, XR-origin relative.
+    position.x (required) [number] - X position (left/right)
+    position.y (required) [number] - Y position (up/down, 1.6 is standing height)
+    position.z (required) [number] - Z position (forward/back, negative is forward)
+  orientation [value] - For hands: {fingers, palm|thumb} directions, or "auto" (a natural reach from the shoulder toward the position). A quaternion {x,y,z,w} or euler degrees {pitch,yaw,roll} sets the device (for hands, the target ray) as before.
+  anchor [string] - Hands: the point of the hand `position` places and keeps there while the hand changes shape: index-tip (press), grasp (where thumb and index tips meet in a full pinch), wrist (gestures), grip, thumb-tip, target-ray (default), or a WebXR joint name.
+  expectedTab [object] - Optional stale-state precondition. Pass the _tab object from an earlier result; the call fails if that browser tab has reloaded or changed.
+    expectedTab.id (required) [string] - Browser tab id from result._tab.id
+    expectedTab.generation (required) [number] - Browser tab generation from result._tab.generation
+  runtimeTarget [object] - Execution destination. Omit for the managed browser. Physical devices require headsetId, pageId and tabGeneration from runtime_list_targets.
+    runtimeTarget.deviceClass (required) [enum]
+      values: managed, physical
+    runtimeTarget.headsetId [string]
+    runtimeTarget.pageId [string]
+    runtimeTarget.tabGeneration [integer]
+    runtimeTarget.browserEpoch [integer]
+    runtimeTarget.sessionId [string]
+
+Example:
+  iwsdk xr set-transform --input-json '{"device":"headset"}'
+
+Options:
+  --input-json <json>
+  --timeout <ms>
+  --raw

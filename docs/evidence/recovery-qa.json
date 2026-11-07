@@ -1,0 +1,8 @@
+{
+  "pass": true,
+  "results": [
+    "actual worker race: rapid clear keeps latest empty mask authoritative",
+    "accessibility/help/recenter controls remain usable",
+    "visibility event does not crash"
+  ]
+}

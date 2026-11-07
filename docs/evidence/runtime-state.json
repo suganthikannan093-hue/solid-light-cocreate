@@ -1,0 +1,30 @@
+{
+  "phase": "level-complete",
+  "message": "You extended the length. I replanned the depth. Together, we found the way. Replay either level.",
+  "revision": 17,
+  "frontPixels": 150,
+  "instances": 900,
+  "decision": {
+    "phase": "success",
+    "pass": true,
+    "failures": [],
+    "pathLength": 28,
+    "attempts": 24,
+    "workerMs": 76.60000002384186
+  },
+  "renderer": {
+    "frame": 10486,
+    "calls": 64,
+    "triangles": 43260,
+    "points": 0,
+    "lines": 0
+  },
+  "camera": {
+    "position": [
+      0,
+      1.600000023841858,
+      0
+    ],
+    "fov": 90
+  }
+}

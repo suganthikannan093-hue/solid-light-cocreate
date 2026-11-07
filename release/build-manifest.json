@@ -1,0 +1,29 @@
+{
+  "artifactSha256": "3bb2d00966e4e617ee4a07cbaaf6f818eb1623ab8be1f250618347f784f1b13c",
+  "files": {
+    "dist/assets/_virtual_iwsdk-disabled-bundled-fonts-BO7XWqUe.js": "13d2d3340629f74eab54eeb019fce80e0d0b965ff88940459ee32b6f12117444",
+    "dist/assets/dist-Brupejm_.js": "a74930e9564ba1e7e7964041a17f437ef5fd9ceae7a84772ee12017b75fb3ff2",
+    "dist/assets/index-BQ7sl6FY.js": "5f9a6be38918da8c761019b47d4e01b7b543edb6672210b515a6aa0733d789a3",
+    "dist/assets/index-C5m33fLo.css": "9d2eccc0ba4ddf1ab954b302e14adf7849648b1e4ee89583319bb1e7ffc9f051",
+    "dist/assets/index-Cybkjs3H.js": "5612819837a8441e34db725cab89face0759f579b2eebb5ee6dcd57c964b1da4",
+    "dist/assets/inter-BNVRAYFH.js": "9159b2ed54dfb23ebadd61a9b91deb26fc652b0a6b1748784e9c4b4315f1da31",
+    "dist/assets/msdf-worker-BUaSHgMS.js": "320d3d5619bcc7ab27ee700e3448f5c8d3807a7e55796bbc0567074fd90604a0",
+    "dist/assets/physics-runtime-A-5WhpNA.js": "b9d95da68dbe2223c9a494787edc7bcc0f58271c67d967094bc930f2a7fd8a28",
+    "dist/assets/physics-worker-C0UdwKyG.js": "a6b2f06867a7755507638b019158e21edf25cf51f37ac6a1754ace0f75c8e13b",
+    "dist/assets/planner.worker-DhhxlrlX.js": "c71dc417a873d47262a4a0cdce3759d5685e8cefc0f09e674ec4770888b4deb2",
+    "dist/assets/worker-D8yl70Ie.js": "e7209cebd8fe67ca83fbf4bcad8831a2d542602a84b33ed62b513c6e9284eaea",
+    "dist/assets/worker-_Lh8Vt-i.js": "430e4c9e12f79a4c6c5fb3c410bcd85d4661151d098080713b5df3ac8b275001",
+    "dist/assets/world-initializer-Da75ZjcN.js": "73801e9391121c4ea132657d4324888591b91a63d63695e274a5954abc0176d7",
+    "dist/audio/chime.mp3": "be5e1bbb6e08c65a31ab7df425da7f3a7cdd59481ce966711bab09b41da7428d",
+    "dist/index.html": "62c518f71b5b15e4e956b6671ce5ed65b8aa712bd0b9a95a279758e1c1fab24c",
+    "dist/scenes/AGENTS.md": "4451a5b98ba38a835cca3fc49666cbe62ba77353f6b8d0ed7d46b691d35067c1",
+    "dist/scenes/main.iwsdk.scene.json": "7bf07cd0cc60427b79ec1f2fb3334f7f679ea34f11ef6460c8e25ff91e27b3b1",
+    "dist/ui/AGENTS.md": "abe74e27fdcd33f9fbdfa6fef5b11cd1427fe15c66fec1a0b884f3a09b750266",
+    "dist/ui/label-grab.uikitml": "0ca74569d172eb022a77670d84e3627fd96f60835dcb5e13fb83d030b56f58f0",
+    "dist/ui/label-select.uikitml": "0850d8b21d5ff4ba290f7a7bd58b74c4f3e4aa7c9c47afbd44c1821e55d0272d",
+    "dist/ui/label-spin.uikitml": "3c5d4286578cf020c42a7b5be3db960f3ee0ecfca0371f47595f4cb9aaa8a22d",
+    "dist/ui/welcome.uikitml": "e2417f2cf63d2f340fda69d2a3e37ecc0d6fcb1659f97229f182b76e56c94427"
+  },
+  "sdk": "1.1.0-rc.2",
+  "source": "local working tree; production E2E passed; remote publication pending authentication"
+}

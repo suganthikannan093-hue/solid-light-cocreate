@@ -1,0 +1,1 @@
+export default async function({page}) {const controls=await page.getByRole('button').allTextContents(); const runtime=page.getByRole('button',{name:'Runtime',exact:true}); if(await runtime.count())await runtime.click();return {controls,frames:page.frames().map(f=>f.url())};}

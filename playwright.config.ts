@@ -1,0 +1,2 @@
+import {defineConfig} from '@playwright/test';
+export default defineConfig({testDir:'tests/e2e',timeout:180000,use:{baseURL:'https://127.0.0.1:4173',ignoreHTTPSErrors:true,viewport:{width:1000,height:720},video:{mode:'on',size:{width:1000,height:720}},channel:'chromium',headless:true,launchOptions:{args:['--use-gl=angle','--use-angle=metal']}},webServer:{command:'npm run preview -- --host 127.0.0.1 --port 4173',url:'https://127.0.0.1:4173',ignoreHTTPSErrors:true,reuseExistingServer:false},reporter:[['list'],['json',{outputFile:'docs/evidence/production-e2e.json'}]]});

@@ -1,0 +1,650 @@
+{
+  "pass": true,
+  "evidence": [
+    {
+      "domain": "xr",
+      "action": "enter",
+      "result": {
+        "ok": true,
+        "data": {
+          "workspaceRoot": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate",
+          "operation": "xr.enter",
+          "result": {
+            "success": true
+          }
+        }
+      }
+    },
+    {
+      "domain": "xr",
+      "action": "set-input-mode",
+      "input": {
+        "mode": "hand"
+      },
+      "result": {
+        "ok": true,
+        "data": {
+          "workspaceRoot": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate",
+          "operation": "xr.set-input-mode",
+          "result": {
+            "mode": "hand",
+            "activeDevices": [
+              "hand-left",
+              "hand-right"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "domain": "xr",
+      "action": "look-at",
+      "input": {
+        "device": "hand-right",
+        "target": {
+          "x": -0.34,
+          "y": 0.49,
+          "z": -1.45
+        }
+      },
+      "result": {
+        "ok": true,
+        "data": {
+          "workspaceRoot": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate",
+          "operation": "xr.look-at",
+          "result": {
+            "device": "hand-right",
+            "position": {
+              "x": -0.75,
+              "y": 1.2649999856948853,
+              "z": -1.25
+            },
+            "orientation": {
+              "x": -0.420939564704895,
+              "y": -0.46001216769218445,
+              "z": -0.26301512122154236,
+              "w": 0.7362212538719177
+            }
+          }
+        }
+      }
+    },
+    {
+      "domain": "xr",
+      "action": "select",
+      "input": {
+        "device": "hand-right",
+        "duration": 0.2
+      },
+      "result": {
+        "ok": true,
+        "data": {
+          "workspaceRoot": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate",
+          "operation": "xr.select",
+          "result": {
+            "device": "hand-right",
+            "duration": 0.2
+          }
+        }
+      }
+    },
+    {
+      "domain": "xr",
+      "action": "set-transform",
+      "input": {
+        "device": "hand-right",
+        "position": {
+          "x": -0.81,
+          "y": 1.265,
+          "z": -1.25
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0
+        }
+      },
+      "result": {
+        "ok": true,
+        "data": {
+          "workspaceRoot": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate",
+          "operation": "xr.set-transform",
+          "result": {
+            "device": "hand-right",
+            "position": {
+              "x": -0.8100000023841858,
+              "y": 1.2649999856948853,
+              "z": -1.25
+            },
+            "orientation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "domain": "xr",
+      "action": "set-select-value",
+      "input": {
+        "device": "hand-right",
+        "value": 1,
+        "duration": 0.2
+      },
+      "result": {
+        "ok": true,
+        "data": {
+          "workspaceRoot": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate",
+          "operation": "xr.set-select-value",
+          "result": {
+            "device": "hand-right",
+            "value": 1
+          }
+        }
+      }
+    },
+    {
+      "domain": "xr",
+      "action": "animate-to",
+      "input": {
+        "device": "hand-right",
+        "position": {
+          "x": -0.085,
+          "y": 1.265,
+          "z": -1.25
+        },
+        "duration": 0.5
+      },
+      "result": {
+        "ok": true,
+        "data": {
+          "workspaceRoot": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate",
+          "operation": "xr.animate-to",
+          "result": {
+            "device": "hand-right",
+            "position": {
+              "x": -0.08500000089406967,
+              "y": 1.2649999856948853,
+              "z": -1.25
+            },
+            "orientation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "actualDuration": 0.5004000000059604
+          }
+        }
+      }
+    },
+    {
+      "domain": "xr",
+      "action": "animate-to",
+      "input": {
+        "device": "hand-right",
+        "position": {
+          "x": -0.085,
+          "y": 1.365,
+          "z": -1.25
+        },
+        "duration": 0.5
+      },
+      "result": {
+        "ok": true,
+        "data": {
+          "workspaceRoot": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate",
+          "operation": "xr.animate-to",
+          "result": {
+            "device": "hand-right",
+            "position": {
+              "x": -0.08500000089406967,
+              "y": 1.3650000095367432,
+              "z": -1.25
+            },
+            "orientation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "actualDuration": 0.5171999999880791
+          }
+        }
+      }
+    },
+    {
+      "domain": "xr",
+      "action": "animate-to",
+      "input": {
+        "device": "hand-right",
+        "position": {
+          "x": -0.81,
+          "y": 1.365,
+          "z": -1.25
+        },
+        "duration": 0.5
+      },
+      "result": {
+        "ok": true,
+        "data": {
+          "workspaceRoot": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate",
+          "operation": "xr.animate-to",
+          "result": {
+            "device": "hand-right",
+            "position": {
+              "x": -0.8100000023841858,
+              "y": 1.3650000095367432,
+              "z": -1.25
+            },
+            "orientation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "actualDuration": 0.5052000000178813
+          }
+        }
+      }
+    },
+    {
+      "domain": "xr",
+      "action": "animate-to",
+      "input": {
+        "device": "hand-right",
+        "position": {
+          "x": -0.81,
+          "y": 1.265,
+          "z": -1.25
+        },
+        "duration": 0.5
+      },
+      "result": {
+        "ok": true,
+        "data": {
+          "workspaceRoot": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate",
+          "operation": "xr.animate-to",
+          "result": {
+            "device": "hand-right",
+            "position": {
+              "x": -0.8100000023841858,
+              "y": 1.2649999856948853,
+              "z": -1.25
+            },
+            "orientation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "actualDuration": 0.5008000000119209
+          }
+        }
+      }
+    },
+    {
+      "domain": "xr",
+      "action": "set-select-value",
+      "input": {
+        "device": "hand-right",
+        "value": 0,
+        "duration": 0.2
+      },
+      "result": {
+        "ok": true,
+        "data": {
+          "workspaceRoot": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate",
+          "operation": "xr.set-select-value",
+          "result": {
+            "device": "hand-right",
+            "value": 0
+          }
+        }
+      }
+    },
+    {
+      "state": {
+        "ok": true,
+        "data": {
+          "operation": "browser.run",
+          "result": {
+            "phase": "needs-user",
+            "message": "My side view cannot add missing length. Extend your cyan outline across the amber marks.",
+            "revision": 15,
+            "frontPixels": 90,
+            "instances": 828,
+            "decision": {
+              "phase": "needs-user",
+              "pass": false,
+              "failures": [
+                "DISCONNECTED_SPAN"
+              ],
+              "pathLength": 0,
+              "attempts": 24,
+              "workerMs": 149.2999999821186
+            },
+            "renderer": {
+              "frame": 9652,
+              "calls": 64,
+              "triangles": 41532,
+              "points": 0,
+              "lines": 0
+            },
+            "camera": {
+              "position": [
+                0,
+                1.600000023841858,
+                0
+              ],
+              "fov": 90
+            }
+          },
+          "script": "scripts/inspect.mjs",
+          "workspaceRoot": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate"
+        }
+      }
+    },
+    {
+      "domain": "xr",
+      "action": "set-transform",
+      "input": {
+        "device": "hand-right",
+        "position": {
+          "x": -0.81,
+          "y": 1.265,
+          "z": -1.25
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0
+        }
+      },
+      "result": {
+        "ok": true,
+        "data": {
+          "workspaceRoot": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate",
+          "operation": "xr.set-transform",
+          "result": {
+            "device": "hand-right",
+            "position": {
+              "x": -0.8100000023841858,
+              "y": 1.2649999856948853,
+              "z": -1.25
+            },
+            "orientation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "domain": "xr",
+      "action": "set-select-value",
+      "input": {
+        "device": "hand-right",
+        "value": 1,
+        "duration": 0.2
+      },
+      "result": {
+        "ok": true,
+        "data": {
+          "workspaceRoot": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate",
+          "operation": "xr.set-select-value",
+          "result": {
+            "device": "hand-right",
+            "value": 1
+          }
+        }
+      }
+    },
+    {
+      "domain": "xr",
+      "action": "animate-to",
+      "input": {
+        "device": "hand-right",
+        "position": {
+          "x": 0.4,
+          "y": 1.265,
+          "z": -1.25
+        },
+        "duration": 0.5
+      },
+      "result": {
+        "ok": true,
+        "data": {
+          "workspaceRoot": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate",
+          "operation": "xr.animate-to",
+          "result": {
+            "device": "hand-right",
+            "position": {
+              "x": 0.4000000059604645,
+              "y": 1.2649999856948853,
+              "z": -1.25
+            },
+            "orientation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "actualDuration": 0.5062999999821186
+          }
+        }
+      }
+    },
+    {
+      "domain": "xr",
+      "action": "animate-to",
+      "input": {
+        "device": "hand-right",
+        "position": {
+          "x": 0.4,
+          "y": 1.365,
+          "z": -1.25
+        },
+        "duration": 0.5
+      },
+      "result": {
+        "ok": true,
+        "data": {
+          "workspaceRoot": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate",
+          "operation": "xr.animate-to",
+          "result": {
+            "device": "hand-right",
+            "position": {
+              "x": 0.4000000059604645,
+              "y": 1.3650000095367432,
+              "z": -1.25
+            },
+            "orientation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "actualDuration": 0.516
+          }
+        }
+      }
+    },
+    {
+      "domain": "xr",
+      "action": "animate-to",
+      "input": {
+        "device": "hand-right",
+        "position": {
+          "x": -0.81,
+          "y": 1.365,
+          "z": -1.25
+        },
+        "duration": 0.5
+      },
+      "result": {
+        "ok": true,
+        "data": {
+          "workspaceRoot": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate",
+          "operation": "xr.animate-to",
+          "result": {
+            "device": "hand-right",
+            "position": {
+              "x": -0.8100000023841858,
+              "y": 1.3650000095367432,
+              "z": -1.25
+            },
+            "orientation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "actualDuration": 0.5173000000119209
+          }
+        }
+      }
+    },
+    {
+      "domain": "xr",
+      "action": "animate-to",
+      "input": {
+        "device": "hand-right",
+        "position": {
+          "x": -0.81,
+          "y": 1.265,
+          "z": -1.25
+        },
+        "duration": 0.5
+      },
+      "result": {
+        "ok": true,
+        "data": {
+          "workspaceRoot": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate",
+          "operation": "xr.animate-to",
+          "result": {
+            "device": "hand-right",
+            "position": {
+              "x": -0.8100000023841858,
+              "y": 1.2649999856948853,
+              "z": -1.25
+            },
+            "orientation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "actualDuration": 0.5100999999940395
+          }
+        }
+      }
+    },
+    {
+      "domain": "xr",
+      "action": "set-select-value",
+      "input": {
+        "device": "hand-right",
+        "value": 0,
+        "duration": 0.2
+      },
+      "result": {
+        "ok": true,
+        "data": {
+          "workspaceRoot": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate",
+          "operation": "xr.set-select-value",
+          "result": {
+            "device": "hand-right",
+            "value": 0
+          }
+        }
+      }
+    },
+    {
+      "state": {
+        "ok": true,
+        "data": {
+          "operation": "browser.run",
+          "result": {
+            "phase": "construction-success",
+            "message": "A path! Both perspectives work. Let’s cross together.",
+            "revision": 17,
+            "frontPixels": 150,
+            "instances": 900,
+            "decision": {
+              "phase": "success",
+              "pass": true,
+              "failures": [],
+              "pathLength": 28,
+              "attempts": 24,
+              "workerMs": 76.60000002384186
+            },
+            "renderer": {
+              "frame": 10410,
+              "calls": 64,
+              "triangles": 43260,
+              "points": 0,
+              "lines": 0
+            },
+            "camera": {
+              "position": [
+                0,
+                1.600000023841858,
+                0
+              ],
+              "fov": 90
+            }
+          },
+          "script": "scripts/inspect.mjs",
+          "workspaceRoot": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate"
+        }
+      }
+    },
+    {
+      "state": {
+        "ok": true,
+        "data": {
+          "operation": "browser.run",
+          "result": {
+            "phase": "level-complete",
+            "message": "You extended the length. I replanned the depth. Together, we found the way. Replay either level.",
+            "revision": 17,
+            "frontPixels": 150,
+            "instances": 900,
+            "decision": {
+              "phase": "success",
+              "pass": true,
+              "failures": [],
+              "pathLength": 28,
+              "attempts": 24,
+              "workerMs": 76.60000002384186
+            },
+            "renderer": {
+              "frame": 10486,
+              "calls": 64,
+              "triangles": 43260,
+              "points": 0,
+              "lines": 0
+            },
+            "camera": {
+              "position": [
+                0,
+                1.600000023841858,
+                0
+              ],
+              "fov": 90
+            }
+          },
+          "script": "scripts/inspect.mjs",
+          "workspaceRoot": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate"
+        }
+      }
+    }
+  ]
+}
