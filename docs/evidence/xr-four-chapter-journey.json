@@ -8,7 +8,7 @@
         "result": {
           "phase": "needs-user",
           "frontPixels": 0,
-          "message": "Drawing interrupted. Your previous outline is safe. Release and try again."
+          "message": "Hand tracking lost. Your outline is safe. Pinch again when your hands reappear."
         },
         "script": "scripts/assert-disconnected-stroke.mjs",
         "workspaceRoot": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate"
@@ -1107,5 +1107,5 @@
       }
     }
   ],
-  "at": "2026-11-07T17:35:20.972Z"
+  "at": "2026-11-07T18:16:09.004Z"
 }

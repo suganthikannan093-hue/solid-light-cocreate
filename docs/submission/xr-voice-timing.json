@@ -1,0 +1,62 @@
+[
+  {
+    "id": "intro",
+    "minimum": 12,
+    "text": "Two views, one solid. In Solid Light, your pinch shapes the cyan outline. Luma chooses the amber depth. Together, you build a route this little traveler can actually cross.",
+    "audio": ".tmp/xr-voice/intro.wav",
+    "audioSeconds": 12,
+    "playbackRate": 0.94,
+    "leadIn": 0.4,
+    "seconds": 13.765957446808512
+  },
+  {
+    "id": "draw",
+    "minimum": 20,
+    "text": "I'll pinch and hold, loop around this short ribbon, then release. My line becomes one silhouette. Luma now tries depth profiles against the actual construction.",
+    "audio": ".tmp/xr-voice/draw.wav",
+    "audioSeconds": 11.65,
+    "playbackRate": 0.94,
+    "leadIn": 0.4,
+    "seconds": 20
+  },
+  {
+    "id": "failure",
+    "minimum": 13,
+    "text": "We haven't reached the far bank. Luma can change depth, but can't add the missing length. That amber section is asking for my help.",
+    "audio": ".tmp/xr-voice/failure.wav",
+    "audioSeconds": 9.15,
+    "playbackRate": 0.94,
+    "leadIn": 0.4,
+    "seconds": 13
+  },
+  {
+    "id": "repair",
+    "minimum": 20,
+    "text": "I'll extend my outline through the gap. Same hand, same simple gesture. Luma keeps its own perspective and tests the new intersection.",
+    "audio": ".tmp/xr-voice/repair.wav",
+    "audioSeconds": 8.6,
+    "playbackRate": 0.94,
+    "leadIn": 0.4,
+    "seconds": 20
+  },
+  {
+    "id": "cross",
+    "minimum": 13,
+    "text": "There's the route. Our traveler crosses only after the solid passes. My outline and Luma's tested depth stay here beside what we made.",
+    "audio": ".tmp/xr-voice/cross.wav",
+    "audioSeconds": 8.8,
+    "playbackRate": 0.94,
+    "leadIn": 0.4,
+    "seconds": 13
+  },
+  {
+    "id": "outro",
+    "minimum": 13,
+    "text": "That hand-off is the heart of co-creation. Captured in the official Immersive Web SDK emulator with hand input. Physical-device performance and usability testing are still pending.",
+    "audio": ".tmp/xr-voice/outro.wav",
+    "audioSeconds": 11.85,
+    "playbackRate": 0.94,
+    "leadIn": 0.4,
+    "seconds": 13.606382978723405
+  }
+]

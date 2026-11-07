@@ -7,4 +7,6 @@
 06: real official IWER emulated-hand Level 2 completion.
 creature-model: official isolated procedural asset preview, not gameplay.
 
-Desktop captures may be replaced by the latest successful production E2E run. All files are real runtime/editor tool captures; no AI-generated gameplay or synthetic success imagery. See ../.. /QA-report.md and evidence JSON for exact test/build limitations. None is a physical Quest capture.
+17–20: official IWER XR demo stills. 17 is the emulator tab at crossing; 18 is seated-headset emulator view (1.2 m); 19 is the clean XR framebuffer at missing-length diagnosis; 20 is the same framebuffer at “WE BUILT THIS TOGETHER.”
+
+Desktop captures may be replaced by the latest successful production E2E run. All files are real runtime/editor tool captures; no AI-generated gameplay or synthetic success imagery. See ../../QA-report.md and evidence JSON for exact test/build limitations. None is a physical Quest capture.

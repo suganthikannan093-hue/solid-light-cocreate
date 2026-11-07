@@ -1,0 +1,25 @@
+{
+  "measuredBeforeFix": true,
+  "source": "Public pointer-event observer during fixed-origin ray rotation; transcribed from runtime diagnostic output",
+  "rayOrigin": [
+    0.20000000298,
+    1.35000002384,
+    -0.30000001192
+  ],
+  "requestedUV": [
+    0.97,
+    0.39
+  ],
+  "capturedPoint": [
+    -0.2696581812359377,
+    1.3936617501749584,
+    -2.2913266421302634
+  ],
+  "pointOnFace": [
+    -0.11840006372750411,
+    1.379600054341136,
+    -1.649999976158142
+  ],
+  "planeZ": -1.65,
+  "consequence": "Using capturedPoint as planar ink shortened the span; pointOnFace matches the aimed board position."
+}

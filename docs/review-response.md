@@ -33,4 +33,4 @@ Both boards name their ownership: the human supplies length and height; LUMA cho
 
 The finale retains the real structure and both silhouettes, credits human and LUMA separately, names their combined result, offers workshop continuation and uses a brief reduced-motion-aware light celebration. Boards render after sparks, sparks do not write depth, and real near hands can still occlude UI correctly. The desktop perpendicular plane has a material-level visibility gate in addition to object visibility.
 
-Owner confirmed no Quest is available. Real hand tracking, comfort/readability, tracking-loss recovery and headset footage remain open. Emulator disconnection and full-journey checks are separate evidence.
+Owner confirmed no Quest is available. Real hand tracking, comfort/readability and original headset footage remain open. Emulator mid-stroke hand disconnect now keeps the outline and announces “Hand tracking lost… Pinch again when your hands reappear.” Four-chapter hands, seated 1.2 m pose, FOV 90° and a 100.9 s pinch-only Incomplete Span capture are emulator evidence.

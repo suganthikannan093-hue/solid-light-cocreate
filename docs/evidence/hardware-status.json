@@ -5,5 +5,14 @@
   "physicalComfortAndReadability": "not tested",
   "headsetRecording": "not recorded; hardware unavailable",
   "emulatorEvidenceIsSeparate": true,
-  "at": "2026-11-07T17:28:29.057166+00:00"
+  "emulator": {
+    "device": "IWER Meta Quest 3",
+    "fourChapterHands": true,
+    "trackingLossRecovery": true,
+    "seatedHeadsetY": 1.2,
+    "reportedFov": 90,
+    "xrDemoSeconds": 100.9,
+    "note": "Emulator seated pose, FOV and hand disconnect do not establish physical Quest performance."
+  },
+  "at": "2026-11-07T18:16:41.163Z"
 }

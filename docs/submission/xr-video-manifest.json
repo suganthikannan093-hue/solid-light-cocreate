@@ -1,0 +1,11 @@
+{
+  "file": "docs/submission/recordings/solid-light-xr-demo.mp4",
+  "seconds": 100.9,
+  "bytes": 3562321,
+  "sha256": "cc698539940c3893987c79d4bc8b7587f1285029f4004383bf571f063f82e83a",
+  "realGameplay": true,
+  "capture": "Official IWSDK IWER Quest 3 emulator, hand input",
+  "narrator": "OpenAI marin, AI-generated conversational XR narration",
+  "physicalQuest": false,
+  "captions": "docs/submission/solid-light-xr-demo.srt"
+}

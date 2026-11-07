@@ -3,4 +3,4 @@ Light Garden is now default chapter 3. Last Spark is chapter 4 and adds a real r
 
 OpenAI is the selected optional cloud provider. A real bounded connectivity check passed; adapters, consent, schema guards and offline fallback are implemented. The public inference proxy remains undeployed. Vultr remains an optional adapter, with no infrastructure provisioned.
 
-Remaining: physical Quest input/comfort/performance testing, unfamiliar-player testing, public video upload and owner competition eligibility/submission confirmations. Detailed executed evidence is in QA-report.md and docs/evidence/.
+Remaining: physical Quest input/comfort/performance testing (emulator tracking-loss, seated 1.2 m and FOV 90° are recorded separately), unfamiliar-player testing, public video upload of `docs/submission/recordings/solid-light-xr-demo.mp4` and owner competition eligibility/submission confirmations. Detailed executed evidence is in QA-report.md and docs/evidence/.

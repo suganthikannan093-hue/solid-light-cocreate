@@ -57,8 +57,8 @@
   },
   {
     "id": "finale",
-    "minimum": 12,
-    "text": "That's the four-chapter journey. Luma's planner runs locally; OpenAI support is optional. This is desktop footage. We've also checked emulated hands, but testing on a physical Quest is still to come.",
+    "minimum": 18,
+    "text": "We built that together. My outline, Luma's tested depth, and a safe route home. Both contributions stay on display. Next opens the workshop. This is desktop footage; physical Quest testing is still pending.",
     "leadIn": 0.5,
     "playbackRate": 0.92
   }
