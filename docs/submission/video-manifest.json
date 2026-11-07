@@ -1,18 +1,20 @@
 {
   "file": "docs/submission/recordings/solid-light-cocreate-narrated.mp4",
-  "seconds": 159.32,
-  "bytes": 6507856,
+  "seconds": 161.6,
+  "bytes": 6217975,
   "realGameplay": true,
-  "narrator": "macOS Samantha synthesized voice",
+  "narrator": "OpenAI marin, AI-generated conversational narration",
   "gameAudio": "Recorded WebAudio motifs, no microphone",
-  "trimmedLoadingSeconds": 2.391999999999996,
+  "trimmedLoadingSeconds": 4.185000000000002,
   "captions": "docs/submission/solid-light-demo.srt",
-  "sha256": "af9e1eaa3eda58a779c968a59bdfa2075115e126397c665c950c7a718288e449",
+  "sha256": "395409317b786e235ee945ec0382e76af99d82a2ebdba08a74c8a72deea5a9e9",
   "audioChecks": {
-    "meanDb": -19.9,
+    "meanDb": -21.1,
     "peakDb": -4.4,
     "codecs": "H.264 / AAC",
     "resolution": "1280x800"
   },
-  "visualCheck": "Contact sheet inspected; final voice transcript and captions retained."
+  "narrationRevision": "Conversational OpenAI marin, pitch-preserving 0.92x pace, scene-specific pauses; Garden demonstrates separate additive roof loop",
+  "applicationSourceCommit": "a59432835c11547e488c6b3e0fbca811a3f6fd28",
+  "visualCheck": "Compact contact sheet inspected; two-band Garden and caption band visible."
 }

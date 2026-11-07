@@ -1,11 +1,65 @@
 [
- {"id":"intro","minimum":12,"text":"Solid Light: Co-Create. Two minds, two perspectives, one creation. This is real gameplay. Your cyan outline controls length; Luma’s amber view controls depth. Together, they become solid light."},
- {"id":"draw","minimum":16,"text":"Watch the moving example. Hold the mouse button, or pinch in immersive mode, and go around the whole ribbon in one closed loop. Return to the start and release. The stroke appears immediately and stays visible."},
- {"id":"agent","minimum":13,"text":"Luma tests actual voxel constructions for thickness, clearance, and a walking route. The glowing deck has real volume. A white line marks the verified path, and our lightling crosses. Next level is now ready."},
- {"id":"failure","minimum":15,"text":"Level Two begins with a short outline. Luma tests it and finds the missing length. Amber highlights the exact gap. Luma can change depth, but only I can extend my outline to connect A and B."},
- {"id":"replan","minimum":15,"text":"I redraw through the amber section. Luma observes my new revision, tests again, and commits a valid construction. Our traveler crosses the updated geometry. The failure and replan come from real validation, not scripted dialogue."},
- {"id":"controls","minimum":21,"text":"Mistakes are recoverable. Pause and resume, high contrast, reduced motion, and mute have visible states. Clear removes my projection. An open stroke keeps its outline and shows the closing gap. Undo restores earlier work, without changing Luma’s ownership."},
- {"id":"garden","minimum":28,"text":"The Light Garden adds a canopy. A path alone is not enough: Luma asks me to include the upper shelter guide. After my edit, both constraints pass, and falling lights stop at the actual roof. Sturdy uses more material; efficient uses less. Both still need a safe path and real shelter."},
- {"id":"budget","minimum":20,"text":"The Last Spark gives us a limited light budget. This wide shape is safe, but costs too much. Luma cannot trim my projection, so amber marks the excess. I tighten my outline, and the verified crossing fits the budget. Four workshop presets remix span, footprint, and resources."},
- {"id":"finale","minimum":12,"text":"Four connected chapters, then remix challenges. Built with Meta’s Immersive Web SDK. Luma plans locally; optional OpenAI support is separate. This capture uses no cloud inference. Emulated hands are tested; physical Quest validation remains open."}
+  {
+    "id": "intro",
+    "minimum": 12,
+    "text": "Here's Solid Light. The idea is simple: you draw one view, and Luma builds the other. You're working on the same little bridge, from two different angles. Let me show you.",
+    "leadIn": 0.5,
+    "playbackRate": 0.92
+  },
+  {
+    "id": "draw",
+    "minimum": 16,
+    "text": "I'll follow this little example. Hold down the mouse, go around the ribbon, and bring it back to the start. On Quest, you'd pinch instead. Then let go.",
+    "leadIn": 1,
+    "playbackRate": 0.92
+  },
+  {
+    "id": "agent",
+    "minimum": 13,
+    "text": "Now Luma's trying different depths. There's the bridge. That white line is the route it checked, and our little traveler can head across.",
+    "leadIn": 0.5,
+    "playbackRate": 0.92
+  },
+  {
+    "id": "failure",
+    "minimum": 15,
+    "text": "This time, I'll stop short. Luma can make the bridge wider, but it can't add length to my drawing. See those amber marks? That's the bit I need to connect.",
+    "leadIn": 0.3,
+    "playbackRate": 0.92
+  },
+  {
+    "id": "replan",
+    "minimum": 15,
+    "text": "So I'll extend the loop through the gap. Luma checks the new shape, finds a route, and we're across. We each changed our own part.",
+    "leadIn": 1.8,
+    "playbackRate": 0.92
+  },
+  {
+    "id": "controls",
+    "minimum": 21,
+    "text": "Let me show you the controls. You can pause, increase contrast, or reduce motion. And if a drawing goes wrong, you can clear it. Here, I've left the loop open. The dashed line shows the gap. Undo brings the earlier shape back.",
+    "leadIn": 0.3,
+    "playbackRate": 0.92
+  },
+  {
+    "id": "garden",
+    "minimum": 28,
+    "text": "The garden needs a roof as well as a path. I'll keep this lower loop, and draw a second loop around the upper guide. Each loop adds light. Now we've got shelter, with air underneath. We can choose a sturdier build, or use less light with the efficient option.",
+    "leadIn": 1,
+    "playbackRate": 0.92
+  },
+  {
+    "id": "budget",
+    "minimum": 20,
+    "text": "One more challenge: we've only got so much light. This shape goes over budget. I'll pull in the outer edges, keeping the crossing connected. There we go. After this, the workshop changes the span, the traveler's footprint, and the budget.",
+    "leadIn": 0.5,
+    "playbackRate": 0.92
+  },
+  {
+    "id": "finale",
+    "minimum": 12,
+    "text": "That's the four-chapter journey. Luma's planner runs locally; OpenAI support is optional. This is desktop footage. We've also checked emulated hands, but testing on a physical Quest is still to come.",
+    "leadIn": 0.5,
+    "playbackRate": 0.92
+  }
 ]

@@ -17,7 +17,7 @@ Deadline shown: November 18, 2026 at noon PST. Build target accelerated to one d
 - [x] Public trusted HTTPS URL: https://suganthikannan093-hue.github.io/solid-light-cocreate/
 - [x] All six hosted browser scenarios passed, including P0 and Garden/budget play offline after initial load
 - [ ] Hosting maintained throughout judging
-- [x] Real narrated gameplay video rendered and technical/visual checks passed: 159.32s; owner editorial review remains
+- [x] Real narrated gameplay video rendered and technical/visual checks passed: 161.60s; owner editorial review remains
 - [ ] Owner approves video upload to public YouTube/Vimeo
 - [ ] Public video URL: pending
 - [ ] Final Devpost form requirements checked

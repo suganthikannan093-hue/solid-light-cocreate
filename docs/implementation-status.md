@@ -9,7 +9,7 @@ Source of truth: master-specification.md. Accelerated single-day delivery; accep
 | Incomplete Span | First Bridge | Missing-X failure → human extension → replan and crossing | Production browser passed; updated IWER hand journey passed |
 | Light Garden | Stable P0 | Path plus canopy, Sturdy/Efficient tradeoff | Default chapter 3; production browser and IWER hands passed |
 | Last Spark/workshop | Garden | Actual voxel budget, human trim, varying constraints | Default chapter 4; unit, browser and IWER hands passed; four deterministic presets |
-| Review feedback | Core journey | Live loop teaching, persistent stroke, gap hints, volume/readout, Settings/states, responsive framing | Six production browser scenarios passed; official hand journey and Settings/Mute passed; 159.32s real narrated capture passed |
+| Review feedback | Core journey | Live loop teaching, persistent stroke, gap hints, volume/readout, Settings/states, responsive framing | Six production browser scenarios passed; official hand journey and Settings/Mute passed; 161.60s real narrated capture passed |
 | Optional OpenAI | Stable local game | Secret-holding backend, consent/schema/limits/fallback | Local backend/client tests passed; bounded real connectivity passed; public proxy not deployed |
 | Release/video | Verified journey | Production build, hosted tests, real narrated capture, honest submission pack | Build passed; four-chapter build deployed; narrated MP4 ready; all six hosted browser scenarios passed |
 | Physical Quest | Hardware | Hands, reach, legibility, comfort, permissions, sustained FPS | Unverified: no physical Quest available |
@@ -28,3 +28,5 @@ Source of truth: master-specification.md. Accelerated single-day delivery; accep
 Intel x86_64 macOS 26.7.2, 16GiB RAM, Node 26.13.0 / npm 11.20.0. Official SDK scaffold and locked dependencies. Existing sibling projects remain untouched. The final local artifact and hashes are in release/build-manifest.json.
 
 Garden follow-up: additive closed-loop drawing now preserves the path while the player adds a separate roof. Thin guide fixtures and six local production browser scenarios pass. The focused Level 2 → Garden hand-input and final hosted checks are tracked in evidence/xr-garden-additive.json and hosted-e2e.json; older recordings are historical.
+
+The Garden follow-up is deployed: six hosted scenarios passed in 2.4 minutes, and the focused official IWER hand sequence passed Level 2 → Next → separate path/roof → crossing. Refreshed 161.60-second narrated footage and release archive are ready. Hardware testing remains open.

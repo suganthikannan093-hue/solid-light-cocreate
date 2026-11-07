@@ -1,12 +1,17 @@
 {
   "repository": "https://github.com/suganthikannan093-hue/solid-light-cocreate",
   "pages": "https://suganthikannan093-hue.github.io/solid-light-cocreate/",
-  "status": "Four-chapter build deployed and all six hosted browser scenarios passed",
+  "status": "Garden additive fix deployed; all six hosted browser scenarios passed",
   "p0DeploymentRun": "https://github.com/suganthikannan093-hue/solid-light-cocreate/actions/runs/42373724390",
   "p1DeploymentRun": "https://github.com/suganthikannan093-hue/solid-light-cocreate/actions/runs/42375982437",
   "reviewExpansionCommit": "aa9f3a85e155ba5ce943b0e33628e4c6cdc42c8b",
   "reviewExpansionRun": "https://github.com/suganthikannan093-hue/solid-light-cocreate/actions/runs/42386728339",
   "hostedBrowserScenarios": 6,
   "offlineAfterLoad": "P0 playthrough plus Garden and budget scenarios passed with browser network disabled after loading",
-  "narratedVideo": "docs/submission/recordings/solid-light-cocreate-narrated.mp4"
+  "narratedVideo": "docs/submission/recordings/solid-light-cocreate-narrated.mp4",
+  "gardenFixCommit": "a59432835c11547e488c6b3e0fbca811a3f6fd28",
+  "gardenFixRun": "https://github.com/suganthikannan093-hue/solid-light-cocreate/actions/runs/42391009740",
+  "gardenHostedScenarios": 6,
+  "gardenHostedMinutes": 2.4,
+  "gardenIWERHandSequence": "Level 2 crossing \u2192 spatial Next \u2192 thin path \u2192 shelter request \u2192 separate roof \u2192 verified Garden crossing"
 }

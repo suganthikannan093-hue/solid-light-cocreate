@@ -25,7 +25,7 @@ npx @iwsdk/cli browser run scripts/desktop-qa.mjs --timeout 60000
 ```
 
 ## Controls
-Hold the mouse button (or pinch in an immersive session), loop around the thick dotted guide, return to the start and release. A moving example teaches the motion; open loops retain their stroke and show the closing gap. New outlines replace the mask. Undo restores earlier work.
+Hold the mouse button (or pinch in an immersive session), loop around the thick dotted guide, return to the start and release. A moving example teaches the motion; open loops retain their stroke and show the closing gap. In Levels 1, 2 and 4, a new outline replaces the mask. In the Garden, each closed loop adds light: draw the thin path, then a separate roof loop. Undo restores earlier work; Clear starts again.
 
 Next, Undo, Clear, Help and Settings are the primary actions. Settings contains chapter practice, Reset, Pause, Recenter, Enter/Exit XR, Mute, Reduced motion, High contrast and Sturdy/Efficient. Selected and toggle states are visible. Immersive sessions use large spatial controls above the scene's lower edge. Physical Quest validation remains open.
 
@@ -41,4 +41,4 @@ Deployment: docs/deployment.md. Submission drafts: docs/submission/. The master 
 
 Original procedural art and synthesized sounds. SDK scaffold and dependencies retain their upstream licenses. See docs/submission/checklist.md for owner rights and eligibility confirmations.
 
-Narrated gameplay demo: [159-second MP4](docs/submission/recordings/solid-light-cocreate-narrated.mp4), with captions and recorded game audio. This is real desktop gameplay with synthesized narration, not physical headset footage.
+Narrated gameplay demo: [162-second MP4](docs/submission/recordings/solid-light-cocreate-narrated.mp4), with captions and recorded game audio. This is real desktop gameplay with AI-generated conversational narration, not physical headset footage.

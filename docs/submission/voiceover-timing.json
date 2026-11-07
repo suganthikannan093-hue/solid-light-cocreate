@@ -2,73 +2,170 @@
   {
     "id": "intro",
     "minimum": 12,
-    "text": "Solid Light: Co-Create. Two minds, two perspectives, one creation. This is real gameplay. Your cyan outline controls length; Luma\u2019s amber view controls depth. Together, they become solid light.",
-    "audio": ".tmp/voice/intro.aiff",
-    "audioSeconds": 13.400771,
-    "seconds": 14.100771
+    "text": "Here's Solid Light. The idea is simple: you draw one view, and Luma builds the other. You're working on the same little bridge, from two different angles. Let me show you.",
+    "audio": ".tmp/voice-natural/intro.wav",
+    "audioSeconds": 11.25,
+    "seconds": 14.101,
+    "start": 0,
+    "state": {
+      "level": 1,
+      "phase": "onboarding",
+      "revision": 1
+    },
+    "leadIn": 0.5,
+    "voice": "OpenAI marin, AI-generated conversational narration",
+    "playbackRate": 0.92
   },
   {
     "id": "draw",
     "minimum": 16,
-    "text": "Watch the moving example. Hold the mouse button, or pinch in immersive mode, and go around the whole ribbon in one closed loop. Return to the start and release. The stroke appears immediately and stays visible.",
-    "audio": ".tmp/voice/draw.aiff",
-    "audioSeconds": 11.646984,
-    "seconds": 16
+    "text": "I'll follow this little example. Hold down the mouse, go around the ribbon, and bring it back to the start. On Quest, you'd pinch instead. Then let go.",
+    "audio": ".tmp/voice-natural/draw.wav",
+    "audioSeconds": 10.15,
+    "seconds": 16.004,
+    "start": 14.101,
+    "state": {
+      "level": 1,
+      "phase": "agent-testing",
+      "revision": 3
+    },
+    "leadIn": 1,
+    "voice": "OpenAI marin, AI-generated conversational narration",
+    "playbackRate": 0.92
   },
   {
     "id": "agent",
     "minimum": 13,
-    "text": "Luma tests actual voxel constructions for thickness, clearance, and a walking route. The glowing deck has real volume. A white line marks the verified path, and our lightling crosses. Next level is now ready.",
-    "audio": ".tmp/voice/agent.aiff",
-    "audioSeconds": 12.577959,
-    "seconds": 13.277959
+    "text": "Now Luma's trying different depths. There's the bridge. That white line is the route it checked, and our little traveler can head across.",
+    "audio": ".tmp/voice-natural/agent.wav",
+    "audioSeconds": 8.05,
+    "seconds": 13.28,
+    "start": 30.105,
+    "state": {
+      "level": 1,
+      "phase": "level-complete",
+      "revision": 3,
+      "validation": true,
+      "failures": []
+    },
+    "leadIn": 0.5,
+    "voice": "OpenAI marin, AI-generated conversational narration",
+    "playbackRate": 0.92
   },
   {
     "id": "failure",
     "minimum": 15,
-    "text": "Level Two begins with a short outline. Luma tests it and finds the missing length. Amber highlights the exact gap. Luma can change depth, but only I can extend my outline to connect A and B.",
-    "audio": ".tmp/voice/failure.aiff",
-    "audioSeconds": 11.602721,
-    "seconds": 15
+    "text": "This time, I'll stop short. Luma can make the bridge wider, but it can't add length to my drawing. See those amber marks? That's the bit I need to connect.",
+    "audio": ".tmp/voice-natural/failure.wav",
+    "audioSeconds": 10.4,
+    "seconds": 15.003,
+    "start": 43.385,
+    "state": {
+      "level": 2,
+      "phase": "needs-user",
+      "revision": 6,
+      "validation": false,
+      "failures": [
+        "DISCONNECTED_SPAN"
+      ]
+    },
+    "leadIn": 0.3,
+    "voice": "OpenAI marin, AI-generated conversational narration",
+    "playbackRate": 0.92
   },
   {
     "id": "replan",
     "minimum": 15,
-    "text": "I redraw through the amber section. Luma observes my new revision, tests again, and commits a valid construction. Our traveler crosses the updated geometry. The failure and replan come from real validation, not scripted dialogue.",
-    "audio": ".tmp/voice/replan.aiff",
-    "audioSeconds": 13.637596,
-    "seconds": 15
+    "text": "So I'll extend the loop through the gap. Luma checks the new shape, finds a route, and we're across. We each changed our own part.",
+    "audio": ".tmp/voice-natural/replan.wav",
+    "audioSeconds": 8.65,
+    "seconds": 15.007,
+    "start": 58.388,
+    "state": {
+      "level": 2,
+      "phase": "level-complete",
+      "revision": 8,
+      "validation": true,
+      "failures": []
+    },
+    "leadIn": 1.8,
+    "voice": "OpenAI marin, AI-generated conversational narration",
+    "playbackRate": 0.92
   },
   {
     "id": "controls",
     "minimum": 21,
-    "text": "Mistakes are recoverable. Pause and resume, high contrast, reduced motion, and mute have visible states. Clear removes my projection. An open stroke keeps its outline and shows the closing gap. Undo restores earlier work, without changing Luma\u2019s ownership.",
-    "audio": ".tmp/voice/controls.aiff",
-    "audioSeconds": 15.677732,
-    "seconds": 21
+    "text": "Let me show you the controls. You can pause, increase contrast, or reduce motion. And if a drawing goes wrong, you can clear it. Here, I've left the loop open. The dashed line shows the gap. Undo brings the earlier shape back.",
+    "audio": ".tmp/voice-natural/controls.wav",
+    "audioSeconds": 15.65,
+    "seconds": 21.002,
+    "start": 73.395,
+    "state": {
+      "level": 2,
+      "phase": "level-complete",
+      "revision": 13,
+      "validation": true,
+      "failures": []
+    },
+    "leadIn": 0.3,
+    "voice": "OpenAI marin, AI-generated conversational narration",
+    "playbackRate": 0.92
   },
   {
     "id": "garden",
     "minimum": 28,
-    "text": "The Light Garden adds a canopy. A path alone is not enough: Luma asks me to include the upper shelter guide. After my edit, both constraints pass, and falling lights stop at the actual roof. Sturdy uses more material; efficient uses less. Both still need a safe path and real shelter.",
-    "audio": ".tmp/voice/garden.aiff",
-    "audioSeconds": 17.461859,
-    "seconds": 28
+    "text": "The garden needs a roof as well as a path. I'll keep this lower loop, and draw a second loop around the upper guide. Each loop adds light. Now we've got shelter, with air underneath. We can choose a sturdier build, or use less light with the efficient option.",
+    "audio": ".tmp/voice-natural/garden.wav",
+    "audioSeconds": 15.8,
+    "seconds": 28.004,
+    "start": 94.397,
+    "state": {
+      "level": 3,
+      "phase": "level-complete",
+      "revision": 18,
+      "validation": true,
+      "failures": []
+    },
+    "leadIn": 1,
+    "voice": "OpenAI marin, AI-generated conversational narration",
+    "playbackRate": 0.92
   },
   {
     "id": "budget",
     "minimum": 20,
-    "text": "The Last Spark gives us a limited light budget. This wide shape is safe, but costs too much. Luma cannot trim my projection, so amber marks the excess. I tighten my outline, and the verified crossing fits the budget. Four workshop presets remix span, footprint, and resources.",
-    "audio": ".tmp/voice/budget.aiff",
-    "audioSeconds": 17.717279,
-    "seconds": 20
+    "text": "One more challenge: we've only got so much light. This shape goes over budget. I'll pull in the outer edges, keeping the crossing connected. There we go. After this, the workshop changes the span, the traveler's footprint, and the budget.",
+    "audio": ".tmp/voice-natural/budget.wav",
+    "audioSeconds": 15.1,
+    "seconds": 20.004,
+    "start": 122.401,
+    "state": {
+      "level": 4,
+      "phase": "level-complete",
+      "revision": 23,
+      "validation": true,
+      "failures": []
+    },
+    "leadIn": 0.5,
+    "voice": "OpenAI marin, AI-generated conversational narration",
+    "playbackRate": 0.92
   },
   {
     "id": "finale",
     "minimum": 12,
-    "text": "Four connected chapters, then remix challenges. Built with Meta\u2019s Immersive Web SDK. Luma plans locally; optional OpenAI support is separate. This capture uses no cloud inference. Emulated hands are tested; physical Quest validation remains open.",
-    "audio": ".tmp/voice/finale.aiff",
-    "audioSeconds": 16.22059,
-    "seconds": 16.92059
+    "text": "That's the four-chapter journey. Luma's planner runs locally; OpenAI support is optional. This is desktop footage. We've also checked emulated hands, but testing on a physical Quest is still to come.",
+    "audio": ".tmp/voice-natural/finale.wav",
+    "audioSeconds": 12.85,
+    "seconds": 16.923,
+    "start": 142.405,
+    "state": {
+      "level": 4,
+      "phase": "level-complete",
+      "revision": 23,
+      "validation": true,
+      "failures": []
+    },
+    "leadIn": 0.5,
+    "voice": "OpenAI marin, AI-generated conversational narration",
+    "playbackRate": 0.92
   }
 ]

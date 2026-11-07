@@ -1,22 +1,22 @@
 {
-  "artifactSha256": "b2351e1377ff5ba6d8218a66388b777f04842fcd0bba84e18dd33e508454fabc",
+  "artifactSha256": "463e840db2133fdb137a87ff5c3d48f844471a1f520fd884df530d633cd05cbd",
   "files": {
     "dist/.nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "dist/assets/_virtual_iwsdk-disabled-bundled-fonts-BO7XWqUe.js": "13d2d3340629f74eab54eeb019fce80e0d0b965ff88940459ee32b6f12117444",
     "dist/assets/dist-Brupejm_.js": "a74930e9564ba1e7e7964041a17f437ef5fd9ceae7a84772ee12017b75fb3ff2",
-    "dist/assets/index-ByiPwPX7.js": "0ee6daa390c07324a0d31eec4a26b8658a64c0031510252d7cabb8cf01990a1c",
-    "dist/assets/index-CCNKheb3.js": "946ace42710b0254ef8a20aabcfb8b1f1e499a05fb024c8651fd36aefe930b95",
-    "dist/assets/index-DKsI5FLB.css": "c2874c32071d695f628488473fcfaf2c915af77a7dbb44181368e1a27c1b2b89",
+    "dist/assets/index-BrmumEaP.js": "8eff88a9cf1e2978ef0f303da90a477ef01644144ea686c1ce2e375e5aa66ae3",
+    "dist/assets/index-CsenE_1i.js": "712ad10b43b12990777370a03e4db0e7073e9d3ab76bc07aa0a6a48a70fad8a3",
+    "dist/assets/index-D_T6o2JG.css": "b416e9e88d97d0b3998507b7d0f84a873a9c6aed332693b15cdb08397e0e639c",
     "dist/assets/inter-BNVRAYFH.js": "9159b2ed54dfb23ebadd61a9b91deb26fc652b0a6b1748784e9c4b4315f1da31",
     "dist/assets/msdf-worker-BUaSHgMS.js": "320d3d5619bcc7ab27ee700e3448f5c8d3807a7e55796bbc0567074fd90604a0",
-    "dist/assets/physics-runtime-CpxYHafY.js": "774c5e964aeef3c2785d6b683c706458900900454f88d9b397418f560aa0585f",
+    "dist/assets/physics-runtime-K-LpG4_q.js": "14c1a5bc6fdec010a6434449733b3fd657021612e7eb12306671e520a59dd934",
     "dist/assets/physics-worker-C0UdwKyG.js": "a6b2f06867a7755507638b019158e21edf25cf51f37ac6a1754ace0f75c8e13b",
     "dist/assets/planner.worker-fs-KboUs.js": "eea0f1da28b9e1d7eda71cc32a2de09f6307bf70c81344582cfeef03604ed887",
     "dist/assets/worker-D8yl70Ie.js": "e7209cebd8fe67ca83fbf4bcad8831a2d542602a84b33ed62b513c6e9284eaea",
     "dist/assets/worker-_Lh8Vt-i.js": "430e4c9e12f79a4c6c5fb3c410bcd85d4661151d098080713b5df3ac8b275001",
-    "dist/assets/world-initializer-WcyIf91V.js": "eebdc197a29a659e7d9372f69d8d9c714fcdfb2c80eeef1390520be29b427efc",
+    "dist/assets/world-initializer-D6pznCnp.js": "7ca8576c994b98a14a11b5f1a56003f7aba9d9c80148495a1473093a7026873b",
     "dist/audio/chime.mp3": "be5e1bbb6e08c65a31ab7df425da7f3a7cdd59481ce966711bab09b41da7428d",
-    "dist/index.html": "867c9aa7479bc7f526ed09995e7a3a088daaa41d2fc650753d38e617a8ce9484",
+    "dist/index.html": "1da71e3de9154ce4820a6148dacd4b86aa61442b9dcbc0496ed2ab6202a55754",
     "dist/scenes/AGENTS.md": "4451a5b98ba38a835cca3fc49666cbe62ba77353f6b8d0ed7d46b691d35067c1",
     "dist/scenes/main.iwsdk.scene.json": "b0d6c31e7839be92a28a3ca8946d4cef9960931574f142763851d6438ebb3bc3",
     "dist/ui/AGENTS.md": "abe74e27fdcd33f9fbdfa6fef5b11cd1427fe15c66fec1a0b884f3a09b750266",
@@ -26,7 +26,7 @@
     "dist/ui/welcome.uikitml": "e2417f2cf63d2f340fda69d2a3e37ecc0d6fcb1659f97229f182b76e56c94427"
   },
   "sdk": "1.1.0-rc.2",
-  "scope": "local static artifact: four default chapters and four workshop presets; optional cloud adapters, no credentials or deployed backend",
-  "builtAt": "2026-11-07T15:26:37.170637+00:00",
-  "applicationSourceCommit": "aa9f3a85e155ba5ce943b0e33628e4c6cdc42c8b"
+  "scope": "Four chapters, Garden additive path/roof loops, workshop presets; no client credentials",
+  "builtAt": "2026-11-07T16:22:01.475017+00:00",
+  "applicationSourceCommit": "a59432835c11547e488c6b3e0fbca811a3f6fd28"
 }
