@@ -16,5 +16,4 @@ try:
  result={'repository':'https://github.com/'+repo,'pages':pages.get('html_url'),'status':'pushed; deployment and public gameplay verification pending'}
  pathlib.Path('docs/evidence/publication.json').write_text(json.dumps(result,indent=2));print(json.dumps(result))
 finally:
- try:secret_path.unlink()
- except FileNotFoundError:pass
+ token=''  # Caller removes the private delivery file after deployment verification.
