@@ -9,9 +9,9 @@ Source of truth: master-specification.md. Accelerated single-day delivery; accep
 | Incomplete Span | First Bridge | Missing-X failure → human extension → replan and crossing | Production browser passed; updated IWER hand journey passed |
 | Light Garden | Stable P0 | Path plus canopy, Sturdy/Efficient tradeoff | Default chapter 3; production browser and IWER hands passed |
 | Last Spark/workshop | Garden | Actual voxel budget, human trim, varying constraints | Default chapter 4; unit, browser and IWER hands passed; four deterministic presets |
-| Review feedback | Core journey | Live loop teaching, persistent stroke, gap hints, volume/readout, Settings/states, responsive framing | Six production browser scenarios passed; official hand journey and Settings/Mute passed; final narrated capture in progress |
+| Review feedback | Core journey | Live loop teaching, persistent stroke, gap hints, volume/readout, Settings/states, responsive framing | Six production browser scenarios passed; official hand journey and Settings/Mute passed; 159.32s real narrated capture passed |
 | Optional OpenAI | Stable local game | Secret-holding backend, consent/schema/limits/fallback | Local backend/client tests passed; bounded real connectivity passed; public proxy not deployed |
-| Release/video | Verified journey | Production build, hosted tests, real narrated capture, honest submission pack | Build passed; older public revision live; updated publication/video in progress |
+| Release/video | Verified journey | Production build, hosted tests, real narrated capture, honest submission pack | Build passed; four-chapter build deployed; narrated MP4 ready; all six hosted browser scenarios passed |
 | Physical Quest | Hardware | Hands, reach, legibility, comfort, permissions, sustained FPS | Unverified: no physical Quest available |
 
 ## Decisions and risks

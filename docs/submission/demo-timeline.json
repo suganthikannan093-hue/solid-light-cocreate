@@ -1,0 +1,152 @@
+{
+  "url": "https://localhost:4173/?level3=1",
+  "duration": 159.328,
+  "audioOffset": 0.312,
+  "voice": "macOS Samantha synthesized English voiceover",
+  "timeline": [
+    {
+      "id": "intro",
+      "minimum": 12,
+      "text": "Solid Light: Co-Create. Two minds, two perspectives, one creation. This is real gameplay. Your cyan outline controls length; Luma’s amber view controls depth. Together, they become solid light.",
+      "audio": ".tmp/voice/intro.aiff",
+      "audioSeconds": 13.400771,
+      "seconds": 14.101,
+      "start": 0,
+      "state": {
+        "level": 1,
+        "phase": "onboarding",
+        "revision": 1
+      }
+    },
+    {
+      "id": "draw",
+      "minimum": 16,
+      "text": "Watch the moving example. Hold the mouse button, or pinch in immersive mode, and go around the whole ribbon in one closed loop. Return to the start and release. The stroke appears immediately and stays visible.",
+      "audio": ".tmp/voice/draw.aiff",
+      "audioSeconds": 11.646984,
+      "seconds": 16.004,
+      "start": 14.101,
+      "state": {
+        "level": 1,
+        "phase": "agent-testing",
+        "revision": 3
+      }
+    },
+    {
+      "id": "agent",
+      "minimum": 13,
+      "text": "Luma tests actual voxel constructions for thickness, clearance, and a walking route. The glowing deck has real volume. A white line marks the verified path, and our lightling crosses. Next level is now ready.",
+      "audio": ".tmp/voice/agent.aiff",
+      "audioSeconds": 12.577959,
+      "seconds": 13.28,
+      "start": 30.105,
+      "state": {
+        "level": 1,
+        "phase": "level-complete",
+        "revision": 3,
+        "validation": true,
+        "failures": []
+      }
+    },
+    {
+      "id": "failure",
+      "minimum": 15,
+      "text": "Level Two begins with a short outline. Luma tests it and finds the missing length. Amber highlights the exact gap. Luma can change depth, but only I can extend my outline to connect A and B.",
+      "audio": ".tmp/voice/failure.aiff",
+      "audioSeconds": 11.602721,
+      "seconds": 15.003,
+      "start": 43.385,
+      "state": {
+        "level": 2,
+        "phase": "needs-user",
+        "revision": 6,
+        "validation": false,
+        "failures": [
+          "DISCONNECTED_SPAN"
+        ]
+      }
+    },
+    {
+      "id": "replan",
+      "minimum": 15,
+      "text": "I redraw through the amber section. Luma observes my new revision, tests again, and commits a valid construction. Our traveler crosses the updated geometry. The failure and replan come from real validation, not scripted dialogue.",
+      "audio": ".tmp/voice/replan.aiff",
+      "audioSeconds": 13.637596,
+      "seconds": 15.007,
+      "start": 58.388,
+      "state": {
+        "level": 2,
+        "phase": "level-complete",
+        "revision": 8,
+        "validation": true,
+        "failures": []
+      }
+    },
+    {
+      "id": "controls",
+      "minimum": 21,
+      "text": "Mistakes are recoverable. Pause and resume, high contrast, reduced motion, and mute have visible states. Clear removes my projection. An open stroke keeps its outline and shows the closing gap. Undo restores earlier work, without changing Luma’s ownership.",
+      "audio": ".tmp/voice/controls.aiff",
+      "audioSeconds": 15.677732,
+      "seconds": 21.002,
+      "start": 73.395,
+      "state": {
+        "level": 2,
+        "phase": "level-complete",
+        "revision": 13,
+        "validation": true,
+        "failures": []
+      }
+    },
+    {
+      "id": "garden",
+      "minimum": 28,
+      "text": "The Light Garden adds a canopy. A path alone is not enough: Luma asks me to include the upper shelter guide. After my edit, both constraints pass, and falling lights stop at the actual roof. Sturdy uses more material; efficient uses less. Both still need a safe path and real shelter.",
+      "audio": ".tmp/voice/garden.aiff",
+      "audioSeconds": 17.461859,
+      "seconds": 28.004,
+      "start": 94.397,
+      "state": {
+        "level": 3,
+        "phase": "level-complete",
+        "revision": 18,
+        "validation": true,
+        "failures": []
+      }
+    },
+    {
+      "id": "budget",
+      "minimum": 20,
+      "text": "The Last Spark gives us a limited light budget. This wide shape is safe, but costs too much. Luma cannot trim my projection, so amber marks the excess. I tighten my outline, and the verified crossing fits the budget. Four workshop presets remix span, footprint, and resources.",
+      "audio": ".tmp/voice/budget.aiff",
+      "audioSeconds": 17.717279,
+      "seconds": 20.004,
+      "start": 122.401,
+      "state": {
+        "level": 4,
+        "phase": "level-complete",
+        "revision": 23,
+        "validation": true,
+        "failures": []
+      }
+    },
+    {
+      "id": "finale",
+      "minimum": 12,
+      "text": "Four connected chapters, then remix challenges. Built with Meta’s Immersive Web SDK. Luma plans locally; optional OpenAI support is separate. This capture uses no cloud inference. Emulated hands are tested; physical Quest validation remains open.",
+      "audio": ".tmp/voice/finale.aiff",
+      "audioSeconds": 16.22059,
+      "seconds": 16.923,
+      "start": 142.405,
+      "state": {
+        "level": 4,
+        "phase": "level-complete",
+        "revision": 23,
+        "validation": true,
+        "failures": []
+      }
+    }
+  ],
+  "errors": [],
+  "recordedAt": "2026-11-07T15:32:26.510Z"
+}

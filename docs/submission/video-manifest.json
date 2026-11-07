@@ -1,0 +1,18 @@
+{
+  "file": "docs/submission/recordings/solid-light-cocreate-narrated.mp4",
+  "seconds": 159.32,
+  "bytes": 6507856,
+  "realGameplay": true,
+  "narrator": "macOS Samantha synthesized voice",
+  "gameAudio": "Recorded WebAudio motifs, no microphone",
+  "trimmedLoadingSeconds": 2.391999999999996,
+  "captions": "docs/submission/solid-light-demo.srt",
+  "sha256": "af9e1eaa3eda58a779c968a59bdfa2075115e126397c665c950c7a718288e449",
+  "audioChecks": {
+    "meanDb": -19.9,
+    "peakDb": -4.4,
+    "codecs": "H.264 / AAC",
+    "resolution": "1280x800"
+  },
+  "visualCheck": "Contact sheet inspected; final voice transcript and captions retained."
+}

@@ -32,7 +32,7 @@ Next, Undo, Clear, Help and Settings are the primary actions. Settings contains 
 ## Journey
 Four default chapters: First Bridge teaches the loop; Incomplete Span requires extending the human projection; Light Garden adds a protective canopy; Last Spark adds a strict voxel budget. Next then cycles four workshop presets that change span, creature footprint and resources. Success requires a real validated route and traveler crossing. An already sufficient drawing can succeed directly.
 
-Live demo: https://suganthikannan093-hue.github.io/solid-light-cocreate/ . The newest local changes are published only after regression checks. Optional OpenAI/Vultr adapters use a separate secret-holding HTTPS backend and explicit consent. OpenAI is the default provider; its key connectivity has been tested, but a public inference proxy is not deployed. No key belongs in this frontend. See docs/optional-cloud.md.
+Live demo: https://suganthikannan093-hue.github.io/solid-light-cocreate/ . The four-chapter build passed six hosted browser scenarios and the official four-chapter emulator hand journey. Optional OpenAI/Vultr adapters use a separate secret-holding HTTPS backend and explicit consent. OpenAI is the default provider; its key connectivity has been tested, but a public inference proxy is not deployed. No key belongs in this frontend. See docs/optional-cloud.md.
 
 ## Engineering
 32³ occupancy V(x,y,z)=F(x,y)&S(z,y); even-odd rasterization, exposed instanced cubes, worker candidate search, bank-anchored rigid-deck walkability BFS, revision guards. World units are meters. See docs/architecture.md and docs/implementation-status.md.
@@ -40,3 +40,5 @@ Live demo: https://suganthikannan093-hue.github.io/solid-light-cocreate/ . The n
 Deployment: docs/deployment.md. Submission drafts: docs/submission/. The master specification is preserved at docs/master-specification.md.
 
 Original procedural art and synthesized sounds. SDK scaffold and dependencies retain their upstream licenses. See docs/submission/checklist.md for owner rights and eligibility confirmations.
+
+Narrated gameplay demo: [159-second MP4](docs/submission/recordings/solid-light-cocreate-narrated.mp4), with captions and recorded game audio. This is real desktop gameplay with synthesized narration, not physical headset footage.

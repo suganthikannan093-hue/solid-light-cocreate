@@ -1,2 +1,4 @@
-# Real gameplay recording
-production-playthrough-raw.webm is an unedited, silent Playwright recording of the real production build: Level 1, actual Level 2 failure/replan/success, and recovery interactions. It is evidence, not a narrated final competition video. The latest passing production test refreshes this recording. Use video-script.md and video-shot-list.md for an edited, narrated public upload under three minutes. No upload or public video URL has been created.
+# Gameplay recordings
+`solid-light-cocreate-narrated.mp4` is the final local narrated demo: 159.32 seconds, 1280×800 H.264/AAC, captions, real game audio and locally synthesized Samantha narration. It shows the four-chapter default journey, actual failures/repairs, verified crossings and recovery/accessibility features. It is real desktop gameplay, not headset footage, and uses no cloud inference.
+
+`solid-light-full-demo-raw.webm` is its unedited browser capture. `../demo-timeline.json` records actual planner states and timing; `../video-manifest.json` describes the rendered result; `../solid-light-demo.srt` supplies captions. Earlier silent production/Garden recordings are historical QA evidence. No YouTube/Vimeo upload has occurred.

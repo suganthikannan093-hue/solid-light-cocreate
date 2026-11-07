@@ -1,0 +1,151 @@
+1
+00:00:00,000 --> 00:00:04,467
+Solid Light: Co-Create. Two minds, two perspectives, one creation. This
+
+2
+00:00:04,467 --> 00:00:08,934
+is real gameplay. Your cyan outline controls length; Luma’s amber
+
+3
+00:00:08,934 --> 00:00:13,401
+view controls depth. Together, they become solid light.
+
+4
+00:00:14,101 --> 00:00:17,013
+Watch the moving example. Hold the mouse button, or pinch
+
+5
+00:00:17,013 --> 00:00:19,924
+in immersive mode, and go around the whole ribbon in
+
+6
+00:00:19,924 --> 00:00:22,836
+one closed loop. Return to the start and release. The
+
+7
+00:00:22,836 --> 00:00:25,748
+stroke appears immediately and stays visible.
+
+8
+00:00:30,105 --> 00:00:33,249
+Luma tests actual voxel constructions for thickness, clearance, and a
+
+9
+00:00:33,249 --> 00:00:36,394
+walking route. The glowing deck has real volume. A white
+
+10
+00:00:36,394 --> 00:00:39,538
+line marks the verified path, and our lightling crosses. Next
+
+11
+00:00:39,538 --> 00:00:42,683
+level is now ready.
+
+12
+00:00:43,385 --> 00:00:46,286
+Level Two begins with a short outline. Luma tests it
+
+13
+00:00:46,286 --> 00:00:49,186
+and finds the missing length. Amber highlights the exact gap.
+
+14
+00:00:49,186 --> 00:00:52,087
+Luma can change depth, but only I can extend my
+
+15
+00:00:52,087 --> 00:00:54,988
+outline to connect A and B.
+
+16
+00:00:58,388 --> 00:01:01,797
+I redraw through the amber section. Luma observes my new
+
+17
+00:01:01,797 --> 00:01:05,207
+revision, tests again, and commits a valid construction. Our traveler
+
+18
+00:01:05,207 --> 00:01:08,616
+crosses the updated geometry. The failure and replan come from
+
+19
+00:01:08,616 --> 00:01:12,026
+real validation, not scripted dialogue.
+
+20
+00:01:13,395 --> 00:01:17,314
+Mistakes are recoverable. Pause and resume, high contrast, reduced motion,
+
+21
+00:01:17,314 --> 00:01:21,234
+and mute have visible states. Clear removes my projection. An
+
+22
+00:01:21,234 --> 00:01:25,153
+open stroke keeps its outline and shows the closing gap.
+
+23
+00:01:25,153 --> 00:01:29,073
+Undo restores earlier work, without changing Luma’s ownership.
+
+24
+00:01:34,397 --> 00:01:37,307
+The Light Garden adds a canopy. A path alone is
+
+25
+00:01:37,307 --> 00:01:40,218
+not enough: Luma asks me to include the upper shelter
+
+26
+00:01:40,218 --> 00:01:43,128
+guide. After my edit, both constraints pass, and falling lights
+
+27
+00:01:43,128 --> 00:01:46,038
+stop at the actual roof. Sturdy uses more material; efficient
+
+28
+00:01:46,038 --> 00:01:48,949
+uses less. Both still need a safe path and real
+
+29
+00:01:48,949 --> 00:01:51,859
+shelter.
+
+30
+00:02:02,401 --> 00:02:05,944
+The Last Spark gives us a limited light budget. This
+
+31
+00:02:05,944 --> 00:02:09,488
+wide shape is safe, but costs too much. Luma cannot
+
+32
+00:02:09,488 --> 00:02:13,031
+trim my projection, so amber marks the excess. I tighten
+
+33
+00:02:13,031 --> 00:02:16,575
+my outline, and the verified crossing fits the budget. Four
+
+34
+00:02:16,575 --> 00:02:20,118
+workshop presets remix span, footprint, and resources.
+
+35
+00:02:22,405 --> 00:02:26,460
+Four connected chapters, then remix challenges. Built with Meta’s Immersive
+
+36
+00:02:26,460 --> 00:02:30,515
+Web SDK. Luma plans locally; optional OpenAI support is separate.
+
+37
+00:02:30,515 --> 00:02:34,570
+This capture uses no cloud inference. Emulated hands are tested;
+
+38
+00:02:34,570 --> 00:02:38,626
+physical Quest validation remains open.

@@ -27,5 +27,6 @@
   },
   "sdk": "1.1.0-rc.2",
   "scope": "local static artifact: four default chapters and four workshop presets; optional cloud adapters, no credentials or deployed backend",
-  "builtAt": "2026-11-07T15:26:37.170637+00:00"
+  "builtAt": "2026-11-07T15:26:37.170637+00:00",
+  "applicationSourceCommit": "aa9f3a85e155ba5ce943b0e33628e4c6cdc42c8b"
 }

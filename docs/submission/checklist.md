@@ -11,13 +11,13 @@ Deadline shown: November 18, 2026 at noon PST. Build target accelerated to one d
 - [ ] Submission statements, team details and proposed launch date approved
 
 ## Release
-- [ ] P0 acceptance gates closed (see QA-report.md)
+- [x] Software P0 gates passed; physical Quest remains explicitly unverified (see QA-report.md)
 - [ ] Physical Quest script executed, or limitations accurately disclosed
 - [x] Owner approves external deployment (new repository, 2026-11-07)
 - [x] Public trusted HTTPS URL: https://suganthikannan093-hue.github.io/solid-light-cocreate/
-- [x] Production public URL tested for both P0 levels and asset/worker paths; latest four-chapter hosted rerun pending
+- [x] All six hosted browser scenarios passed, including P0 and Garden/budget play offline after initial load
 - [ ] Hosting maintained throughout judging
-- [ ] Real gameplay video under 3 minutes reviewed
+- [x] Real narrated gameplay video rendered and technical/visual checks passed: 159.32s; owner editorial review remains
 - [ ] Owner approves video upload to public YouTube/Vimeo
 - [ ] Public video URL: pending
 - [ ] Final Devpost form requirements checked

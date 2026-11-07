@@ -21,3 +21,9 @@ Emulator automation initially skewed the stroke when interpolating rotating rays
 Physical Quest 3/3S input reliability, seated reach, legibility, comfort, permissions, sustained FPS/thermal behavior, OS background/foreground and cold offline loading remain unverified. There is no service worker. Unfamiliar-human onboarding and long resource soak remain open. See quest-test-script.md.
 
 Final hosted regression and narrated video status are recorded in hosted-e2e.json and submission/video-manifest.json when completed. No public YouTube/Vimeo upload, owner eligibility confirmation or Devpost submission is claimed. The public cloud proxy is not deployed.
+
+## Narrated capture
+Real production four-chapter progression passed through actual mouse input, including expected failure types and recovery controls. Narrated MP4 is 159.32 seconds, H.264/AAC 1280×800, 6.51 MB. The final image contact sheet was inspected; game audio and narration are present, measured mean −19.9 dB / peak −4.4 dB. Captions and timeline are retained. Narrator is locally synthesized Samantha. This is desktop capture, not physical Quest footage.
+
+## Final hosted regression
+All six scenarios passed against the deployed Pages build in 2.0 minutes. Garden and Last Spark explicitly disabled browser networking after initial load, as did the P0 playthrough. The final FOV framing, live drawing, status/toggle/unsupported-XR behavior and cloud-outage recovery passed on the hosted artifact. Evidence: evidence/hosted-e2e.json. GitHub Actions run 42386728339 passed install/typecheck/unit/build/deploy for application source aa9f3a8.
