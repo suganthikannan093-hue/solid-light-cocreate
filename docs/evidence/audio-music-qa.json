@@ -1,0 +1,26 @@
+{
+  "pass": true,
+  "before": {
+    "state": "running",
+    "muted": false,
+    "paused": false,
+    "music": true,
+    "voice": "",
+    "loaded": 12,
+    "rms": 0.013166682415361357,
+    "time": 143.19466666666668,
+    "error": ""
+  },
+  "after": {
+    "state": "running",
+    "muted": false,
+    "paused": false,
+    "music": true,
+    "voice": "",
+    "loaded": 12,
+    "rms": 0.003840888855250203,
+    "time": 176.20266666666666,
+    "error": ""
+  },
+  "at": "2026-11-08T04:49:52.824Z"
+}

@@ -1,0 +1,66 @@
+{
+  "pass": true,
+  "assets": [
+    {
+      "file": "budget.m4a",
+      "seconds": 5.245,
+      "bytes": 70218
+    },
+    {
+      "file": "build.m4a",
+      "seconds": 3.277,
+      "bytes": 43069
+    },
+    {
+      "file": "chapter2.m4a",
+      "seconds": 5.514,
+      "bytes": 71616
+    },
+    {
+      "file": "chapter3.m4a",
+      "seconds": 5.424,
+      "bytes": 69376
+    },
+    {
+      "file": "chapter4.m4a",
+      "seconds": 5.945,
+      "bytes": 79079
+    },
+    {
+      "file": "finale.m4a",
+      "seconds": 5.785,
+      "bytes": 76758
+    },
+    {
+      "file": "intro.m4a",
+      "seconds": 8.936,
+      "bytes": 114540
+    },
+    {
+      "file": "length.m4a",
+      "seconds": 5.918,
+      "bytes": 78544
+    },
+    {
+      "file": "music.m4a",
+      "seconds": 32.0,
+      "bytes": 497308
+    },
+    {
+      "file": "open.m4a",
+      "seconds": 3.802,
+      "bytes": 50203
+    },
+    {
+      "file": "roof.m4a",
+      "seconds": 6.081,
+      "bytes": 80963
+    },
+    {
+      "file": "success.m4a",
+      "seconds": 3.01,
+      "bytes": 39536
+    }
+  ],
+  "totalBytes": 1271210
+}

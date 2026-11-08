@@ -1,0 +1,77 @@
+{
+  "pass": true,
+  "results": [
+    {
+      "check": "first gesture unlocks music and voice with nonzero output",
+      "state": {
+        "state": "running",
+        "muted": false,
+        "paused": false,
+        "music": true,
+        "voice": "intro",
+        "loaded": 11,
+        "rms": 0.15993397472089782,
+        "time": 0.448,
+        "error": ""
+      }
+    },
+    {
+      "check": "master mute silences music, voice and effects",
+      "state": {
+        "state": "running",
+        "muted": true,
+        "paused": false,
+        "music": true,
+        "voice": "",
+        "loaded": 12,
+        "rms": 0,
+        "time": 3.466666666666667,
+        "error": ""
+      }
+    },
+    {
+      "check": "pause suspends mix",
+      "state": {
+        "state": "suspended",
+        "muted": false,
+        "paused": true,
+        "music": true,
+        "voice": "",
+        "loaded": 12,
+        "rms": 0.07577000682832957,
+        "time": 4.469333333333333,
+        "error": ""
+      }
+    },
+    {
+      "check": "chapter selection replaces voice",
+      "state": {
+        "state": "running",
+        "muted": false,
+        "paused": false,
+        "music": true,
+        "voice": "chapter3",
+        "loaded": 12,
+        "rms": 0.16199818334748736,
+        "time": 4.96,
+        "error": ""
+      }
+    },
+    {
+      "check": "voice works offline after loading",
+      "state": {
+        "state": "running",
+        "muted": false,
+        "paused": false,
+        "music": true,
+        "voice": "chapter4",
+        "loaded": 12,
+        "rms": 0.1455661619286655,
+        "time": 5.290666666666667,
+        "error": ""
+      }
+    }
+  ],
+  "errors": [],
+  "at": "2026-11-08T04:47:01.929Z"
+}

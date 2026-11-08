@@ -1,0 +1,18 @@
+{
+  "pass": true,
+  "result": {
+    "immersive": true,
+    "audio": {
+      "state": "running",
+      "muted": false,
+      "paused": false,
+      "music": true,
+      "voice": "",
+      "loaded": 12,
+      "rms": 0.005186963618081068,
+      "time": 232.92266666666666,
+      "error": ""
+    }
+  },
+  "at": "2026-11-08T04:50:49.546Z"
+}
