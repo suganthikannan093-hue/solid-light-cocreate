@@ -2,19 +2,6 @@
   "pass": true,
   "results": [
     {
-      "ok": true,
-      "data": {
-        "operation": "browser.run",
-        "result": {
-          "phase": "needs-user",
-          "frontPixels": 0,
-          "message": "Hand tracking lost. Your outline is safe. Pinch again when your hands reappear."
-        },
-        "script": "scripts/assert-disconnected-stroke.mjs",
-        "workspaceRoot": "/Users/apple/work/12-competitions/events/2026/meta-vr-start/code/solid-light-cocreate"
-      }
-    },
-    {
       "phase": "complete",
       "level": 1,
       "result": {
@@ -24,6 +11,14 @@
           "result": {
             "level": 1,
             "phase": "level-complete",
+            "message": "LEVEL 1 COMPLETE! Watch our traveler reach the far end. Choose Next level for a new challenge.",
+            "completed": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "roofStep": false,
             "report": {
               "pass": true,
               "path": [
@@ -222,6 +217,14 @@
           "result": {
             "level": 2,
             "phase": "level-complete",
+            "message": "Level 2 complete! You extended the length; I replanned the depth. Choose Next level for the Light Garden.",
+            "completed": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "roofStep": false,
             "report": {
               "pass": true,
               "path": [
@@ -598,6 +601,14 @@
           "result": {
             "level": 3,
             "phase": "level-complete",
+            "message": "The Light Garden is safe. Choose Next level: The Last Spark challenges your light budget.",
+            "completed": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "roofStep": true,
             "report": {
               "pass": true,
               "path": [
@@ -956,6 +967,14 @@
           "result": {
             "level": 4,
             "phase": "level-complete",
+            "message": "WE BUILT THIS TOGETHER! Your cyan length + height and LUMA’s tested amber depth made this safe crossing. Neither view alone is the solid. Our traveler is home. Next: remix the constraints.",
+            "completed": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "roofStep": false,
             "report": {
               "pass": true,
               "path": [
@@ -1107,5 +1126,5 @@
       }
     }
   ],
-  "at": "2026-11-07T18:16:09.004Z"
+  "at": "2026-11-08T04:28:00.505Z"
 }

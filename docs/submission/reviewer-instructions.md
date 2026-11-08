@@ -1,7 +1,7 @@
 # Reviewer instructions
 Public URL: https://suganthikannan093-hue.github.io/solid-light-cocreate/ . Desktop: open the URL in a current browser. Quest: use Quest Browser over trusted HTTPS, open Settings and select Enter XR, allow hand tracking, use spatial controls in the primary spatial row. Physical Quest behavior remains unverified; see QA report.
 
-1. Level 1 starts automatically. Pinch-and-drag (desktop: click-and-drag) a closed ribbon around the dotted cyan-plane guide. Release. LUMA tests side profiles and the traveler crosses a validated bridge.
+1. Level 1 starts automatically. Pinch and hold a closed ribbon around the dotted cyan-plane guide, then release. LUMA tests side profiles and the traveler crosses a validated bridge.
 2. Choose Next level to enter Level 2. Trace its intentionally shorter guide. Wait for LUMA's real missing-length diagnosis and amber column highlight.
 3. Redraw a ribbon extending left-to-right through all highlighted columns. Only your drawing changes the front silhouette. LUMA replans and the traveler crosses.
 4. Undo, Clear, Reset and Pause/Resume recover freely. Use Help for a reminder. High contrast, Reduced motion and Mute are available. One pointing hand suffices; no two-hand gesture or voice input required.

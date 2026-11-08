@@ -9,7 +9,7 @@
   {
     "id": "draw",
     "minimum": 16,
-    "text": "I'll follow this little example. Hold down the mouse, go around the ribbon, and bring it back to the start. On Quest, you'd pinch instead. Then let go.",
+    "text": "I'll follow this little example. Pinch and hold, go around the ribbon, and bring it back to the start. Then release.",
     "leadIn": 1,
     "playbackRate": 0.92
   },
