@@ -1,0 +1,23 @@
+{
+  "pass": true,
+  "deploymentCommit": "6f2717b",
+  "url": "https://suganthikannan093-hue.github.io/solid-light-cocreate/",
+  "desktop": {
+    "audioHintHidden": true,
+    "bundle": [
+      "https://suganthikannan093-hue.github.io/solid-light-cocreate/assets/index-BIEWGuQG.js"
+    ],
+    "canvasBottom": 646,
+    "gap": 12.109375,
+    "height": 800,
+    "panelTop": 658.109375,
+    "width": 1280
+  },
+  "narrow": {
+    "canvasBottom": 593,
+    "gap": 12.71875,
+    "height": 844,
+    "panelTop": 605.71875,
+    "width": 390
+  }
+}
