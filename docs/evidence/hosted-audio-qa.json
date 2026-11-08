@@ -1,0 +1,16 @@
+{
+  "pass": true,
+  "url": "https://suganthikannan093-hue.github.io/solid-light-cocreate/",
+  "deploymentCommit": "b8886db",
+  "bundle": "index-BCDPlxhU.js",
+  "checks": {
+    "helpStartsVoiceAndMusic": true,
+    "decodedAssets": 12,
+    "runningRms": 0.2094896982053515,
+    "mutedRms": 0,
+    "audioErrors": "",
+    "pagesWorkflow": "success"
+  },
+  "at": "2026-11-08T14:29:48.655719+00:00",
+  "device": "shared desktop Chromium; physical Quest unverified"
+}
