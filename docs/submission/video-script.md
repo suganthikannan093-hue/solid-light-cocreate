@@ -1,5 +1,5 @@
 # Narrated gameplay demo
-Primary upload: `recordings/solid-light-xr-demo.mp4` (100.9 s). Canonical XR narration is `xr-narration.json`; timings in `xr-voice-timing.json` and `xr-demo-timeline.json`. Voice: OpenAI marin, pinch/VR only — no mouse or click language. The clip is one Incomplete Span loop: pinch a short ribbon, LUMA cannot add length, the player extends the outline, the traveler crosses. Capture is official IWER Quest 3 hand input, not a physical headset.
+Primary upload: `recordings/solid-light-xr-demo.mp4` (100.9 s). Canonical XR narration is `xr-narration.json`; timings in `xr-voice-timing.json` and `xr-demo-timeline.json`. Voice: OpenAI marin, pinch/VR only — pinch-only language. The clip is one Incomplete Span loop: pinch a short ribbon, LUMA cannot add length, the player extends the outline, the traveler crosses. Capture is official IWER Quest 3 hand input, not a physical headset.
 
 Supplementary four-chapter desktop capture remains `narration.json` / `voiceover-timing.json` / `solid-light-cocreate-narrated.mp4`. Voice: OpenAI marin, an AI-generated conversational voice, separate from LUMA's original game motifs.
 

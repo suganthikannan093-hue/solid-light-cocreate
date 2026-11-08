@@ -51,3 +51,8 @@ Planar ink now samples IWSDK `pointOnFace` so a fixed-origin rotating ray matche
 Seated emulator headset at 1.2 m and reported FOV 90°: `evidence/xr-seated-qa.json`. This is not physical seated reach or Quest FOV.
 
 Primary competition capture is the 100.9 s XR hand demo (`docs/submission/recordings/solid-light-xr-demo.mp4`, H.264/AAC 1280×720, 3.56 MB, SHA256 `cc698539940c3893987c79d4bc8b7587f1285029f4004383bf571f063f82e83a`). It is real IWER hand drawing of Incomplete Span: pinch a short ribbon, LUMA’s missing-length diagnosis, human extension, traveler crossing. Narration is OpenAI marin, pinch/VR only; captions contain no “mouse” or “click”. Physical Quest FPS, pinch reliability and headset recording remain unverified.
+
+## Four-chapter completion follow-up — 2026-11-08
+Chapters 1–4 and the finale passed the recorded sequential desktop journey with no page errors (`docs/evidence/four-chapter-qa.json`, recorded 04:25 UTC). The official IWER hand journey separately passed four crossings and the genuine missing-length, shelter and budget failures (`docs/evidence/xr-four-chapter-journey.json`). This is emulator evidence, not a physical headset playthrough.
+
+Chapter 3 now explicitly guides the separate path and roof steps; Chapter 4 explains the trim and budget challenge. The finale credits both contributors and exposes all four completed chapters. Player-facing guidance uses pinch instructions. A remaining empty-outline planner diagnostic was corrected in this follow-up. TypeScript and all 31 unit tests passed again. The hosted shared-browser check opened the four-chapter build (`index-fasDvgCL.js`) successfully with pinch onboarding and a live game runtime. Physical Quest input, comfort and sustained frame rate remain unverified.

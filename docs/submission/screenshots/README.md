@@ -1,6 +1,6 @@
 # Capture provenance
 01: initial real SDK-managed desktop app, before framing refinement.
-02: real Level 1 completion via automated mouse drawing.
+02: real Level 1 completion via automated desktop drawing.
 03: real Level 2 missing-X failure and geometrically computed highlight.
 04: real Level 2 human extension and replanned completion.
 05: real official IWER Quest 3 emulated-hand Level 1 result.

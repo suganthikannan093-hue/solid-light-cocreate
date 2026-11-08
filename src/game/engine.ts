@@ -89,7 +89,7 @@ export class OfflineStrategyProvider implements StrategyProvider {
   }
   if(best)return {...best,attempts,elapsed:performance.now()-start};
   if(closest){side=closest.side;volume=closest.volume;report=closest.report;}
-  if(!observation.occupied){report={...report,failures:['EMPTY_USER_MASK'],diagnostics:[{reason:'EMPTY_USER_MASK',columns:[],message:'Pinch or drag a closed outline around the dotted guide.'}]};}
+  if(!observation.occupied){report={...report,failures:['EMPTY_USER_MASK'],diagnostics:[{reason:'EMPTY_USER_MASK',columns:[],message:'Pinch and hold to draw a closed outline around the dotted guide.'}]};}
   else if(observation.missingColumns.length){report={...report,failures:['DISCONNECTED_SPAN'],diagnostics:[{reason:'DISCONNECTED_SPAN',columns:observation.missingColumns,message:'My side view cannot add missing length. Extend your cyan outline across the amber marks.'}]};}
   return {phase:'needs-user',side,volume,report,attempts,elapsed:performance.now()-start};
  }
