@@ -1,0 +1,14 @@
+{
+  "pass": true,
+  "runner": "official IWSDK browser run scripts/desktop-qa.mjs",
+  "checks": [
+    "Level 1 crossing",
+    "Level 2 genuine failure",
+    "Level 2 extension and replan crossing",
+    "Clear recovery",
+    "Undo recovery",
+    "tiny stroke recovery"
+  ],
+  "errors": [],
+  "at": "2026-11-08T14:40:58.136341+00:00"
+}
