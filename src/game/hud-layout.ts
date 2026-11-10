@@ -1,3 +1,4 @@
+import {N} from './engine.js';
 import {OUTLINE_LABELS, panelTextWidth} from './labels.js';
 
 export interface Box2 {
@@ -28,15 +29,33 @@ export const BOARD_START_MARGIN = 0.25;
 export function outlinePanelRegions(
   w: number = OUTLINE_LABELS.canvasWidth,
   h: number = OUTLINE_LABELS.canvasHeight,
-): {title: Box2; subtitle: Box2; ghost: Box2; footer: Box2} {
+): {title: Box2; subtitle: Box2; footer: Box2} {
   const x = OUTLINE_LABELS.panelMargin;
   const width = panelTextWidth(w);
   return {
     title: {id: 'Your outline title', x, y: 8, w: width, h: 36},
     subtitle: {id: 'Your outline subtitle', x, y: 46, w: width, h: 30},
-    ghost: {id: 'GHOST EXAMPLE caption', x, y: 100, w: width, h: 108},
     footer: {id: 'panel footer', x, y: h - 32, w: width, h: 24},
   };
+}
+
+/** On-canvas A/B badge bounds. The GHOST EXAMPLE caption is a world-space billboard, not an in-panel label, so it must not occupy this space. */
+export function endpointMarkerRegions(
+  source: number,
+  target: number,
+  w: number = OUTLINE_LABELS.canvasWidth,
+  h: number = OUTLINE_LABELS.canvasHeight,
+): {a: Box2; b: Box2} {
+  const radius = OUTLINE_LABELS.endpointRadius + 10;
+  const boxFor = (cell: number, id: string): Box2 => {
+    const cx = ((cell + 0.5) * w) / N;
+    const cy = (1 - 9 / N) * h;
+    const letterY = cy - 28;
+    const minY = letterY - radius;
+    const maxY = Math.max(letterY + radius, cy + OUTLINE_LABELS.endpointRadius);
+    return {id, x: cx - radius, y: minY, w: radius * 2, h: maxY - minY};
+  };
+  return {a: boxFor(source, 'endpoint A'), b: boxFor(target, 'endpoint B')};
 }
 
 export function statusPanelRegions(

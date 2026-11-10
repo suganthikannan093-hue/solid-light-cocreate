@@ -3,8 +3,10 @@ import {
   outlinePanelRegions,
   statusPanelRegions,
   hudWorldLayout,
+  endpointMarkerRegions,
   separated2,
   separated3,
+  boxesOverlap2,
   boxesOverlap3,
   clampBoardUV,
   isNearBoard,
@@ -12,24 +14,40 @@ import {
   STATUS_CANVAS,
 } from '../src/game/hud-layout';
 import {estimateBoldWidth,wrapAndFit} from '../src/game/labels';
+import {goalFor} from '../src/game/engine';
 
 describe('HUD regions stay apart',()=>{
-  it('keeps outline title, subtitle, ghost caption and footer from overlapping',()=>{
+  it('keeps outline title, subtitle and footer from overlapping, with no in-panel ghost caption region',()=>{
     const regions=outlinePanelRegions();
-    const result=separated2([regions.title,regions.subtitle,regions.ghost,regions.footer]);
+    expect('ghost' in regions).toBe(false);
+    expect(Object.keys(regions).sort()).toEqual(['footer','subtitle','title']);
+    const result=separated2([regions.title,regions.subtitle,regions.footer]);
     expect(result,result.ok?'ok':`${result.a} overlaps ${result.b}`).toEqual({ok:true});
-    expect(regions.ghost.y).toBeGreaterThanOrEqual(regions.subtitle.y+regions.subtitle.h);
     expect(regions.title.y+regions.title.h).toBeLessThanOrEqual(regions.subtitle.y);
   });
 
-  it('keeps the world-space ghost billboard out of the status title and the outline board',()=>{
+  it('places exactly one GHOST EXAMPLE billboard above the board, clear of A/B markers and the status title',()=>{
     const hud=hudWorldLayout({x:-0.72,y:1.45,z:-1.65});
+    const ghostBoxes=Object.values(hud).filter(box=>box.id.includes('GHOST EXAMPLE'));
+    expect(ghostBoxes).toHaveLength(1);
+    expect(ghostBoxes[0].id).toBe('GHOST EXAMPLE billboard');
     const result=separated3([hud.board,hud.ghost,hud.status]);
     expect(result,result.ok?'ok':`${result.a} overlaps ${result.b}`).toEqual({ok:true});
     expect(hud.ghost.minY).toBeGreaterThanOrEqual(hud.board.maxY);
     expect(hud.status.minY).toBeGreaterThanOrEqual(hud.ghost.maxY);
     expect(boxesOverlap3(hud.ghost,hud.status)).toBe(false);
     expect(boxesOverlap3(hud.ghost,hud.board)).toBe(false);
+  });
+
+  it('keeps in-panel chrome off the A and B marker badges',()=>{
+    const goal=goalFor(1);
+    const regions=outlinePanelRegions();
+    const markers=endpointMarkerRegions(goal.source,goal.target);
+    for(const chrome of Object.values(regions)){
+      for(const marker of Object.values(markers)){
+        expect(boxesOverlap2(chrome,marker),`${chrome.id} overlaps ${marker.id}`).toBe(false);
+      }
+    }
   });
 
   it('fits the full SOLID LIGHT: CO-CREATE title in its status region',()=>{
