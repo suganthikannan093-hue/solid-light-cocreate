@@ -32,3 +32,11 @@ button:disabled:hover,button:disabled:focus-visible,#buttons button:disabled:foc
 body.is-immersive #scene-container{bottom:0}
 body.is-immersive #desktop-controls{background:#091326f2}
 .audio-hint{margin:0;width:100%;font-size:12px;color:#9ec9c3}
+
+#xr-actions{display:flex;flex-wrap:wrap;align-items:center;gap:8px;pointer-events:auto;order:-1}
+#xr-actions button{font-weight:750;padding:12px 18px}
+#xr-actions .xr-enter,#buttons .xr-enter{background:#1a746b;border-color:#b8fff5;box-shadow:0 0 16px #5dffd055;font-size:15px;letter-spacing:.02em}
+#xr-actions .xr-enter:hover,#xr-actions .xr-enter:focus-visible{background:#1f8a80;outline:3px solid #e9fffb}
+#xr-actions .xr-preview{background:#243e5c;border-color:#8ec7e4;font-weight:700}
+#xr-actions .xr-preview[hidden]{display:none}
+@media(max-width:700px){#xr-actions{flex-basis:100%}#xr-actions button{padding:10px 14px}}
