@@ -230,3 +230,29 @@ export function paintFittedCaption(
   });
   return {font: fitted.font, lines: fitted.lines, width, height};
 }
+
+export function paintCaptionInBox(
+  ctx: CanvasRenderingContext2D,
+  text: string,
+  box: {x: number; y: number; w: number; h: number},
+  maxFont: number,
+  fill: string,
+): {font: number; lines: string[]; width: number; height: number} {
+  const measure = (line: string, font: number) => {
+    ctx.font = `bold ${font}px system-ui, sans-serif`;
+    return ctx.measureText(line).width;
+  };
+  const fitted = wrapAndFit(text, box.w - 16, maxFont, 16, measure);
+  const lineHeight = fitted.font + 8;
+  const width = Math.min(box.w, Math.max(...fitted.widths) + 16);
+  const height = Math.min(box.h, fitted.lines.length * lineHeight + 16);
+  ctx.fillStyle = '#041018e6';
+  ctx.fillRect(box.x, box.y, width, height);
+  fitted.lines.forEach((line, i) => {
+    const baseline = box.y + 8 + fitted.font * 0.85 + i * lineHeight;
+    if (baseline <= box.y + box.h - 4) {
+      paintOutlinedText(ctx, line, box.x + 8, baseline, fill, `bold ${fitted.font}px system-ui`, 'left', box.w - 16);
+    }
+  });
+  return {font: fitted.font, lines: fitted.lines, width, height};
+}
