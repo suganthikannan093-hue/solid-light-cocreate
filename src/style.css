@@ -19,3 +19,16 @@ button:disabled:hover,button:disabled:focus-visible,#buttons button:disabled:foc
 #scene-container{overflow:hidden}
 #scene-container>canvas{max-width:100%;max-height:100%;display:block}
 @media(max-width:700px){#desktop-controls{max-height:48dvh}#buttons{flex-basis:100%;justify-content:flex-start}#buttons button{padding:8px 12px}}
+
+#audio-controls{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;flex:1 1 100%;min-width:0}
+#audio-controls #audio-state{margin:0;flex:1 1 180px;font-size:12px;color:#b8fff4}
+#mute-slot button{min-width:7.5rem}
+.volume-control{display:inline-flex;align-items:center;gap:8px;font-size:12px;color:#d5e8f4;pointer-events:auto}
+.volume-control input{width:120px;accent-color:#7ce9e3}
+#enable-audio{background:#2d6a62;border-color:#9ef7ee}
+#xr-banner{flex:1 1 100%;display:flex;align-items:center;gap:12px;margin:0;padding:8px 12px;background:#14544d;border:1px solid #9ef7ee;border-radius:8px;color:#f4fffd}
+#xr-banner[hidden]{display:none}
+#xr-banner p{margin:0;font-size:13px;font-weight:650}
+body.is-immersive #scene-container{bottom:0}
+body.is-immersive #desktop-controls{background:#091326f2}
+.audio-hint{margin:0;width:100%;font-size:12px;color:#9ec9c3}
