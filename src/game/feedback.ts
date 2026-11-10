@@ -31,13 +31,17 @@ export function drawingGuide(level:number,goal:LevelGoal,roofStep=false,needsExt
 
 export function chapterIntro(level:number,variant=0,budget?:number):string{
  if(level===1)return '01 · Pinch and hold. Go around the dotted ribbon in one closed loop, then release.';
- if(level===2)return '02 · Start with the SHORT dotted ribbon. LUMA will test it, then ask you to extend the loop all the way to B.';
+ if(level===2)return '02 · Incomplete Span. Start with the SHORT dotted ribbon. LUMA will test a solid, fall short, and ask you to extend the loop to B with your hands.';
  if(level===3)return '03 of 4 · TWO LOOPS. First pinch a thin LOWER path from A to B. After LUMA confirms, add a SECOND closed loop around the UPPER roof. Next is The Last Spark.';
  return `04 of 4 · The Last Spark — the ending${variant?' / Remix '+(((variant-1)%4)+1)+'/4':''}. One sheltered crossing${budget?` within ${budget} light units`:''}. Stay inside the tighter guide so the traveler can reach home.`;
 }
 
 export function disconnectedSpanHint():string{
- return 'Connect A to B: your loop stops before the far bank. The amber marks show the missing stretch. Draw a longer closed loop that reaches B — LUMA can add depth, but only you can extend the cyan outline.';
+ return 'LUMA’s bridge falls short — its search cannot invent the missing length. The amber marks the gap. Extend your cyan loop to B with your hands, then release. Only you can add length; LUMA will replan the depth.';
+}
+
+export function incompleteSpanSuccess():string{
+ return 'YOU EXTENDED THE SPAN. LUMA’s first solid fell short; your longer loop made a safe crossing. Our traveler is home. Choose Next level for the Light Garden.';
 }
 
 export function budgetHint(cost?:number,budget?:number):string{

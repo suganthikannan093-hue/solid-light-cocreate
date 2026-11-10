@@ -40,3 +40,25 @@ body.is-immersive #desktop-controls{background:#091326f2}
 #xr-actions .xr-preview{background:#243e5c;border-color:#8ec7e4;font-weight:700}
 #xr-actions .xr-preview[hidden]{display:none}
 @media(max-width:700px){#xr-actions{flex-basis:100%}#xr-actions button{padding:10px 14px}}
+
+#continue-screen{position:fixed;inset:0;z-index:20;display:flex;align-items:center;justify-content:center;background:#050a14d8;pointer-events:auto;padding:24px}
+#continue-screen[hidden]{display:none}
+.continue-card{width:min(520px,100%);background:#0c1a2de8;border:1px solid #9ef7ee;border-radius:16px;padding:28px 24px;box-shadow:0 0 40px #5dffd033;color:#e8f2ff}
+.continue-card h2{margin:0 0 12px;letter-spacing:.08em;color:#99f4ec}
+#continue-summary{margin:0 0 18px;line-height:1.45;color:#d7e7f4}
+#continue-actions{display:flex;flex-wrap:wrap;gap:10px}
+#continue-actions button{pointer-events:auto;font-weight:750;padding:12px 20px}
+#continue-actions button[data-action="Continue"]{background:#1a746b;border-color:#b8fff5}
+#continue-actions button[data-action="New game"]{background:#243e5c;border-color:#8ec7e4}
+
+#luma-panel{position:fixed;right:24px;top:24px;z-index:18;width:min(380px,calc(100vw - 48px));max-height:min(70vh,520px);overflow:auto;background:#071525f2;border:1px solid #9ef7ee;border-radius:12px;padding:16px 18px;color:#e7effd;pointer-events:auto}
+#luma-panel[hidden]{display:none}
+#luma-panel h2{margin:0 0 10px;color:#7ce9e3;letter-spacing:.06em;font-size:16px}
+#luma-explanation{margin:0 0 12px;white-space:pre-wrap;line-height:1.45;font-size:13px}
+#luma-close{pointer-events:auto}
+
+#workshop-list{flex:1 1 100%;margin:0;padding:10px 0 0;border-top:1px solid #3c566c}
+#workshop-list[hidden]{display:none}
+#workshop-list h3{margin:0 0 6px;color:#9ef7ee;font-size:13px;letter-spacing:.08em}
+#workshop-list p{margin:0 0 8px;font-size:12px;color:#c9deea}
+#workshop-buttons{display:flex;flex-wrap:wrap;gap:6px}

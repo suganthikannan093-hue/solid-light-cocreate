@@ -5,6 +5,14 @@ Repository: https://github.com/suganthikannan093-hue/solid-light-cocreate
 
 A local construction agent and a human each own one perpendicular silhouette. Their intersection creates a real voxel bridge for a tiny traveler. LUMA is a bounded deterministic search-and-validation planner, not an LLM.
 
+## Positioning
+Competition track: **Gaming**, with a **Best First Five Minutes** opening. Minutes 0–5 teach the loop on *The First Bridge*, then stage the authored *Incomplete Span* beat: LUMA’s solid visibly falls short, you repair the missing length with your hands, and the traveler crosses under a celebratory payoff. See [docs/JUDGE-GUIDE.md](docs/JUDGE-GUIDE.md).
+
+LUMA is a **deterministic local search planner**, not an LLM. It searches a fixed budget of candidate side profiles, scores walkability, clearance, shelter and cost, and either commits a solid or asks you to edit what it cannot change (it cannot see intent, and it cannot invent missing length). Open **How LUMA thinks** in the game to inspect the last decision.
+
+Progress (completed chapters, current chapter, Workshop unlocks, fewest-stroke records, comfort/audio settings) is saved in the browser. Returning players choose **Continue** or **New game**. In a headset, lean or look around to inspect real depth; on desktop, right-drag to orbit.
+
+
 ## Run
 Requires Node 20.19+ (20), 22.12+ (22), or 24+. Verified environment: Intel macOS, Node 26.13.0. Dependencies are locked; official IWSDK 1.1.0-rc.2 scaffold.
 
@@ -30,7 +38,7 @@ Hold the mouse button (or pinch in an immersive session), loop around the thick 
 Next, Undo, Clear, Help, Enter XR and Settings are the primary actions. A visible Sound on/off control and volume slider sit in the control bar; Help repeats voice guidance. Settings contains chapter practice, Reset, Pause, Recenter, Preview XR, Passthrough, Reduced motion, High contrast and Sturdy/Efficient. Selected and toggle states are visible. Immersive sessions use large spatial controls above the scene's lower edge and a desktop banner while a session is active. Physical Quest validation remains open.
 
 ## Journey
-Four default chapters: First Bridge teaches the loop; Incomplete Span requires extending the human projection; Light Garden adds a protective canopy; Last Spark adds a strict voxel budget. Next then cycles four workshop presets that change span, creature footprint and resources. Success requires a real validated route and traveler crossing. An already sufficient drawing can succeed directly.
+Four default chapters: First Bridge teaches the loop; Incomplete Span is the failure → human repair → success beat (LUMA’s first solid falls short; only your hands can add the missing length); Light Garden adds a protective canopy; Last Spark adds a strict voxel budget. After Last Spark, a visible Workshop lists four remixes that change span, creature footprint and resources, with per-chapter best-stroke stars kept in your save. Success requires a real validated route and traveler crossing. An already sufficient drawing can succeed directly.
 
 Live demo: https://suganthikannan093-hue.github.io/solid-light-cocreate/ . On a desktop browser without a headset, Enter XR is the highlighted primary action and Preview XR sits beside it. Preview XR reloads with `?emulate` to install the official IWER Quest 3 runtime, after which Enter XR starts the immersive preview. The four-chapter build passed six hosted browser scenarios and the official four-chapter emulator hand journey. Optional OpenAI/Vultr adapters use a separate secret-holding HTTPS backend and explicit consent. OpenAI is the default provider; its key connectivity has been tested, but a public inference proxy is not deployed. No key belongs in this frontend. See docs/optional-cloud.md.
 

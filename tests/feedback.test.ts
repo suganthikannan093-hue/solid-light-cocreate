@@ -45,8 +45,8 @@ it('lets a new player finish chapters 3 and 4 by following the visible guides',(
 });
 
 it('names the missing stretch and the tighter Last Spark budget in player-facing copy',()=>{
- expect(disconnectedSpanHint()).toMatch(/longer closed loop that reaches B/);
- expect(disconnectedSpanHint()).toMatch(/only you can extend the cyan outline/);
+ expect(disconnectedSpanHint()).toMatch(/falls short/);
+ expect(disconnectedSpanHint()).toMatch(/Only you can add length/i);
  expect(chapterIntro(2)).toMatch(/extend the loop/);
  expect(budgetHint(2000,1700)).toMatch(/2000 \/ 1700/);
  expect(friendlyFailure('DISCONNECTED_SPAN')).toMatch(/Connect A to B/);
