@@ -1,5 +1,5 @@
 import {it,expect} from 'vitest';
-import {samplePoint,strokeClosure,friendlyFailure,examplePoint,drawingGuide,chapterIntro,disconnectedSpanHint,budgetHint} from '../src/game/feedback';
+import {samplePoint,strokeClosure,friendlyFailure,examplePoint,drawingGuide,chapterIntro,disconnectedSpanHint,budgetHint,closeIfNear,CLOSURE_GAP} from '../src/game/feedback';
 import {rasterize,addMask,OfflineStrategyProvider,goalFor,type Point} from '../src/game/engine';
 it('preserves deliberate corners from sparse input and yields a valid first bridge',()=>{const points:Point[]=[];for(const p of [[.07,.20],[.94,.20],[.94,.37],[.07,.37],[.07,.20]] as Point[])samplePoint(points,p);expect(points[1]).toEqual([.94,.20]);expect(strokeClosure(points).closed).toBe(true);expect(new OfflineStrategyProvider().plan({revision:1,playerMask:rasterize(points,1),goal:goalFor(1),previousAttempts:[]}).report.pass).toBe(true);});
 it('distinguishes open outlines from near-closed loops',()=>{expect(strokeClosure([[.1,.2],[.9,.2],[.9,.4]]).closed).toBe(false);expect(strokeClosure([[.1,.2],[.9,.2],[.9,.4],[.11,.21]]).closed).toBe(true);});
@@ -51,4 +51,15 @@ it('names the missing stretch and the tighter Last Spark budget in player-facing
  expect(budgetHint(2000,1700)).toMatch(/2000 \/ 1700/);
  expect(friendlyFailure('DISCONNECTED_SPAN')).toMatch(/Connect A to B/);
  expect(friendlyFailure('RESOURCE_BUDGET')).toMatch(/tighter guide/);
+});
+
+it('treats a generous near-miss as a closed loop and snaps back to the start',()=>{
+ expect(CLOSURE_GAP).toBeGreaterThanOrEqual(.2);
+ const almost:[[number,number][]]=[[.1,.2],[.9,.2],[.9,.4],[.1+.12,.2+.05]];
+ expect(strokeClosure(almost).closed).toBe(true);
+ const snapped=closeIfNear(almost);
+ expect(snapped.closed).toBe(true);
+ expect(snapped.points.at(-1)).toEqual(almost[0]);
+ expect(strokeClosure([[.1,.2],[.9,.2],[.9,.4]]).closed).toBe(false);
+ expect(closeIfNear([[.1,.2],[.9,.2],[.9,.4]]).closed).toBe(false);
 });

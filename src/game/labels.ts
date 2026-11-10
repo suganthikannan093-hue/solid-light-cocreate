@@ -4,10 +4,18 @@ import {CanvasTexture, Sprite, SpriteMaterial} from '@iwsdk/core';
 export const OUTLINE_LABELS = {
   ghostFont: 42,
   ghostLine: 48,
-  endpointFont: 36,
-  endpointRadius: 18,
+  endpointFont: 48,
+  endpointRadius: 24,
   captionPad: 10,
+  panelMargin: 48,
+  panelTitleFont: 30,
+  panelSubtitleFont: 16,
+  panelFooterFont: 18,
+  canvasWidth: 768,
+  canvasHeight: 384,
 } as const;
+
+export const BILLBOARD_CANVAS = {width: 1024, height: 320} as const;
 
 export interface BillboardLabel {
   sprite: Sprite;
@@ -16,14 +24,88 @@ export interface BillboardLabel {
   text: string;
 }
 
+export function estimateBoldWidth(text: string, fontSize: number): number {
+  // Conservative width for bold system-ui; tests can rely on this as a ceiling.
+  return text.length * fontSize * 0.7;
+}
+
+export function wrapWords(
+  text: string,
+  maxWidth: number,
+  measure: (line: string) => number,
+): string[] {
+  const explicit = text.split('\n');
+  const lines: string[] = [];
+  for (const paragraph of explicit) {
+    const words = paragraph.split(/\s+/).filter(Boolean);
+    if (!words.length) continue;
+    let line = words[0];
+    for (const word of words.slice(1)) {
+      const next = `${line} ${word}`;
+      if (measure(next) <= maxWidth) line = next;
+      else {
+        lines.push(line);
+        line = word;
+      }
+    }
+    lines.push(line);
+  }
+  return lines.length ? lines : [text];
+}
+
+export function wrapAndFit(
+  text: string,
+  maxWidth: number,
+  maxFont: number,
+  minFont = 18,
+  measure: (text: string, font: number) => number = estimateBoldWidth,
+): {font: number; lines: string[]; widths: number[]} {
+  let font = maxFont;
+  let lines: string[] = [];
+  let widths: number[] = [];
+  while (font >= minFont) {
+    lines = wrapWords(text, maxWidth, (line) => measure(line, font));
+    widths = lines.map((line) => measure(line, font));
+    if (widths.every((width) => width <= maxWidth) && lines.length <= 3) {
+      return {font, lines, widths};
+    }
+    font -= 2;
+  }
+  lines = wrapWords(text, maxWidth, (line) => measure(line, minFont));
+  return {font: minFont, lines, widths: lines.map((line) => measure(line, minFont))};
+}
+
+export function fitsWidth(text: string, font: number, maxWidth: number, measure = estimateBoldWidth): boolean {
+  return measure(text, font) <= maxWidth;
+}
+
+export function ghostCaption(
+  level: number,
+  roofStep = false,
+  needsExtension = false,
+): string {
+  if (level === 3) return roofStep ? 'GHOST EXAMPLE\nLoop the UPPER roof' : 'GHOST EXAMPLE\nLoop the LOWER path';
+  if (level === 2 && needsExtension) return 'GHOST EXAMPLE\nLonger loop to B';
+  return 'GHOST EXAMPLE\nPinch, go around, close';
+}
+
+export function panelTitle(agent: boolean): string {
+  return agent ? 'LUMA’s depth' : 'Your outline';
+}
+
+/** Usable width for in-panel captions, inset so the left/right edges stay visible. */
+export function panelTextWidth(canvasWidth: number = OUTLINE_LABELS.canvasWidth): number {
+  return canvasWidth - OUTLINE_LABELS.panelMargin * 2;
+}
+
 export function createBillboardLabel(
   name: string,
   text: string,
-  scale = {x: 0.48, y: 0.14},
+  scale = {x: 0.9, y: 0.28},
 ): BillboardLabel {
   const canvas = document.createElement('canvas');
-  canvas.width = 768;
-  canvas.height = 224;
+  canvas.width = BILLBOARD_CANVAS.width;
+  canvas.height = BILLBOARD_CANVAS.height;
   const texture = new CanvasTexture(canvas);
   const sprite = new Sprite(
     new SpriteMaterial({
@@ -53,17 +135,20 @@ export function paintBillboardLabel(
   const ctx = canvas.getContext('2d')!;
   const {width: w, height: h} = canvas;
   ctx.clearRect(0, 0, w, h);
-  const lines = text.split('\n');
-  ctx.font = 'bold 72px system-ui, sans-serif';
-  const padding = 28;
-  const lineHeight = 84;
-  const textWidth = Math.max(...lines.map((line) => ctx.measureText(line).width));
-  const boxW = Math.min(w - 8, textWidth + padding * 2);
-  const boxH = lines.length * lineHeight + padding;
+  const measure = (line: string, font: number) => {
+    ctx.font = `bold ${font}px system-ui, sans-serif`;
+    return ctx.measureText(line).width;
+  };
+  const padX = 48;
+  const padY = 36;
+  const fitted = wrapAndFit(text, w - padX * 2, 72, 28, measure);
+  const lineHeight = fitted.font + 16;
+  const boxW = Math.min(w - 16, Math.max(...fitted.widths) + padX * 2);
+  const boxH = Math.min(h - 16, fitted.lines.length * lineHeight + padY);
   const x = (w - boxW) / 2;
   const y = (h - boxH) / 2;
   const radius = 28;
-  ctx.fillStyle = options.bg ?? 'rgba(4, 12, 24, 0.88)';
+  ctx.fillStyle = options.bg ?? 'rgba(4, 12, 24, 0.92)';
   ctx.beginPath();
   ctx.moveTo(x + radius, y);
   ctx.arcTo(x + boxW, y, x + boxW, y + boxH, radius);
@@ -78,8 +163,9 @@ export function paintBillboardLabel(
   ctx.fillStyle = options.fill ?? '#fff8e8';
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
-  lines.forEach((line, i) => {
-    ctx.fillText(line, w / 2, y + padding + lineHeight * (i + 0.4));
+  ctx.font = `bold ${fitted.font}px system-ui, sans-serif`;
+  fitted.lines.forEach((line, i) => {
+    ctx.fillText(line, w / 2, y + padY * 0.55 + lineHeight * (i + 0.5));
   });
   texture.needsUpdate = true;
 }
@@ -92,6 +178,7 @@ export function paintOutlinedText(
   fill: string,
   font: string,
   align: CanvasTextAlign = 'left',
+  maxWidth?: number,
 ): void {
   ctx.font = font;
   ctx.textAlign = align;
@@ -99,7 +186,47 @@ export function paintOutlinedText(
   ctx.miterLimit = 2;
   ctx.strokeStyle = '#06101c';
   ctx.lineWidth = 8;
+  if (maxWidth !== undefined) {
+    ctx.strokeText(text, x, y, maxWidth);
+    ctx.fillStyle = fill;
+    ctx.fillText(text, x, y, maxWidth);
+    return;
+  }
   ctx.strokeText(text, x, y);
   ctx.fillStyle = fill;
   ctx.fillText(text, x, y);
+}
+
+export function paintFittedCaption(
+  ctx: CanvasRenderingContext2D,
+  text: string,
+  x: number,
+  y: number,
+  maxWidth: number,
+  maxFont: number,
+  fill: string,
+): {font: number; lines: string[]; width: number; height: number} {
+  const measure = (line: string, font: number) => {
+    ctx.font = `bold ${font}px system-ui, sans-serif`;
+    return ctx.measureText(line).width;
+  };
+  const fitted = wrapAndFit(text, maxWidth, maxFont, 18, measure);
+  const lineHeight = fitted.font + 10;
+  const width = Math.max(...fitted.widths);
+  const height = fitted.lines.length * lineHeight + 16;
+  ctx.fillStyle = '#041018e6';
+  ctx.fillRect(x - 8, y - fitted.font, width + 16, height);
+  fitted.lines.forEach((line, i) => {
+    paintOutlinedText(
+      ctx,
+      line,
+      x,
+      y + i * lineHeight,
+      fill,
+      `bold ${fitted.font}px system-ui`,
+      'left',
+      maxWidth,
+    );
+  });
+  return {font: fitted.font, lines: fitted.lines, width, height};
 }
