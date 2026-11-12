@@ -33,7 +33,7 @@ test('chapter 1 shows exactly one unclipped GHOST EXAMPLE caption and leaves A v
     const boardTop=plane.position.y+0.32;
     const front=(plane as {material?:{map?:{image?:HTMLCanvasElement}}}).material?.map?.image;
     let captionFillRatio=0;
-    let aAmber=0;
+    let aPlayer=0;
     if(front){
       const ctx=front.getContext('2d');
       if(ctx){
@@ -47,7 +47,7 @@ test('chapter 1 shows exactly one unclipped GHOST EXAMPLE caption and leaves A v
         const marks=ctx.getImageData(0,200,front.width,100);
         for(let i=0;i<marks.data.length;i+=4){
           const r=marks.data[i],g=marks.data[i+1],b=marks.data[i+2];
-          if(r>200&&g>150&&g<220&&b>80&&b<150)aAmber++;
+          if(g>200&&b>190&&g>r+20)aPlayer++;
         }
       }
     }
@@ -59,7 +59,7 @@ test('chapter 1 shows exactly one unclipped GHOST EXAMPLE caption and leaves A v
       scaleX:label?.scaleX??0,
       scaleY:label?.scaleY??0,
       captionFillRatio,
-      aAmber,
+      aPlayer,
       canvas:{w:front?.width??0,h:front?.height??0},
     };
   });
@@ -72,7 +72,7 @@ test('chapter 1 shows exactly one unclipped GHOST EXAMPLE caption and leaves A v
   expect(info.scaleX).toBeCloseTo(GHOST_BILLBOARD.width,2);
   expect(info.scaleY).toBeCloseTo(GHOST_BILLBOARD.height,2);
   expect(info.captionFillRatio).toBeLessThan(0.08);
-  expect(info.aAmber).toBeGreaterThan(50);
+  expect(info.aPlayer).toBeGreaterThan(50);
   expect(info.canvas).toEqual({w:768,h:384});
 
   await page.screenshot({path:'test-results/sl-caption.png',fullPage:true});
