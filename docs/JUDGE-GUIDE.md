@@ -38,4 +38,4 @@ Completed chapters, the current chapter, Workshop unlocks, fewest-stroke / star 
 
 ## Honest limits
 
-No physical Quest comfort study is claimed here. The Best First Five Minutes pitch is about a reliable authored opening, not an unverified headset study.
+No physical Quest comfort study is claimed here. The Best First Five Minutes pitch is about a reliable authored opening, not an unverified headset study. A lightweight `?debug` overlay reports frames per second and frame time on desktop or in a headset preview; Quest frame rate is unverified without a physical headset.

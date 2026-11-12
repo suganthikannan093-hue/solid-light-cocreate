@@ -48,3 +48,34 @@ export function budgetHint(cost?:number,budget?:number):string{
  const used=cost!=null&&budget!=null?` Light used: ${cost} / ${budget}.`:'';
  return 'Trim the amber outer edges to fit our light budget. Keep A and B covered inside the tighter guide.'+used;
 }
+
+export const START_INSIDE = 'Start inside the glowing area.';
+export const TOO_SHORT = 'Too short, drag further.';
+export const EXAMPLE_LOOP_DURATION = 5;
+export const EXAMPLE_MAX_LOOPS = 2;
+
+export function strokePathLength(points:Point[]):number{
+ let distance=0;
+ for(let i=1;i<points.length;i++)distance+=Math.hypot(points[i][0]-points[i-1][0],points[i][1]-points[i-1][1]);
+ return distance;
+}
+
+/** A tap or a drag too small to read as a loop — not an open-gap correction. */
+export function isTinyStroke(points:Point[]):boolean{
+ if(points.length<3)return true;
+ return strokePathLength(points)<0.08;
+}
+
+export function commitStrokeMessage(points:Point[],openGap:boolean):string{
+ if(!points.length)return 'No stroke was recorded. Start inside the glowing area, then drag further.';
+ if(isTinyStroke(points))return TOO_SHORT;
+ if(openGap)return 'Bring the glowing end back to the start. Draw a loop around the ribbon, not just a line.';
+ return 'That loop is too small. Surround the dotted ribbon from A to B.';
+}
+
+export function examplePlayback(elapsed:number,startedAt:number,active:boolean,loops=EXAMPLE_MAX_LOOPS):{visible:boolean;finished:boolean;t:number}{
+ if(!active)return {visible:false,finished:true,t:loops};
+ const t=Math.max(0,(elapsed-startedAt)/EXAMPLE_LOOP_DURATION);
+ if(t>=loops)return {visible:false,finished:true,t:loops};
+ return {visible:true,finished:false,t};
+}
