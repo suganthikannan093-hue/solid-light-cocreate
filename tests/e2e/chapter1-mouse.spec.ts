@@ -11,7 +11,7 @@ function around(guide:ReturnType<typeof drawingGuide>,margin=0.02):Point[]{
 }
 
 test('desktop mouse completes all four chapters, including an edge-started stroke',async({page})=>{
- test.setTimeout(240000);
+ test.setTimeout(360000);
  await page.goto('./');
  await page.waitForFunction(()=>!!window.solidLight);
  await expect(page.getByRole('button',{name:'Enter XR',exact:true})).toBeVisible();

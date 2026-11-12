@@ -110,3 +110,58 @@ test('the example cursor stops when the player starts drawing',async({page})=>{
  expect(await page.evaluate(()=>window.solidLight.state().exampleFinished)).toBe(true);
  await page.mouse.up();
 });
+
+
+async function ghostVisible(page:{evaluate:Function}){
+ return page.evaluate(()=>{
+  let visible=false;
+  window.solidLight.world.scene.traverse(obj=>{if(obj.name==='GhostExampleLabel')visible=!!obj.visible;});
+  return visible;
+ });
+}
+
+test('Undo, Clear and replans do not bring the ghost example back once the player has drawn',async({page})=>{
+ await page.goto('./');
+ await page.waitForFunction(()=>!!window.solidLight);
+ expect(await ghostVisible(page)).toBe(true);
+
+ const guide=drawingGuide(2,goalFor(2),false,false);
+ const loop:Point[]=[[guide.x0-0.04,guide.y0-0.04],[guide.x1+0.04,guide.y0-0.04],[guide.x1+0.04,guide.y1+0.04],[guide.x0-0.04,guide.y1+0.04],[guide.x0-0.04,guide.y0-0.04]];
+ const points=await page.evaluate(outline=>{
+  const w=window.solidLight.world,p=w.requireSceneObject('front-plane'),r=w.renderer.domElement.getBoundingClientRect();
+  return outline.map(([u,v])=>{const a=p.position.clone().set((u-.5)*1.28,(v-.5)*.64,0);p.localToWorld(a);a.project(w.camera);return {x:r.x+(a.x+1)*r.width/2,y:r.y+(1-a.y)*r.height/2};});
+ },loop);
+
+ await clickControl(page,'Level 2');
+ await page.waitForFunction(()=>window.solidLight.state().level===2);
+ // A new chapter may show the example; drawing must dismiss it for the rest of the chapter.
+ await page.mouse.move(points[0].x,points[0].y);
+ await page.mouse.down();
+ for(const point of points.slice(1))await page.mouse.move(point.x,point.y,{steps:8});
+ await page.mouse.up();
+ await page.waitForFunction(()=>window.solidLight.state().phase==='needs-user');
+ expect(await ghostVisible(page)).toBe(false);
+ expect(await page.evaluate(()=>window.solidLight.state().exampleActive)).toBe(false);
+
+ await clickControl(page,'Undo');
+ await expect(page.getByRole('status')).toContainText('LUMA will re-test depth');
+ expect(await ghostVisible(page)).toBe(false);
+ expect(await page.evaluate(()=>window.solidLight.state().exampleActive)).toBe(false);
+
+ await clickControl(page,'Clear');
+ expect(await ghostVisible(page)).toBe(false);
+ expect(await page.evaluate(()=>window.solidLight.state().exampleActive)).toBe(false);
+
+ await clickControl(page,'Replay example');
+ expect(await page.evaluate(()=>window.solidLight.state().exampleActive)).toBe(true);
+ await expect.poll(()=>ghostVisible(page)).toBe(true);
+});
+
+test('?debug shows a lightweight FPS overlay',async({page})=>{
+ await page.goto('./?debug');
+ await page.waitForFunction(()=>!!window.solidLight);
+ const overlay=page.locator('#perf-debug');
+ await expect(overlay).toBeVisible();
+ await expect(overlay).toContainText(/fps/i);
+ await expect(overlay).toContainText(/unverified/i);
+});
