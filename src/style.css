@@ -62,3 +62,6 @@ body.is-immersive #desktop-controls{background:#091326f2}
 #workshop-list h3{margin:0 0 6px;color:#9ef7ee;font-size:13px;letter-spacing:.08em}
 #workshop-list p{margin:0 0 8px;font-size:12px;color:#c9deea}
 #workshop-buttons{display:flex;flex-wrap:wrap;gap:6px}
+
+#perf-debug{position:fixed;left:12px;bottom:12px;z-index:30;pointer-events:none;background:#041018e6;color:#9ef7ee;border:1px solid #3c566c;border-radius:8px;padding:6px 10px;font:12px/1.35 ui-monospace,monospace;letter-spacing:.02em;max-width:min(420px,calc(100vw - 24px))}
+body.is-immersive #perf-debug{left:16px;bottom:auto;top:16px;font-size:14px;padding:8px 12px}

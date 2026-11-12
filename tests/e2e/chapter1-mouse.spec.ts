@@ -34,7 +34,7 @@ test('desktop mouse completes all four chapters, including an edge-started strok
   const points=await toScreen(outline,steps);
   await page.mouse.move(points[0].x,points[0].y);
   await page.mouse.down();
-  for(const point of points.slice(1))await page.mouse.move(point.x,point.y);
+  for(const point of points.slice(1))await page.mouse.move(point.x,point.y,{steps:6});
   await page.mouse.up();
  }
 
@@ -85,4 +85,16 @@ test('desktop mouse completes all four chapters, including an edge-started strok
  await waitPhase('level-complete');
  expect(await page.evaluate(()=>window.solidLight.state().decision!.report.pass)).toBe(true);
  await expect(page.getByRole('status')).toContainText(/Last Spark|BUILT THIS TOGETHER|created together/i);
+ expect(await page.evaluate(()=>window.solidLight.state().phase)).toBe('level-complete');
+ expect(await page.evaluate(()=>window.solidLight.state().completed)).toEqual(expect.arrayContaining([1,2,3,4]));
+ await expect(page.locator('#chapter-progress')).toContainText('4 COMPLETE');
+
+ // Saved progress must survive a reload and offer Continue into the ending chapter.
+ await page.reload();
+ await page.waitForFunction(()=>!!window.solidLight);
+ await expect(page.getByRole('dialog',{name:'Saved progress'})).toBeVisible();
+ expect(await page.evaluate(()=>window.solidLight.state().awaitingContinue)).toBe(true);
+ await page.getByRole('button',{name:'Continue',exact:true}).click();
+ await page.waitForFunction(()=>window.solidLight.state().level===4&&!window.solidLight.state().awaitingContinue);
+ await expect(page.getByRole('status')).toContainText(/Last Spark/i);
 });

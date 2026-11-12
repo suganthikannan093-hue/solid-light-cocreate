@@ -63,3 +63,25 @@ it('treats a generous near-miss as a closed loop and snaps back to the start',()
  expect(strokeClosure([[.1,.2],[.9,.2],[.9,.4]]).closed).toBe(false);
  expect(closeIfNear([[.1,.2],[.9,.2],[.9,.4]]).closed).toBe(false);
 });
+
+import {isTinyStroke,strokePathLength,commitStrokeMessage,examplePlayback,TOO_SHORT,START_INSIDE,EXAMPLE_MAX_LOOPS,EXAMPLE_LOOP_DURATION} from '../src/game/feedback';
+
+it('treats taps and very short drags as too short, not as an open gap',()=>{
+ expect(isTinyStroke([])).toBe(true);
+ expect(isTinyStroke([[.5,.5]])).toBe(true);
+ expect(isTinyStroke([[.5,.5],[.52,.5]])).toBe(true);
+ expect(strokePathLength([[.1,.2],[.2,.2],[.3,.2]])).toBeCloseTo(.2,5);
+ expect(isTinyStroke([[.1,.2],[.2,.2],[.3,.2],[.4,.2]])).toBe(false);
+ expect(commitStrokeMessage([],false)).toMatch(/glowing area/);
+ expect(commitStrokeMessage([[.5,.5]],true)).toBe(TOO_SHORT);
+ expect(commitStrokeMessage([[.1,.2],[.9,.2],[.9,.4]],true)).toMatch(/glowing end/);
+ expect(START_INSIDE).toMatch(/glowing area/);
+});
+
+it('plays the ghost example twice, then finishes instead of looping',()=>{
+ expect(examplePlayback(0,0,true).visible).toBe(true);
+ expect(examplePlayback(EXAMPLE_LOOP_DURATION*1.5,0,true).visible).toBe(true);
+ expect(examplePlayback(EXAMPLE_LOOP_DURATION*EXAMPLE_MAX_LOOPS,0,true)).toEqual({visible:false,finished:true,t:EXAMPLE_MAX_LOOPS});
+ expect(examplePlayback(100,0,false).finished).toBe(true);
+ expect(examplePoint(.1,.9,.2,.4,0.25)[0]).toBeGreaterThan(.1);
+});
