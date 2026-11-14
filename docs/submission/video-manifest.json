@@ -16,5 +16,11 @@
   },
   "narrationRevision": "Conversational OpenAI marin, pitch-preserving 0.92x pace, scene-specific pauses; Garden demonstrates separate additive roof loop",
   "applicationSourceCommit": "a59432835c11547e488c6b3e0fbca811a3f6fd28",
-  "visualCheck": "Compact contact sheet inspected; two-band Garden and caption band visible."
+  "visualCheck": "Compact contact sheet inspected; two-band Garden and caption band visible.",
+  "primaryCompetitionDemo": {
+    "file": "docs/submission/recordings/solid-light-xr-demo-v3.mp4",
+    "seconds": 96.469,
+    "manifest": "docs/submission/xr-video-manifest-v3.json",
+    "note": "Primary upload is the v3 XR hand demo (overlap-free XR layout); this file's top-level entry describes the supplementary desktop demo."
+  }
 }

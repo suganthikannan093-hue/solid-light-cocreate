@@ -1,0 +1,71 @@
+1
+00:00:00,400 --> 00:00:04,779
+Two views, one solid. In Solid Light, your pinch shapes
+
+2
+00:00:04,779 --> 00:00:09,159
+the cyan outline. Luma chooses the amber depth. Together, you
+
+3
+00:00:09,159 --> 00:00:13,538
+build a route this little traveler can actually cross.
+
+4
+00:00:14,540 --> 00:00:18,388
+I'll pinch and hold, loop around this short ribbon, then
+
+5
+00:00:18,388 --> 00:00:22,235
+release. My line becomes one silhouette. Luma now tries depth
+
+6
+00:00:22,235 --> 00:00:26,083
+profiles against the actual construction.
+
+7
+00:00:34,540 --> 00:00:37,607
+We haven't reached the far bank. Luma can change depth,
+
+8
+00:00:37,607 --> 00:00:40,675
+but can't add the missing length. That amber section is
+
+9
+00:00:40,675 --> 00:00:43,742
+asking for my help.
+
+10
+00:00:47,541 --> 00:00:50,626
+I'll extend my outline through the gap. Same hand, same
+
+11
+00:00:50,626 --> 00:00:53,711
+simple gesture. Luma keeps its own perspective and tests the
+
+12
+00:00:53,711 --> 00:00:56,796
+new intersection.
+
+13
+00:01:07,542 --> 00:01:10,538
+There's the route. Our traveler crosses only after the solid
+
+14
+00:01:10,538 --> 00:01:13,535
+passes. My outline and Luma's tested depth stay here beside
+
+15
+00:01:13,535 --> 00:01:16,531
+what we made.
+
+16
+00:01:20,542 --> 00:01:25,152
+That hand-off is the heart of co-creation. Captured in the
+
+17
+00:01:25,152 --> 00:01:29,762
+official Immersive Web SDK emulator with hand input. Physical-device performance
+
+18
+00:01:29,762 --> 00:01:34,372
+and usability testing are still pending.

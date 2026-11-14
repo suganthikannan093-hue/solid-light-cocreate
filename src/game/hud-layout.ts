@@ -26,6 +26,22 @@ export const STATUS_PANEL = {width: 1.65, height: 0.36, z: -1.95} as const;
 export const STATUS_CANVAS = {width: 1536, height: 320} as const;
 export const BOARD_START_MARGIN = 0.25;
 
+/**
+ * Immersive placement of LUMA's depth (side-silhouette) panel and its helpers.
+ * From the default standing head pose (0, 1.6, 0) the depth panel sits about 19–48° to the
+ * right, above the toolbar and below the status panel, so nothing in the centre overlaps it.
+ * It keeps a partial inward yaw so it still reads as a side view ("lean or look right").
+ */
+export const XR_DEPTH_PANEL = {position: [1.2, 1.5, -1.95], yaw: -1.0} as const;
+/** INSPECT DEPTH billboard: above the depth panel's right half, clear of the status panel. */
+export const XR_INSPECT_CUE = {position: [1.45, 2.03, -1.95]} as const;
+/** How LUMA thinks: seventh slot at the right end of the toolbar row, so it never covers the bridge, the solid or the toolbar. */
+export const XR_HOW_LUMA_BUTTON = {position: [-0.78 + 6 * 0.32 + 0.05, 1.02, -1.45]} as const;
+/** Replay example: beside the right edge of the outline board, clear of the toolbar and depth panel. */
+export const XR_REPLAY_BUTTON = {position: [0.2, 1.45, -1.62]} as const;
+/** Spatial toolbar rows (six per row). */
+export const XR_TOOLBAR = {x0: -0.78, dx: 0.32, y0: 1.02, rowPitch: 0.13, z: -1.45, perRow: 6, button: {width: 0.34, height: 0.105}} as const;
+
 export function outlinePanelRegions(
   w: number = OUTLINE_LABELS.canvasWidth,
   h: number = OUTLINE_LABELS.canvasHeight,
