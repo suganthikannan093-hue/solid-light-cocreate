@@ -1,0 +1,35 @@
+{
+  "file": "docs/submission/recordings/solid-light-xr-demo-v2.mp4",
+  "seconds": 96.298,
+  "bytes": 2789340,
+  "sha256": "b849d40d69db7c9706b8301aea0c9e9c7a9cf77591463757964efc7bdeefc6c1",
+  "realGameplay": true,
+  "capture": "Official IWSDK IWER Quest 3 emulator, hand input",
+  "narrator": "OpenAI marin, AI-generated conversational XR narration",
+  "physicalQuest": false,
+  "captions": "docs/submission/solid-light-xr-demo-v2.srt",
+  "applicationSourceCommit": "7efafe42dde739c9c75bd026261d33032e698f73",
+  "resolution": "1280x720",
+  "codecs": "H.264 / AAC 48 kHz stereo",
+  "rawCanvas": "780x493 IWER renderer canvas, upscaled and padded",
+  "rawCapture": "docs/submission/recordings/solid-light-xr-demo-v2-raw.webm",
+  "timeline": "docs/submission/xr-demo-v2-timeline.json",
+  "narration": "Regenerated 2026-11-14 with OpenAI gpt-4o-mini-tts voice marin from the unchanged xr-narration.json script (original 10 Nov WAVs were not on this machine); 0.94x pace, 0.4 s lead-in",
+  "gameAudio": "Recorded in-app WebAudio, mixed at 0.55",
+  "audioChecks": {
+    "meanDb": -20.8,
+    "peakDb": -3.9
+  },
+  "frameCheck": "docs/submission/screenshots/xr-demo-v2-frames/ (t06s, t28s, t45s, t62s, t80s, t92s): cyan player outline, amber missing-length marker, REPAIRED TOGETHER completion panel",
+  "plannerStates": [
+    "onboarding",
+    "needs-user DISCONNECTED_SPAN",
+    "level-complete"
+  ],
+  "recordedAt": "2026-11-14",
+  "supersedes": {
+    "file": "docs/submission/recordings/solid-light-xr-demo.mp4",
+    "seconds": 100.9,
+    "note": "10 Nov capture before the 12 Nov authorship-colour changes; kept for reference"
+  }
+}
