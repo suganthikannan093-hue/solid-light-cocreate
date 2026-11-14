@@ -1,0 +1,43 @@
+{
+  "file": "docs/submission/recordings/solid-light-xr-demo-v3.mp4",
+  "seconds": 96.469,
+  "bytes": 2762582,
+  "sha256": "aca56f0a5df517d7832053489ef07f92c9314a5ac5c6d9a3ed37588048600657",
+  "realGameplay": true,
+  "capture": "Official IWSDK IWER Quest 3 emulator, hand input",
+  "narrator": "OpenAI marin, AI-generated conversational XR narration",
+  "physicalQuest": false,
+  "captions": "docs/submission/solid-light-xr-demo-v3.srt",
+  "applicationSourceCommit": "5f2d8e6",
+  "resolution": "1280x720",
+  "codecs": "H.264 / AAC 48 kHz stereo",
+  "rawCanvas": "780x493 IWER renderer canvas, upscaled and padded",
+  "rawCapture": "docs/submission/recordings/solid-light-xr-demo-v3-raw.webm",
+  "timeline": "docs/submission/xr-demo-v3-timeline.json",
+  "narration": "Same clips as v2: OpenAI gpt-4o-mini-tts voice marin, unchanged xr-narration.json script, 0.94x pace, 0.4 s lead-in",
+  "gameAudio": "Recorded in-app WebAudio, mixed at 0.55",
+  "audioChecks": {
+    "meanDb": -20.9,
+    "peakDb": -4.4
+  },
+  "layoutFix": "LUMA depth panel at (1.2, 1.5, -1.95) yaw -1.0 rad, INSPECT DEPTH above it, Replay example beside the outline board, How LUMA thinks at the end of the toolbar row; no overlaps from the default head pose",
+  "frameCheck": "docs/submission/screenshots/xr-demo-v3-frames/ (t06s, t28s, t45s, t62s, t80s, t92s); per-chapter stills in docs/submission/screenshots/xr-layout-v3/",
+  "plannerStates": [
+    "onboarding",
+    "needs-user DISCONNECTED_SPAN",
+    "level-complete"
+  ],
+  "recordedAt": "2026-11-14",
+  "supersedes": [
+    {
+      "file": "docs/submission/recordings/solid-light-xr-demo-v2.mp4",
+      "seconds": 96.298,
+      "note": "depth panel overlapped the centre/toolbar"
+    },
+    {
+      "file": "docs/submission/recordings/solid-light-xr-demo.mp4",
+      "seconds": 100.9,
+      "note": "before the 12 Nov colour changes"
+    }
+  ]
+}

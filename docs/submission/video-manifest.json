@@ -18,9 +18,9 @@
   "applicationSourceCommit": "a59432835c11547e488c6b3e0fbca811a3f6fd28",
   "visualCheck": "Compact contact sheet inspected; two-band Garden and caption band visible.",
   "primaryCompetitionDemo": {
-    "file": "docs/submission/recordings/solid-light-xr-demo-v2.mp4",
-    "seconds": 96.298,
-    "manifest": "docs/submission/xr-video-manifest-v2.json",
-    "note": "Primary upload is the re-recorded XR hand demo on the current build; this file's top-level entry describes the supplementary desktop demo."
+    "file": "docs/submission/recordings/solid-light-xr-demo-v3.mp4",
+    "seconds": 96.469,
+    "manifest": "docs/submission/xr-video-manifest-v3.json",
+    "note": "Primary upload is the v3 XR hand demo (overlap-free XR layout); this file's top-level entry describes the supplementary desktop demo."
   }
 }
